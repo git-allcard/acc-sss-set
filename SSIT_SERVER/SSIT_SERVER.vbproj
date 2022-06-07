@@ -1,0 +1,1606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87942264-1523-49CF-97FC-6E8326E00C8B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SSIT_SERVER.My.MyApplication</StartupObject>
+    <RootNamespace>SSIT_SERVER</RootNamespace>
+    <AssemblyName>SSIT_SERVER</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SSIT_SERVER.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SSIT_SERVER.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=10.0.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v14.1.Drawing, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPdfViewer.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Innovatrics.AnsiIso.Net, Version=2.3.0.21676, Culture=neutral, PublicKeyToken=0bfe3bd71f8c6cda, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Innovatrics.AnsiIso.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Innovatrics.Sdk.commons, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0bfe3bd71f8c6cda, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Innovatrics.Sdk.commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Keyboard">
+      <HintPath>C:\Users\ECQ-LAPTOP\Downloads\VirtualKeyboardExample\Keyboard\bin\Debug\Keyboard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.DataAccess, Version=4.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="ScanAPIHelper, Version=1.1.5801.26941, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Futronic VS2010\ScanAPIDemo\FutronicAPI\bin\Debug\ScanAPIHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UMIDLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\UMIDLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\addMaternityNotification.vb" />
+    <Compile Include="Class\AdjustMode.vb" />
+    <Compile Include="Class\Calendar.vb" />
+    <Compile Include="Class\ClearCache.vb" />
+    <Compile Include="Class\ConnectionString.vb" />
+    <Compile Include="Class\ConnectionString2.vb" />
+    <Compile Include="Class\ExtractedDetails.vb" />
+    <Compile Include="Class\HTMLDataExtractor.vb" />
+    <Compile Include="Class\insertProcedure.vb" />
+    <Compile Include="Class\insertSalaryLoan.vb" />
+    <Compile Include="Class\loanDisclosuretxt.vb" />
+    <Compile Include="Class\modClear_Cache.vb" />
+    <Compile Include="Class\modSettings.vb" />
+    <Compile Include="Class\MySettings.vb" />
+    <Compile Include="Class\PrintHelper.vb" />
+    <Compile Include="Class\PrintHelper2.vb" />
+    <Compile Include="Class\printModule.vb" />
+    <Compile Include="Class\SMTP.vb" />
+    <Compile Include="Class\StarIOPrinter.vb" />
+    <Compile Include="Class\Store.vb" />
+    <Compile Include="Class\auditTrail.vb" />
+    <Compile Include="Class\kioskRegistration.vb" />
+    <Compile Include="Class\txnNo.vb" />
+    <Compile Include="Class\V2\CardBlock.vb" />
+    <Compile Include="Class\V2\DeviceConnectivity.vb" />
+    <Compile Include="Class\V2\getContactInfo.vb" />
+    <Compile Include="Class\V2\getLatestEmployer.vb" />
+    <Compile Include="Class\V2\MyBitmapFile.vb" />
+    <Compile Include="Class\V2\SSUmidService.vb" />
+    <Compile Include="Class\V2\OnlineRetirement.vb" />
+    <Compile Include="Class\V2\SWR.vb" />
+    <Compile Include="Class\V2\SalaryLoan.vb" />
+    <Compile Include="Class\V2\Maternity.vb" />
+    <Compile Include="Class\V2\TestData2.vb" />
+    <Compile Include="ConnectToServer.Designer.vb">
+      <DependentUpon>ConnectToServer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectToServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmCalendarv2.Designer.vb">
+      <DependentUpon>_frmCalendarv2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmCalendarv2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmCitizenCharter3.designer.vb">
+      <DependentUpon>_frmCitizenCharter3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmCitizenCharter3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmErrorFormWeb.Designer.vb">
+      <DependentUpon>_frmErrorFormWeb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmErrorFormWeb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmCalendar.Designer.vb">
+      <DependentUpon>_frmCalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmCalendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmConError.Designer.vb">
+      <DependentUpon>_frmConError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmConError.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmErrorForm.Designer.vb">
+      <DependentUpon>_frmErrorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmErrorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmFirstLoad.Designer.vb">
+      <DependentUpon>_frmFirstLoad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmFirstLoad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmFutronic.Designer.vb">
+      <DependentUpon>_frmFutronic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmFutronic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmLoading.Designer.vb">
+      <DependentUpon>_frmLoading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmLoading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmFingerPrintMatch.Designer.vb">
+      <DependentUpon>_frmFingerPrintMatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmFingerPrintMatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmPleaseWait.Designer.vb">
+      <DependentUpon>_frmPleaseWait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmPleaseWait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmPrintError.Designer.vb">
+      <DependentUpon>_frmPrintError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmPrintError.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmPrintForm.Designer.vb">
+      <DependentUpon>_frmPrintForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmPrintForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmTerms.Designer.vb">
+      <DependentUpon>_frmTerms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmTerms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmUserAuthentication.Designer.vb">
+      <DependentUpon>_frmUserAuthentication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmUserAuthentication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmVirtualKeyboard.Designer.vb">
+      <DependentUpon>_frmVirtualKeyboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmVirtualKeyboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\_frmMainMenu.Designer.vb">
+      <DependentUpon>_frmMainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\_frmMainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\ACOP\V2\_frmACOPMonthPensionHistory.Designer.vb">
+      <DependentUpon>_frmACOPMonthPensionHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\ACOP\V2\_frmACOPMonthPensionHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\ACOP\_frmACOPconfirmationDependent.Designer.vb">
+      <DependentUpon>_frmACOPconfirmationDependent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\ACOP\_frmACOPconfirmationDependent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\ACOP\_frmACOPdependent.Designer.vb">
+      <DependentUpon>_frmACOPdependent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\ACOP\_frmACOPdependent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\ACOP\_frmAcopSummary.Designer.vb">
+      <DependentUpon>_frmAcopSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\ACOP\_frmAcopSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\ChangePIN\_frmChangePIN.Designer.vb">
+      <DependentUpon>_frmChangePIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\ChangePIN\_frmChangePIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\frmSSSWebsiteMsg.Designer.vb">
+      <DependentUpon>frmSSSWebsiteMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\frmSSSWebsiteMsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Maternityv2\_frmEnhanceMaternityNotif.Designer.vb">
+      <DependentUpon>_frmEnhanceMaternityNotif.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Maternityv2\_frmEnhanceMaternityNotif.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Maternityv2\_frmEnhanceMaternityNotifSummary.Designer.vb">
+      <DependentUpon>_frmEnhanceMaternityNotifSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Maternityv2\_frmEnhanceMaternityNotifSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Pensioner\_frmPensionSummary.Designer.vb">
+      <DependentUpon>_frmPensionSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Pensioner\_frmPensionSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\PRN_SSS\_frmPRNApplication_ConfirmFinal_List.Designer.vb">
+      <DependentUpon>_frmPRNApplication_ConfirmFinal_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\PRN_SSS\_frmPRNApplication_ConfirmFinal_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\PRN_SSS\_frmPRNContributions2.Designer.vb">
+      <DependentUpon>_frmPRNContributions2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\PRN_SSS\_frmPRNContributions2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\PRN_SSS\_frmPRNApplication_ConfirmFinal.Designer.vb">
+      <DependentUpon>_frmPRNApplication_ConfirmFinal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\PRN_SSS\_frmPRNApplication_ConfirmFinal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\PRN_SSS\_frmPRNContributions.Designer.vb">
+      <DependentUpon>_frmPRNContributions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\PRN_SSS\_frmPRNContributions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\PRN_SSS\_frmPRN_Generate.Designer.vb">
+      <DependentUpon>_frmPRN_Generate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\PRN_SSS\_frmPRN_Generate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\PRN_SSS\_frmPRNApplication_Confirm.Designer.vb">
+      <DependentUpon>_frmPRNApplication_Confirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\PRN_SSS\_frmPRNApplication_Confirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\PRN_SSS\_frmPRNApplication.Designer.vb">
+      <DependentUpon>_frmPRNApplication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\PRN_SSS\_frmPRNApplication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Salary Loan\_frmSalaryLoanv2.Designer.vb">
+      <DependentUpon>_frmSalaryLoanv2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Salary Loan\_frmSalaryLoanv2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Salary Loan\_frmSalaryLoanDisclosurev2.Designer.vb">
+      <DependentUpon>_frmSalaryLoanDisclosurev2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Salary Loan\_frmSalaryLoanDisclosurev2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Salary Loan\_frmSalaryLoanEmployerv2.Designer.vb">
+      <DependentUpon>_frmSalaryLoanEmployerv2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Salary Loan\_frmSalaryLoanEmployerv2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\Exit Survey\FindInfo.Designer.vb">
+      <DependentUpon>FindInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\Exit Survey\FindInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\Exit Survey\OverallExp.Designer.vb">
+      <DependentUpon>OverallExp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\Exit Survey\OverallExp.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\Exit Survey\EasyToUse.Designer.vb">
+      <DependentUpon>EasyToUse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\Exit Survey\EasyToUse.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\Exit Survey\Welcome.Designer.vb">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\Exit Survey\Welcome.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\Exit Survey\_frmExitSurveyIntro.Designer.vb">
+      <DependentUpon>_frmExitSurveyIntro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\Exit Survey\_frmExitSurveyIntro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\Exit Survey\_frmExitSurveyMain.designer.vb">
+      <DependentUpon>_frmExitSurveyMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\Exit Survey\_frmExitSurveyMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk.designer.vb">
+      <DependentUpon>_frmFeedbackKiosk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk1.Designer.vb">
+      <DependentUpon>_frmFeedbackKiosk1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk2.designer.vb">
+      <DependentUpon>_frmFeedbackKiosk2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmFeedbackKioskMain.Designer.vb">
+      <DependentUpon>_frmFeedbackKioskMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmFeedbackKioskMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmSSSwebsite.Designer.vb">
+      <DependentUpon>_frmSSSwebsite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmSSSwebsite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\SWR\_frmSWR2v2.Designer.vb">
+      <DependentUpon>_frmSWR2v2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\SWR\_frmSWR2v2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementERNotRegistered.Designer.vb">
+      <DependentUpon>_frmTechRetirementERNotRegistered.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementERNotRegistered.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementNoDaem.Designer.vb">
+      <DependentUpon>_frmTechRetirementNoDaem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementNoDaem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementEmpHistInvalid.Designer.vb">
+      <DependentUpon>_frmTechRetirementEmpHistInvalid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementEmpHistInvalid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmFingerprintValidation12.Designer.vb">
+      <DependentUpon>usrfrmFingerprintValidation12.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmFingerprintValidation12.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrFrmMenuButton.Designer.vb">
+      <DependentUpon>usrFrmMenuButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrFrmMenuButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmContactInfo.Designer.vb">
+      <DependentUpon>usrfrmContactInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmContactInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmPageHeader.Designer.vb">
+      <DependentUpon>usrfrmPageHeader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmPageHeader.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite.designer.vb">
+      <DependentUpon>_frmFeedbackWebsite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite1.Designer.vb">
+      <DependentUpon>_frmFeedbackWebsite1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite2.Designer.vb">
+      <DependentUpon>_frmFeedbackWebsite2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite3.Designer.vb">
+      <DependentUpon>_frmFeedbackWebsite3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite4.Designer.vb">
+      <DependentUpon>_frmFeedbackWebsite4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmWebBrowser.Designer.vb">
+      <DependentUpon>_frmWebBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmWebBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\SWR\_frmSWR3.Designer.vb">
+      <DependentUpon>_frmSWR3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\SWR\_frmSWR3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\SWR\_frmSWR2.Designer.vb">
+      <DependentUpon>_frmSWR2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\SWR\_frmSWR2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\SWR\_frmSWR1.Designer.vb">
+      <DependentUpon>_frmSWR1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\SWR\_frmSWR1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementApplyDate.Designer.vb">
+      <DependentUpon>_frmTechRetirementApplyDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementApplyDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementApplyValidation.Designer.vb">
+      <DependentUpon>_frmTechRetirementApplyValidation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementApplyValidation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementApplyMineworker.Designer.vb">
+      <DependentUpon>_frmTechRetirementApplyMineworker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementApplyMineworker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementApplyBank.Designer.vb">
+      <DependentUpon>_frmTechRetirementApplyBank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementApplyBank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementConfirm.Designer.vb">
+      <DependentUpon>_frmTechRetirementConfirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementEmpHist.Designer.vb">
+      <DependentUpon>_frmTechRetirementEmpHist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirementv2\_frmTechRetirementEmpHist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\UpdateContactInfo\_frmUpdCntcInfv2.Designer.vb">
+      <DependentUpon>_frmUpdCntcInfv2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\UpdateContactInfo\_frmUpdCntcInfv2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Class\Person.vb" />
+    <Compile Include="Class\Registration.vb" />
+    <Compile Include="Extra Forms\_frmBlock.Designer.vb">
+      <DependentUpon>_frmBlock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmBlock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Pensioner\_frmPensionDetails.Designer.vb">
+      <DependentUpon>_frmPensionDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Pensioner\_frmPensionDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Pensioner\_frmPensionMaintenance.Designer.vb">
+      <DependentUpon>_frmPensionMaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Pensioner\_frmPensionMaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmLoad.Designer.vb">
+      <DependentUpon>_frmLoad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmLoad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\_frmHomeScreen.Designer.vb">
+      <DependentUpon>_frmHomeScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\_frmHomeScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\_frmKioskSettings.Designer.vb">
+      <DependentUpon>_frmKioskSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\_frmKioskSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\AllcardUMID.vb" />
+    <Compile Include="Class\DAL_Mssql.vb" />
+    <Compile Include="Class\DAL_Oracle.vb" />
+    <Compile Include="Class\SCard\ConversionRoutine.vb" />
+    <Compile Include="Class\SCard\ModWinsCard.vb" />
+    <Compile Include="Class\SCard\PCSCRoutines.vb" />
+    <Compile Include="Class\SharedFunction.vb" />
+    <Compile Include="Class\SystemMessage.vb" />
+    <Compile Include="Class\umid.vb" />
+    <Compile Include="SSIT_Home\frmAuthentication.Designer.vb">
+      <DependentUpon>frmAuthentication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\frmAuthentication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\frmPIN.Designer.vb">
+      <DependentUpon>frmPIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\frmPIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\frmSelectAuth.designer.vb">
+      <DependentUpon>frmSelectAuth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\frmSelectAuth.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\UMIDSAM_QC.vb" />
+    <Compile Include="SSIT_Home\usrfrmCode.Designer.vb">
+      <DependentUpon>usrfrmCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmCode.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmFingerprintValidation.Designer.vb">
+      <DependentUpon>usrfrmFingerprintValidation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmFingerprintValidation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmFingerprintValidation2.Designer.vb">
+      <DependentUpon>usrfrmFingerprintValidation2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmFingerprintValidation2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmIdle.Designer.vb">
+      <DependentUpon>usrfrmIdle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmIdle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmSelectv2.Designer.vb">
+      <DependentUpon>usrfrmSelectv2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmSelectv2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmUMID.Designer.vb">
+      <DependentUpon>usrfrmUMID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmUMID.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\_frm2.Designer.vb">
+      <DependentUpon>_frm2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\_frm2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web References\BankWorkflowWebService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\DisclosureWebserviceImplService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\EligibilityWebserviceImplService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MobileWS2BeanService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\OnlineRetirementWebServiceImplService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SimpleWebRegistrationService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SSSTokenGenerator\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\UmidService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_Disclosure\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConnectToServer.resx">
+      <DependentUpon>ConnectToServer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmCalendarv2.resx">
+      <DependentUpon>_frmCalendarv2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmCitizenCharter3.resx">
+      <DependentUpon>_frmCitizenCharter3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmCalendar.resx">
+      <DependentUpon>_frmCalendar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmConError.resx">
+      <DependentUpon>_frmConError.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmErrorForm.resx">
+      <DependentUpon>_frmErrorForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmErrorFormWeb.resx">
+      <DependentUpon>_frmErrorFormWeb.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmFirstLoad.resx">
+      <DependentUpon>_frmFirstLoad.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmFutronic.resx">
+      <DependentUpon>_frmFutronic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmLoading.resx">
+      <DependentUpon>_frmLoading.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmFingerPrintMatch.resx">
+      <DependentUpon>_frmFingerPrintMatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmPleaseWait.resx">
+      <DependentUpon>_frmPleaseWait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmPrintError.resx">
+      <DependentUpon>_frmPrintError.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmPrintForm.resx">
+      <DependentUpon>_frmPrintForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmTerms.resx">
+      <DependentUpon>_frmTerms.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmUserAuthentication.resx">
+      <DependentUpon>_frmUserAuthentication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmVirtualKeyboard.resx">
+      <DependentUpon>_frmVirtualKeyboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\_frmMainMenu.resx">
+      <DependentUpon>_frmMainMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\ACOP\V2\_frmACOPMonthPensionHistory.resx">
+      <DependentUpon>_frmACOPMonthPensionHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\ACOP\_frmACOPconfirmationDependent.resx">
+      <DependentUpon>_frmACOPconfirmationDependent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\ACOP\_frmACOPdependent.resx">
+      <DependentUpon>_frmACOPdependent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\ACOP\_frmAcopSummary.resx">
+      <DependentUpon>_frmAcopSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\ChangePIN\_frmChangePIN.resx">
+      <DependentUpon>_frmChangePIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\frmSSSWebsiteMsg.resx">
+      <DependentUpon>frmSSSWebsiteMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Maternityv2\_frmEnhanceMaternityNotif.resx">
+      <DependentUpon>_frmEnhanceMaternityNotif.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Maternityv2\_frmEnhanceMaternityNotifSummary.resx">
+      <DependentUpon>_frmEnhanceMaternityNotifSummary.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Pensioner\_frmPensionSummary.resx">
+      <DependentUpon>_frmPensionSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\PRN_SSS\_frmPRNApplication_ConfirmFinal_List.resx">
+      <DependentUpon>_frmPRNApplication_ConfirmFinal_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\PRN_SSS\_frmPRNContributions2.resx">
+      <DependentUpon>_frmPRNContributions2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\PRN_SSS\_frmPRNApplication_ConfirmFinal.resx">
+      <DependentUpon>_frmPRNApplication_ConfirmFinal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\PRN_SSS\_frmPRNContributions.resx">
+      <DependentUpon>_frmPRNContributions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\PRN_SSS\_frmPRN_Generate.resx">
+      <DependentUpon>_frmPRN_Generate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\PRN_SSS\_frmPRNApplication_Confirm.resx">
+      <DependentUpon>_frmPRNApplication_Confirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\PRN_SSS\_frmPRNApplication.resx">
+      <DependentUpon>_frmPRNApplication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Salary Loan\_frmSalaryLoanv2.resx">
+      <DependentUpon>_frmSalaryLoanv2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Salary Loan\_frmSalaryLoanDisclosurev2.resx">
+      <DependentUpon>_frmSalaryLoanDisclosurev2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Salary Loan\_frmSalaryLoanEmployerv2.resx">
+      <DependentUpon>_frmSalaryLoanEmployerv2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\Exit Survey\FindInfo.resx">
+      <DependentUpon>FindInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\Exit Survey\OverallExp.resx">
+      <DependentUpon>OverallExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\Exit Survey\EasyToUse.resx">
+      <DependentUpon>EasyToUse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\Exit Survey\Welcome.resx">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\Exit Survey\_frmExitSurveyIntro.resx">
+      <DependentUpon>_frmExitSurveyIntro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\Exit Survey\_frmExitSurveyMain.resx">
+      <DependentUpon>_frmExitSurveyMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk.resx">
+      <DependentUpon>_frmFeedbackKiosk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk1.resx">
+      <DependentUpon>_frmFeedbackKiosk1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk2.resx">
+      <DependentUpon>_frmFeedbackKiosk2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\reportForms\_frmFeedbackKioskMain.resx">
+      <DependentUpon>_frmFeedbackKioskMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\reportForms\_frmSSSwebsite.resx">
+      <DependentUpon>_frmSSSwebsite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\SWR\_frmSWR2v2.resx">
+      <DependentUpon>_frmSWR2v2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirementv2\_frmTechRetirementERNotRegistered.resx">
+      <DependentUpon>_frmTechRetirementERNotRegistered.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirementv2\_frmTechRetirementNoDaem.resx">
+      <DependentUpon>_frmTechRetirementNoDaem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirementv2\_frmTechRetirementEmpHistInvalid.resx">
+      <DependentUpon>_frmTechRetirementEmpHistInvalid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmFingerprintValidation12.resx">
+      <DependentUpon>usrfrmFingerprintValidation12.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrFrmMenuButton.resx">
+      <DependentUpon>usrFrmMenuButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmContactInfo.resx">
+      <DependentUpon>usrfrmContactInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmPageHeader.resx">
+      <DependentUpon>usrfrmPageHeader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\_frmFeedbackWebsite.resx">
+      <DependentUpon>_frmFeedbackWebsite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\_frmFeedbackWebsite1.resx">
+      <DependentUpon>_frmFeedbackWebsite1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\_frmFeedbackWebsite2.resx">
+      <DependentUpon>_frmFeedbackWebsite2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\_frmFeedbackWebsite3.resx">
+      <DependentUpon>_frmFeedbackWebsite3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\_frmFeedbackWebsite4.resx">
+      <DependentUpon>_frmFeedbackWebsite4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\_frmWebBrowser.resx">
+      <DependentUpon>_frmWebBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\SWR\_frmSWR3.resx">
+      <DependentUpon>_frmSWR3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\SWR\_frmSWR2.resx">
+      <DependentUpon>_frmSWR2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\SWR\_frmSWR1.resx">
+      <DependentUpon>_frmSWR1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirementv2\_frmTechRetirementApplyDate.resx">
+      <DependentUpon>_frmTechRetirementApplyDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirementv2\_frmTechRetirementApplyValidation.resx">
+      <DependentUpon>_frmTechRetirementApplyValidation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirementv2\_frmTechRetirementApplyMineworker.resx">
+      <DependentUpon>_frmTechRetirementApplyMineworker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirementv2\_frmTechRetirementApplyBank.resx">
+      <DependentUpon>_frmTechRetirementApplyBank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirementv2\_frmTechRetirementConfirm.resx">
+      <DependentUpon>_frmTechRetirementConfirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirementv2\_frmTechRetirementEmpHist.resx">
+      <DependentUpon>_frmTechRetirementEmpHist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\UpdateContactInfo\_frmUpdCntcInfv2.resx">
+      <DependentUpon>_frmUpdCntcInfv2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmBlock.resx">
+      <DependentUpon>_frmBlock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Pensioner\_frmPensionDetails.resx">
+      <DependentUpon>_frmPensionDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Pensioner\_frmPensionMaintenance.resx">
+      <DependentUpon>_frmPensionMaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\reportForms\_frmLoad.resx">
+      <DependentUpon>_frmLoad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\_frmHomeScreen.resx">
+      <DependentUpon>_frmHomeScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\_frmKioskSettings.resx">
+      <DependentUpon>_frmKioskSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\frmAuthentication.resx">
+      <DependentUpon>frmAuthentication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\frmPIN.resx">
+      <DependentUpon>frmPIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\frmSelectAuth.resx">
+      <DependentUpon>frmSelectAuth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmCode.resx">
+      <DependentUpon>usrfrmCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmFingerprintValidation.resx">
+      <DependentUpon>usrfrmFingerprintValidation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmFingerprintValidation2.resx">
+      <DependentUpon>usrfrmFingerprintValidation2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmIdle.resx">
+      <DependentUpon>usrfrmIdle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmSelectv2.resx">
+      <DependentUpon>usrfrmSelectv2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmUMID.resx">
+      <DependentUpon>usrfrmUMID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\_frm2.resx">
+      <DependentUpon>_frm2.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\BankWorkflowWebService\accountDeactiveWorkflow.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\BankWorkflowWebService\accountNumberWorkflow.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\BankWorkflowWebService\accountTypeWorkflow.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\BankWorkflowWebService\bankWorkflow.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\BankWorkflowWebService\BankWorkflowWebServiceImplPort.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\BankWorkflowWebService\BankWorkflowWebServiceImplService.wsdl" />
+    <None Include="Web References\BankWorkflowWebService\insertAccntInfoWorkflow.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\BankWorkflowWebService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\DisclosureWebserviceImplService\DisclosureWebserviceImplService.wsdl" />
+    <None Include="Web References\DisclosureWebserviceImplService\DisclosureWebserviceImplService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\DisclosureWebserviceImplService\disclosureWsResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\DisclosureWebserviceImplService\disWsparams.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\DisclosureWebserviceImplService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\EligibilityWebserviceImplService\EligibilityWebserviceImplService.wsdl" />
+    <None Include="Web References\EligibilityWebserviceImplService\EligibilityWebserviceImplService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\EligibilityWebserviceImplService\eligibTsReponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EligibilityWebserviceImplService\eligibWsResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EligibilityWebserviceImplService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\actualPremiums.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\actualPremiumsSummary.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\branch.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\completeAddress.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\contactInfoAdress.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\contributionStatus.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\country.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\disabilityStatus.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\ecMedStatus.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\employer.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\employerAddress.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\mailingAddress.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\maternityStatus.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\memberProfile.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\memberType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\MobileWSBeanService.wsdl" />
+    <None Include="Web References\MobileWS2BeanService\MobileWSBeanService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\MobileWSBeanService0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\municipality.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\otherInformation.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\paymentRefNo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\province.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\retirementStatus.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\salaryLoanApplicationResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\salaryLoanStatus.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\sicknessStatus.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\webResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MobileWS2BeanService\webTransactionResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnlineRetirementWebServiceImplService\benefitsworkflow.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnlineRetirementWebServiceImplService\bsVoucherInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnlineRetirementWebServiceImplService\claimDetails.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnlineRetirementWebServiceImplService\deathEligibility.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnlineRetirementWebServiceImplService\disabilityEligibility.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnlineRetirementWebServiceImplService\eligibility.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnlineRetirementWebServiceImplService\eligibilityEntity.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnlineRetirementWebServiceImplService\memberClaimInformation.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnlineRetirementWebServiceImplService\memberClaimInformationEntity.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnlineRetirementWebServiceImplService\OnlineRetirementWebServiceImplService.wsdl" />
+    <None Include="Web References\OnlineRetirementWebServiceImplService\OnlineRetirementWebServiceImplService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OnlineRetirementWebServiceImplService\paymentHist13ThMon.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnlineRetirementWebServiceImplService\paymentHistMP.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnlineRetirementWebServiceImplService\prevClaims.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnlineRetirementWebServiceImplService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\SimpleWebRegistrationService\memberRecord.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SimpleWebRegistrationService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\SimpleWebRegistrationService\webResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SimpleWebRegistrationService\Wes3in1Service.wsdl" />
+    <None Include="Web References\SimpleWebRegistrationService\Wes3in1Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SSSTokenGenerator\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\SSSTokenGenerator\tokenDetailsResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SSSTokenGenerator\TokenServiceBeanService.wsdl" />
+    <None Include="Web References\SSSTokenGenerator\TokenServiceBeanService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\UmidService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\UmidService\UmidService.wsdl" />
+    <None Include="Web References\UmidService\UmidService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\UmidService\webserviceResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_Disclosure\DisclosureWebserviceImplService.wsdl" />
+    <None Include="Web References\WS_Disclosure\DisclosureWebserviceImplService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WS_Disclosure\disclosureWsResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_Disclosure\disWsparams.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_Disclosure\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Untitled.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\errorpage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SSSHEADER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PRINT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FEEDBACK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WEBICON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGOUT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BACK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEXT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KEYBOARD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HORIZONTALDIVIDERLONG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HORIZONTALDIVIDER23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HORIZONTAL DIVIDER23LEFT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DIVIDERVERTICAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REFRESH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOWN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UPBUTTON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEXT1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KEYBOARDWEBSITE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\System-Error-icon white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEXT BLUE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BACK BLUE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BACK BLUE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CHECK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SUBMIT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLEAR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico home resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BLUE_BUTTON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BLUE_BUTTON_CANCEL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico accept-submit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-in-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-OUT1-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MESSAGEBOX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TABLE_OF_CONTENTS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UPBUTTON75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOWN75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auth-bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auth-pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auth-fingerprint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://10.0.161.237:7101/Wes3in1EJBBean/Wes3in1Service%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SimpleWebRegistrationService\</RelPath>
+      <UpdateFromURL>http://10.0.161.237:7101/Wes3in1EJBBean/Wes3in1Service%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SSIT_SERVER_SimpleWebRegistrationService_SimpleWebRegistrationService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.141.249.22:8017/TokenServiceBean/TokenServiceBeanService%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SSSTokenGenerator\</RelPath>
+      <UpdateFromURL>http://10.141.249.22:8017/TokenServiceBean/TokenServiceBeanService%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SSIT_SERVER_SSSTokenGenerator_TokenDetailsService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://m41sv145:7009/testbemws/BankWorkflowWebServiceImplPort%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\BankWorkflowWebService\</RelPath>
+      <UpdateFromURL>http://m41sv145:7009/testbemws/BankWorkflowWebServiceImplPort%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SSIT_SERVER_BankWorkflowWebService_BankWorkflowWebServiceImplService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://m41sv145:7009/TestUmidWSBean/UmidService%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\UmidService\</RelPath>
+      <UpdateFromURL>http://m41sv145:7009/TestUmidWSBean/UmidService%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SSIT_SERVER_UmidService_UmidService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://sssohs:7777/webcallingds/DisclosureWebserviceImplService%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_Disclosure\</RelPath>
+      <UpdateFromURL>http://sssohs:7777/webcallingds/DisclosureWebserviceImplService%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SSIT_SERVER_WS_Disclosure_DisclosureWebserviceImplService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://ww8.sss.gov.ph/eligibwebservice/EligibilityWebserviceImplService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\EligibilityWebserviceImplService\</RelPath>
+      <UpdateFromURL>https://ww8.sss.gov.ph/eligibwebservice/EligibilityWebserviceImplService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SSIT_SERVER_EligibilityWebserviceImplService_EligibilityWebserviceImplService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://ww8.sss.gov.ph/TestOnlineRetirement/OnlineRetirementWebServiceImplService%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\OnlineRetirementWebServiceImplService\</RelPath>
+      <UpdateFromURL>https://ww8.sss.gov.ph/TestOnlineRetirement/OnlineRetirementWebServiceImplService%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SSIT_SERVER_OnlineRetirementWebServiceImplService_OnlineRetirementWebServiceImplService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://ww8.sss.gov.ph/webcallingds/DisclosureWebserviceImplService%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\DisclosureWebserviceImplService\</RelPath>
+      <UpdateFromURL>https://ww8.sss.gov.ph/webcallingds/DisclosureWebserviceImplService%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SSIT_SERVER_DisclosureWebserviceImplService_DisclosureWebserviceImplService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wws.sss.gov.ph:80/MobileWSBean/MobileWSBeanService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MobileWS2BeanService\</RelPath>
+      <UpdateFromURL>http://wws.sss.gov.ph:80/MobileWSBean/MobileWSBeanService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SSIT_SERVER_MobileWS2BeanService_MobileWS2BeanService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

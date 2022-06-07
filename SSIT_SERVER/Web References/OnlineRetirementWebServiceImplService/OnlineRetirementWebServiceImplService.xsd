@@ -1,0 +1,1449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://benefitsworkflowenhancementwebservice/" targetNamespace="http://benefitsworkflowenhancementwebservice/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="BSVoucherInquiryDate" type="tns:BSVoucherInquiryDate" />
+  <xs:element name="BSVoucherInquiryDateMF" type="tns:BSVoucherInquiryDateMF" />
+  <xs:element name="BSVoucherInquiryDateMFResponse" type="tns:BSVoucherInquiryDateMFResponse" />
+  <xs:element name="BSVoucherInquiryDateResponse" type="tns:BSVoucherInquiryDateResponse" />
+  <xs:element name="BSVoucherInquiryStatus" type="tns:BSVoucherInquiryStatus" />
+  <xs:element name="BSVoucherInquiryStatusResponse" type="tns:BSVoucherInquiryStatusResponse" />
+  <xs:element name="BSVoucherInquiryssNumber" type="tns:BSVoucherInquiryssNumber" />
+  <xs:element name="BSVoucherInquiryssNumberMF" type="tns:BSVoucherInquiryssNumberMF" />
+  <xs:element name="BSVoucherInquiryssNumberMFResponse" type="tns:BSVoucherInquiryssNumberMFResponse" />
+  <xs:element name="BSVoucherInquiryssNumberResponse" type="tns:BSVoucherInquiryssNumberResponse" />
+  <xs:element name="BSVoucherInquiryssNumberTFnMF" type="tns:BSVoucherInquiryssNumberTFnMF" />
+  <xs:element name="BSVoucherInquiryssNumberTFnMFResponse" type="tns:BSVoucherInquiryssNumberTFnMFResponse" />
+  <xs:element name="BenefitCalculator" type="tns:BenefitCalculator" />
+  <xs:element name="BenefitCalculatorResponse" type="tns:BenefitCalculatorResponse" />
+  <xs:element name="autoConnect" type="tns:autoConnect" />
+  <xs:element name="autoConnectResponse" type="tns:autoConnectResponse" />
+  <xs:element name="availment_18mos" type="tns:availment_18mos" />
+  <xs:element name="availment_18mosResponse" type="tns:availment_18mosResponse" />
+  <xs:element name="checkElig_OnlineRt" type="tns:checkElig_OnlineRt" />
+  <xs:element name="checkElig_OnlineRtResponse" type="tns:checkElig_OnlineRtResponse" />
+  <xs:element name="compute" type="tns:compute" />
+  <xs:element name="computeResponse" type="tns:computeResponse" />
+  <xs:element name="compute_lump_sum" type="tns:compute_lump_sum" />
+  <xs:element name="compute_lump_sumResponse" type="tns:compute_lump_sumResponse" />
+  <xs:element name="compute_mp" type="tns:compute_mp" />
+  <xs:element name="compute_mpResponse" type="tns:compute_mpResponse" />
+  <xs:element name="compute_mp_deemed" type="tns:compute_mp_deemed" />
+  <xs:element name="compute_mp_deemedResponse" type="tns:compute_mp_deemedResponse" />
+  <xs:element name="compute_mp_edited" type="tns:compute_mp_edited" />
+  <xs:element name="compute_mp_editedResponse" type="tns:compute_mp_editedResponse" />
+  <xs:element name="compute_no_of_contrib" type="tns:compute_no_of_contrib" />
+  <xs:element name="compute_no_of_contribResponse" type="tns:compute_no_of_contribResponse" />
+  <xs:element name="compute_no_of_contrib_with_sem" type="tns:compute_no_of_contrib_with_sem" />
+  <xs:element name="compute_no_of_contrib_with_semResponse" type="tns:compute_no_of_contrib_with_semResponse" />
+  <xs:element name="compute_sem" type="tns:compute_sem" />
+  <xs:element name="compute_semResponse" type="tns:compute_semResponse" />
+  <xs:element name="determineDoctg_OnlineRt" type="tns:determineDoctg_OnlineRt" />
+  <xs:element name="determineDoctg_OnlineRtResponse" type="tns:determineDoctg_OnlineRtResponse" />
+  <xs:element name="employerCert" type="tns:employerCert" />
+  <xs:element name="employerCertResponse" type="tns:employerCertResponse" />
+  <xs:element name="employmentHistory" type="tns:employmentHistory" />
+  <xs:element name="employmentHistoryResponse" type="tns:employmentHistoryResponse" />
+  <xs:element name="getActiveClaims" type="tns:getActiveClaims" />
+  <xs:element name="getActiveClaimsResponse" type="tns:getActiveClaimsResponse" />
+  <xs:element name="getAge" type="tns:getAge" />
+  <xs:element name="getAgeResponse" type="tns:getAgeResponse" />
+  <xs:element name="getAllSSNumbers" type="tns:getAllSSNumbers" />
+  <xs:element name="getAllSSNumbersResponse" type="tns:getAllSSNumbersResponse" />
+  <xs:element name="getDateOfDeath" type="tns:getDateOfDeath" />
+  <xs:element name="getDateOfDeathResponse" type="tns:getDateOfDeathResponse" />
+  <xs:element name="getDeathEligibilityResults" type="tns:getDeathEligibilityResults" />
+  <xs:element name="getDeathEligibilityResultsResponse" type="tns:getDeathEligibilityResultsResponse" />
+  <xs:element name="getDeathNDisabilityComp" type="tns:getDeathNDisabilityComp" />
+  <xs:element name="getDeathNDisabilityCompResponse" type="tns:getDeathNDisabilityCompResponse" />
+  <xs:element name="getDisabilityEligibilityResults" type="tns:getDisabilityEligibilityResults" />
+  <xs:element name="getDisabilityEligibilityResultsResponse" type="tns:getDisabilityEligibilityResultsResponse" />
+  <xs:element name="getEligibilityResults" type="tns:getEligibilityResults" />
+  <xs:element name="getEligibilityResultsResponse" type="tns:getEligibilityResultsResponse" />
+  <xs:element name="getLoansInformation" type="tns:getLoansInformation" />
+  <xs:element name="getLoansInformationResponse" type="tns:getLoansInformationResponse" />
+  <xs:element name="getMemCovHist" type="tns:getMemCovHist" />
+  <xs:element name="getMemCovHistResponse" type="tns:getMemCovHistResponse" />
+  <xs:element name="getMemberstatus" type="tns:getMemberstatus" />
+  <xs:element name="getMemberstatusResponse" type="tns:getMemberstatusResponse" />
+  <xs:element name="getPaymentHistory13thMonth" type="tns:getPaymentHistory13thMonth" />
+  <xs:element name="getPaymentHistory13thMonthResponse" type="tns:getPaymentHistory13thMonthResponse" />
+  <xs:element name="getPaymentHistoryMonthlyPen" type="tns:getPaymentHistoryMonthlyPen" />
+  <xs:element name="getPaymentHistoryMonthlyPenResponse" type="tns:getPaymentHistoryMonthlyPenResponse" />
+  <xs:element name="getPhysicianList" type="tns:getPhysicianList" />
+  <xs:element name="getPhysicianListResponse" type="tns:getPhysicianListResponse" />
+  <xs:element name="getPreviousClaimDetails" type="tns:getPreviousClaimDetails" />
+  <xs:element name="getPreviousClaimDetailsResponse" type="tns:getPreviousClaimDetailsResponse" />
+  <xs:element name="getPreviousClaimsList" type="tns:getPreviousClaimsList" />
+  <xs:element name="getPreviousClaimsListResponse" type="tns:getPreviousClaimsListResponse" />
+  <xs:element name="getResultsStruts" type="tns:getResultsStruts" />
+  <xs:element name="getResultsStrutsResponse" type="tns:getResultsStrutsResponse" />
+  <xs:element name="getSSScase" type="tns:getSSScase" />
+  <xs:element name="getSSScaseResponse" type="tns:getSSScaseResponse" />
+  <xs:element name="pr_tran_token" type="tns:pr_tran_token" />
+  <xs:element name="pr_tran_tokenResponse" type="tns:pr_tran_tokenResponse" />
+  <xs:element name="retirementEstimator" type="tns:retirementEstimator" />
+  <xs:element name="retirementEstimatorResponse" type="tns:retirementEstimatorResponse" />
+  <xs:complexType name="BSVoucherInquiryDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="frday" type="xs:string" />
+      <xs:element minOccurs="0" name="today" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BSVoucherInquiryDateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:bsVoucherInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bsVoucherInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="bsvoucherListMF" nillable="true" type="tns:bsVoucherInfo" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="bsvoucherListTF" nillable="true" type="tns:bsVoucherInfo" />
+      <xs:element minOccurs="0" name="cfulname" type="xs:string" />
+      <xs:element minOccurs="0" name="ckamt" type="xs:string" />
+      <xs:element minOccurs="0" name="ckdt" type="xs:string" />
+      <xs:element minOccurs="0" name="cknum" type="xs:string" />
+      <xs:element minOccurs="0" name="ckstat" type="xs:string" />
+      <xs:element minOccurs="0" name="cltyp" type="xs:string" />
+      <xs:element minOccurs="0" name="dson" type="xs:string" />
+      <xs:element minOccurs="0" name="frday" type="xs:string" />
+      <xs:element minOccurs="0" name="frday2" type="xs:string" />
+      <xs:element minOccurs="0" name="fulname" type="xs:string" />
+      <xs:element minOccurs="0" name="rson" type="xs:string" />
+      <xs:element minOccurs="0" name="ssNumber" type="xs:string" />
+      <xs:element minOccurs="0" name="ssNumber2" type="xs:string" />
+      <xs:element minOccurs="0" name="today" type="xs:string" />
+      <xs:element minOccurs="0" name="today2" type="xs:string" />
+      <xs:element minOccurs="0" name="trcd" type="xs:string" />
+      <xs:element minOccurs="0" name="trcd_desc" type="xs:string" />
+      <xs:element minOccurs="0" name="trnum" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPreviousClaimsList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPreviousClaimsListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:prevClaims" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="prevClaims">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="chkdt" type="xs:string" />
+      <xs:element minOccurs="0" name="cltyp" type="xs:string" />
+      <xs:element minOccurs="0" name="cltyp_code" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCTG_F" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCTG_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="FNPay_brcd" type="xs:string" />
+      <xs:element minOccurs="0" name="ffreg" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listOfPrevClaims" nillable="true" type="tns:prevClaims" />
+      <xs:element minOccurs="0" name="msg" type="xs:string" />
+      <xs:element name="pn_flg" type="xs:int" />
+      <xs:element minOccurs="0" name="refno" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="status" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compute_lump_sum">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg_in" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compute_lump_sumResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:memberClaimInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="memberClaimInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="active_status_flg" type="xs:string" />
+      <xs:element minOccurs="0" name="age" type="xs:string" />
+      <xs:element name="age_benCalcu" type="xs:int" />
+      <xs:element minOccurs="0" name="amsc" type="xs:string" />
+      <xs:element name="amsc2" type="xs:int" />
+      <xs:element minOccurs="0" name="auth_status" type="xs:string" />
+      <xs:element minOccurs="0" name="auth_token" type="xs:string" />
+      <xs:element minOccurs="0" name="BC_CASE_FLG" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_highmsc_amsc" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_highmsc_ben_amt" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_highmsc_bentype" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_highmsc_contri" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_highmsc_cys" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_highmsc_doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_lastmsc_amsc" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_lastmsc_ben_amt" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_lastmsc_bentype" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_lastmsc_contri" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_lastmsc_cys" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_lastmsc_doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_highmsc_amsc" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_highmsc_ben_amt" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_highmsc_bentype" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_highmsc_contri" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_highmsc_cys" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_highmsc_doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_lastmsc_amsc" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_lastmsc_ben_amt" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_lastmsc_bentype" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_lastmsc_contri" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_lastmsc_cys" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_lastmsc_doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="bentype60" type="xs:string" />
+      <xs:element minOccurs="0" name="bentype65" type="xs:string" />
+      <xs:element minOccurs="0" name="bpc_amsc" type="xs:string" />
+      <xs:element minOccurs="0" name="bpc_ben_amt" type="xs:string" />
+      <xs:element minOccurs="0" name="bpc_bentype" type="xs:string" />
+      <xs:element minOccurs="0" name="bpc_contri" type="xs:string" />
+      <xs:element minOccurs="0" name="bpc_cys" type="xs:string" />
+      <xs:element minOccurs="0" name="bpc_doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="bpc_lump_amt" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msga" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgb" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgc" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msge" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf1" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf10" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf2" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf3" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf4" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf5" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf6" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf7" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf8" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf9" type="xs:string" />
+      <xs:element minOccurs="0" name="clmfn" type="xs:string" />
+      <xs:element minOccurs="0" name="clmln" type="xs:string" />
+      <xs:element minOccurs="0" name="clmmi" type="xs:string" />
+      <xs:element minOccurs="0" name="cltyp" type="xs:string" />
+      <xs:element minOccurs="0" name="coverageDt" type="xs:string" />
+      <xs:element minOccurs="0" name="cys" type="xs:string" />
+      <xs:element name="cys_container" type="xs:int" />
+      <xs:element minOccurs="0" name="cys_double" type="xs:double" />
+      <xs:element minOccurs="0" name="date_in" type="xs:string" />
+      <xs:element minOccurs="0" name="dedte" type="xs:string" />
+      <xs:element name="deem_pd_contrib" type="xs:int" />
+      <xs:element name="deem_pd_contrib_flg" type="xs:int" />
+      <xs:element minOccurs="0" name="determined_doctg" type="xs:string" />
+      <xs:element name="diffInMinutes" type="xs:long" />
+      <xs:element minOccurs="0" name="dobth" type="xs:string" />
+      <xs:element minOccurs="0" name="doc" type="xs:string" />
+      <xs:element minOccurs="0" name="docov_in" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg60" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg65" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg_args" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg_in" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg_sem" type="xs:string" />
+      <xs:element minOccurs="0" name="dtefl" type="xs:string" />
+      <xs:element minOccurs="0" name="earliestRetirementDate" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eh_List" nillable="true" type="tns:employerHistory" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="emp_List" nillable="true" type="tns:hashMap" />
+      <xs:element minOccurs="0" name="entity_amsc" type="xs:double" />
+      <xs:element minOccurs="0" name="entity_cys" type="xs:string" />
+      <xs:element minOccurs="0" name="entity_mp" type="xs:double" />
+      <xs:element minOccurs="0" name="enuid" type="xs:string" />
+      <xs:element minOccurs="0" name="extnm" type="xs:string" />
+      <xs:element minOccurs="0" name="finalClaim" type="xs:string" />
+      <xs:element minOccurs="0" name="final_cys" type="xs:double" />
+      <xs:element minOccurs="0" name="final_no_of_contribution" type="xs:string" />
+      <xs:element name="flg" type="xs:int" />
+      <xs:element minOccurs="0" name="flg_1k" type="xs:string" />
+      <xs:element minOccurs="0" name="gender" type="xs:string" />
+      <xs:element minOccurs="0" name="givnm" type="xs:string" />
+      <xs:element minOccurs="0" name="higher_msc_value" type="xs:string" />
+      <xs:element minOccurs="0" name="last_msc_value" type="xs:string" />
+      <xs:element minOccurs="0" name="loan_balance" type="xs:string" />
+      <xs:element minOccurs="0" name="ludte" type="xs:string" />
+      <xs:element minOccurs="0" name="lump" type="xs:string" />
+      <xs:element minOccurs="0" name="lumpsum_benefit" type="xs:string" />
+      <xs:element minOccurs="0" name="mem_type" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="memberInfoList" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="memberInfoList60" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="membersCd" type="xs:string" />
+      <xs:element minOccurs="0" name="memfn" type="xs:string" />
+      <xs:element minOccurs="0" name="memln" type="xs:string" />
+      <xs:element minOccurs="0" name="memmi" type="xs:string" />
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+      <xs:element minOccurs="0" name="midnm" type="xs:string" />
+      <xs:element minOccurs="0" name="monthlyPension" type="xs:int" />
+      <xs:element minOccurs="0" name="mp" type="xs:string" />
+      <xs:element minOccurs="0" name="mp60" type="xs:double" />
+      <xs:element minOccurs="0" name="mp65" type="xs:double" />
+      <xs:element minOccurs="0" name="mp_amt" type="xs:string" />
+      <xs:element minOccurs="0" name="mp_flg" type="xs:string" />
+      <xs:element minOccurs="0" name="mp_for_retirement" type="xs:double" />
+      <xs:element minOccurs="0" name="msc" type="xs:int" />
+      <xs:element minOccurs="0" name="msc01" type="xs:string" />
+      <xs:element minOccurs="0" name="msc02" type="xs:string" />
+      <xs:element minOccurs="0" name="msc03" type="xs:string" />
+      <xs:element minOccurs="0" name="msc04" type="xs:string" />
+      <xs:element minOccurs="0" name="msc05" type="xs:string" />
+      <xs:element minOccurs="0" name="msc06" type="xs:string" />
+      <xs:element minOccurs="0" name="msc07" type="xs:string" />
+      <xs:element minOccurs="0" name="msc08" type="xs:string" />
+      <xs:element minOccurs="0" name="msc09" type="xs:string" />
+      <xs:element minOccurs="0" name="msc10" type="xs:string" />
+      <xs:element minOccurs="0" name="msc11" type="xs:string" />
+      <xs:element minOccurs="0" name="msc12" type="xs:string" />
+      <xs:element minOccurs="0" name="msg" type="xs:string" />
+      <xs:element minOccurs="0" name="msg2" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="msg_List" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="msg_flg" type="xs:string" />
+      <xs:element name="no_of_contrib" type="xs:int" />
+      <xs:element minOccurs="0" name="numberOfContribution" type="xs:int" />
+      <xs:element minOccurs="0" name="refno" type="xs:string" />
+      <xs:element minOccurs="0" name="remarks" type="xs:string" />
+      <xs:element minOccurs="0" name="reml1" type="xs:string" />
+      <xs:element minOccurs="0" name="reml2" type="xs:string" />
+      <xs:element minOccurs="0" name="reml3" type="xs:string" />
+      <xs:element minOccurs="0" name="reml4" type="xs:string" />
+      <xs:element minOccurs="0" name="reml5" type="xs:string" />
+      <xs:element minOccurs="0" name="result_c60" type="xs:string" />
+      <xs:element minOccurs="0" name="result_cr" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="results" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="SError" type="xs:string" />
+      <xs:element minOccurs="0" name="SNumberOfContribution" type="xs:string" />
+      <xs:element minOccurs="0" name="STotalAmount" type="xs:string" />
+      <xs:element minOccurs="0" name="STotalAmount60" type="xs:string" />
+      <xs:element minOccurs="0" name="STotalNumOfContribution" type="xs:string" />
+      <xs:element minOccurs="0" name="STotalNumOfContribution60" type="xs:string" />
+      <xs:element minOccurs="0" name="sixtyFifth" type="xs:string" />
+      <xs:element minOccurs="0" name="sixtyFifthContingency" type="xs:string" />
+      <xs:element minOccurs="0" name="sixtyth" type="xs:string" />
+      <xs:element minOccurs="0" name="sixtythContingency" type="xs:string" />
+      <xs:element minOccurs="0" name="sscde" type="xs:string" />
+      <xs:element minOccurs="0" name="sscno" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="stat" type="xs:string" />
+      <xs:element minOccurs="0" name="status" type="xs:string" />
+      <xs:element minOccurs="0" name="status_flag" type="xs:string" />
+      <xs:element minOccurs="0" name="status_flg" type="xs:string" />
+      <xs:element minOccurs="0" name="surnm" type="xs:string" />
+      <xs:element minOccurs="0" name="tnmcp" type="xs:int" />
+      <xs:element minOccurs="0" name="totalAmount" type="xs:int" />
+      <xs:element minOccurs="0" name="totalAmount60" type="xs:int" />
+      <xs:element minOccurs="0" name="totalNumOfContribution" type="xs:int" />
+      <xs:element minOccurs="0" name="totalNumOfContribution60" type="xs:int" />
+      <xs:element minOccurs="0" name="tran_token" type="xs:string" />
+      <xs:element minOccurs="0" name="type_of_retirement" type="xs:string" />
+      <xs:element minOccurs="0" name="umflag" type="xs:string" />
+      <xs:element minOccurs="0" name="v_name" type="xs:string" />
+      <xs:element minOccurs="0" name="year" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="employerHistory">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="emp_date" type="xs:string" />
+      <xs:element minOccurs="0" name="emp_name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hashMap">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:abstractMap">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="abstractMap" abstract="true">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="compute_mp">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg_in" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compute_mpResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:memberClaimInformationEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="memberClaimInformationEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="active_status_flg" type="xs:string" />
+      <xs:element minOccurs="0" name="age" type="xs:string" />
+      <xs:element name="age_benCalcu" type="xs:int" />
+      <xs:element minOccurs="0" name="amsc" type="xs:string" />
+      <xs:element name="amsc2" type="xs:int" />
+      <xs:element minOccurs="0" name="auth_status" type="xs:string" />
+      <xs:element minOccurs="0" name="auth_token" type="xs:string" />
+      <xs:element minOccurs="0" name="avail_18mos_flg" type="xs:string" />
+      <xs:element minOccurs="0" name="BC_CASE_FLG" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_highmsc_amsc" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_highmsc_ben_amt" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_highmsc_bentype" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_highmsc_contri" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_highmsc_cys" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_highmsc_doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_lastmsc_amsc" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_lastmsc_ben_amt" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_lastmsc_bentype" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_lastmsc_contri" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_lastmsc_cys" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp120_lastmsc_doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_highmsc_amsc" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_highmsc_ben_amt" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_highmsc_bentype" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_highmsc_contri" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_highmsc_cys" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_highmsc_doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_lastmsc_amsc" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_lastmsc_ben_amt" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_lastmsc_bentype" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_lastmsc_contri" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_lastmsc_cys" type="xs:string" />
+      <xs:element minOccurs="0" name="bcp65_lastmsc_doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="bday_60th" type="xs:string" />
+      <xs:element minOccurs="0" name="bentype60" type="xs:string" />
+      <xs:element minOccurs="0" name="bentype65" type="xs:string" />
+      <xs:element minOccurs="0" name="bpc_amsc" type="xs:string" />
+      <xs:element minOccurs="0" name="bpc_ben_amt" type="xs:string" />
+      <xs:element minOccurs="0" name="bpc_bentype" type="xs:string" />
+      <xs:element minOccurs="0" name="bpc_contri" type="xs:string" />
+      <xs:element minOccurs="0" name="bpc_cys" type="xs:string" />
+      <xs:element minOccurs="0" name="bpc_doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="bpc_lump_amt" type="xs:string" />
+      <xs:element minOccurs="0" name="cancel_ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msga" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgb" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgc" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msge" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf1" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf10" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf2" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf3" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf4" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf5" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf6" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf7" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf8" type="xs:string" />
+      <xs:element minOccurs="0" name="ce_msgf9" type="xs:string" />
+      <xs:element minOccurs="0" name="ckdte" type="xs:string" />
+      <xs:element minOccurs="0" name="clmfn" type="xs:string" />
+      <xs:element minOccurs="0" name="clmln" type="xs:string" />
+      <xs:element minOccurs="0" name="clmmi" type="xs:string" />
+      <xs:element minOccurs="0" name="cltyp" type="xs:string" />
+      <xs:element minOccurs="0" name="converted_sem" type="xs:string" />
+      <xs:element minOccurs="0" name="converted_yy" type="xs:string" />
+      <xs:element minOccurs="0" name="coverageDt" type="xs:string" />
+      <xs:element minOccurs="0" name="coverage_dt" type="xs:string" />
+      <xs:element name="ctr" type="xs:int" />
+      <xs:element minOccurs="0" name="cys" type="xs:string" />
+      <xs:element name="cys2_ra_from" type="xs:int" />
+      <xs:element name="cys2_ra_to" type="xs:int" />
+      <xs:element name="cys_container" type="xs:int" />
+      <xs:element minOccurs="0" name="cys_double" type="xs:double" />
+      <xs:element minOccurs="0" name="date_in" type="xs:string" />
+      <xs:element minOccurs="0" name="dedte" type="xs:string" />
+      <xs:element name="deem" type="xs:int" />
+      <xs:element name="deem_pd_contrib" type="xs:int" />
+      <xs:element name="deem_pd_contrib_flg" type="xs:int" />
+      <xs:element minOccurs="0" name="des" type="xs:string" />
+      <xs:element minOccurs="0" name="determined_doctg" type="xs:string" />
+      <xs:element name="diffInMinutes" type="xs:long" />
+      <xs:element minOccurs="0" name="dobth" type="xs:string" />
+      <xs:element minOccurs="0" name="doc" type="xs:string" />
+      <xs:element minOccurs="0" name="docov_in" type="xs:string" />
+      <xs:element minOccurs="0" name="docreq_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg60" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg65" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg_args" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg_in" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg_sem" type="xs:string" />
+      <xs:element minOccurs="0" name="dtefl" type="xs:string" />
+      <xs:element minOccurs="0" name="earliestRetirementDate" type="xs:string" />
+      <xs:element minOccurs="0" name="ee_sss_no" type="xs:string" />
+      <xs:element minOccurs="0" name="effect_strdt" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eh_List" nillable="true" type="tns:employerHistory" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="emp_List" nillable="true" type="tns:hashMap" />
+      <xs:element minOccurs="0" name="entity_amsc" type="xs:double" />
+      <xs:element minOccurs="0" name="entity_cys" type="xs:string" />
+      <xs:element minOccurs="0" name="entity_mp" type="xs:double" />
+      <xs:element minOccurs="0" name="enuid" type="xs:string" />
+      <xs:element minOccurs="0" name="er_br_seqno" type="xs:string" />
+      <xs:element minOccurs="0" name="er_buss_name" type="xs:string" />
+      <xs:element minOccurs="0" name="ersp_ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="expired_dt" type="xs:string" />
+      <xs:element minOccurs="0" name="extnm" type="xs:string" />
+      <xs:element minOccurs="0" name="finalClaim" type="xs:string" />
+      <xs:element minOccurs="0" name="final_cys" type="xs:double" />
+      <xs:element minOccurs="0" name="final_no_of_contribution" type="xs:string" />
+      <xs:element name="flg" type="xs:int" />
+      <xs:element minOccurs="0" name="flg_120" type="xs:string" />
+      <xs:element minOccurs="0" name="flg_1k" type="xs:string" />
+      <xs:element minOccurs="0" name="flg_60" type="xs:string" />
+      <xs:element minOccurs="0" name="flg_rejection" type="xs:string" />
+      <xs:element minOccurs="0" name="gender" type="xs:string" />
+      <xs:element minOccurs="0" name="getdocov_yy" type="xs:string" />
+      <xs:element minOccurs="0" name="givnm" type="xs:string" />
+      <xs:element minOccurs="0" name="higher_msc_value" type="xs:string" />
+      <xs:element minOccurs="0" name="last_msc_value" type="xs:string" />
+      <xs:element minOccurs="0" name="lntyp" type="xs:string" />
+      <xs:element minOccurs="0" name="loan_amount" type="xs:string" />
+      <xs:element minOccurs="0" name="loan_balance" type="xs:string" />
+      <xs:element minOccurs="0" name="loan_date" type="xs:string" />
+      <xs:element minOccurs="0" name="loan_desc" type="xs:string" />
+      <xs:element minOccurs="0" name="loan_type" type="xs:string" />
+      <xs:element minOccurs="0" name="ludte" type="xs:string" />
+      <xs:element minOccurs="0" name="lump" type="xs:string" />
+      <xs:element minOccurs="0" name="lumpsum_benefit" type="xs:string" />
+      <xs:element minOccurs="0" name="m1" type="xs:string" />
+      <xs:element minOccurs="0" name="m10" type="xs:string" />
+      <xs:element minOccurs="0" name="m11" type="xs:string" />
+      <xs:element minOccurs="0" name="m12" type="xs:string" />
+      <xs:element minOccurs="0" name="m2" type="xs:string" />
+      <xs:element minOccurs="0" name="m3" type="xs:string" />
+      <xs:element minOccurs="0" name="m4" type="xs:string" />
+      <xs:element minOccurs="0" name="m5" type="xs:string" />
+      <xs:element minOccurs="0" name="m6" type="xs:string" />
+      <xs:element minOccurs="0" name="m7" type="xs:string" />
+      <xs:element minOccurs="0" name="m8" type="xs:string" />
+      <xs:element minOccurs="0" name="m9" type="xs:string" />
+      <xs:element minOccurs="0" name="mem_type" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="memberInfoList" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="memberInfoList60" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="membersCd" type="xs:string" />
+      <xs:element minOccurs="0" name="members_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="memfn" type="xs:string" />
+      <xs:element minOccurs="0" name="memln" type="xs:string" />
+      <xs:element minOccurs="0" name="memmi" type="xs:string" />
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+      <xs:element minOccurs="0" name="midnm" type="xs:string" />
+      <xs:element minOccurs="0" name="monthlyPension" type="xs:int" />
+      <xs:element minOccurs="0" name="mp" type="xs:string" />
+      <xs:element minOccurs="0" name="mp60" type="xs:double" />
+      <xs:element minOccurs="0" name="mp65" type="xs:double" />
+      <xs:element minOccurs="0" name="mp_amt" type="xs:string" />
+      <xs:element minOccurs="0" name="mp_flg" type="xs:string" />
+      <xs:element minOccurs="0" name="mp_for_retirement" type="xs:double" />
+      <xs:element minOccurs="0" name="msc" type="xs:int" />
+      <xs:element minOccurs="0" name="msc01" type="xs:string" />
+      <xs:element minOccurs="0" name="msc02" type="xs:string" />
+      <xs:element minOccurs="0" name="msc03" type="xs:string" />
+      <xs:element minOccurs="0" name="msc04" type="xs:string" />
+      <xs:element minOccurs="0" name="msc05" type="xs:string" />
+      <xs:element minOccurs="0" name="msc06" type="xs:string" />
+      <xs:element minOccurs="0" name="msc07" type="xs:string" />
+      <xs:element minOccurs="0" name="msc08" type="xs:string" />
+      <xs:element minOccurs="0" name="msc09" type="xs:string" />
+      <xs:element minOccurs="0" name="msc10" type="xs:string" />
+      <xs:element minOccurs="0" name="msc11" type="xs:string" />
+      <xs:element minOccurs="0" name="msc12" type="xs:string" />
+      <xs:element minOccurs="0" name="msg" type="xs:string" />
+      <xs:element minOccurs="0" name="msg2" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="msg_List" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="msg_flg" type="xs:string" />
+      <xs:element minOccurs="0" name="n60_down" type="xs:string" />
+      <xs:element minOccurs="0" name="n60_up" type="xs:string" />
+      <xs:element name="no_of_contrib" type="xs:int" />
+      <xs:element name="no_of_months_flg" type="xs:int" />
+      <xs:element minOccurs="0" name="numberOfContribution" type="xs:int" />
+      <xs:element minOccurs="0" name="rec_num" type="xs:string" />
+      <xs:element minOccurs="0" name="refno" type="xs:string" />
+      <xs:element minOccurs="0" name="remarks" type="xs:string" />
+      <xs:element minOccurs="0" name="reml1" type="xs:string" />
+      <xs:element minOccurs="0" name="reml2" type="xs:string" />
+      <xs:element minOccurs="0" name="reml3" type="xs:string" />
+      <xs:element minOccurs="0" name="reml4" type="xs:string" />
+      <xs:element minOccurs="0" name="reml5" type="xs:string" />
+      <xs:element minOccurs="0" name="result_c60" type="xs:string" />
+      <xs:element minOccurs="0" name="result_cr" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="results" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="retain_ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="SError" type="xs:string" />
+      <xs:element minOccurs="0" name="SNumberOfContribution" type="xs:string" />
+      <xs:element minOccurs="0" name="STotalAmount" type="xs:string" />
+      <xs:element minOccurs="0" name="STotalAmount60" type="xs:string" />
+      <xs:element minOccurs="0" name="STotalNumOfContribution" type="xs:string" />
+      <xs:element minOccurs="0" name="STotalNumOfContribution60" type="xs:string" />
+      <xs:element minOccurs="0" name="sixtyFifth" type="xs:string" />
+      <xs:element minOccurs="0" name="sixtyFifthContingency" type="xs:string" />
+      <xs:element minOccurs="0" name="sixtyth" type="xs:string" />
+      <xs:element minOccurs="0" name="sixtythContingency" type="xs:string" />
+      <xs:element minOccurs="0" name="sscde" type="xs:string" />
+      <xs:element minOccurs="0" name="sscno" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="stat" type="xs:string" />
+      <xs:element minOccurs="0" name="status" type="xs:string" />
+      <xs:element minOccurs="0" name="status_flag" type="xs:string" />
+      <xs:element minOccurs="0" name="status_flg" type="xs:string" />
+      <xs:element minOccurs="0" name="surnm" type="xs:string" />
+      <xs:element minOccurs="0" name="table" type="xs:string" />
+      <xs:element minOccurs="0" name="tmscs" type="xs:string" />
+      <xs:element minOccurs="0" name="tnmcp" type="xs:int" />
+      <xs:element minOccurs="0" name="totalAmount" type="xs:int" />
+      <xs:element minOccurs="0" name="totalAmount60" type="xs:int" />
+      <xs:element minOccurs="0" name="totalNumOfContribution" type="xs:int" />
+      <xs:element minOccurs="0" name="totalNumOfContribution60" type="xs:int" />
+      <xs:element minOccurs="0" name="tran_token" type="xs:string" />
+      <xs:element minOccurs="0" name="transact_dt" type="xs:string" />
+      <xs:element minOccurs="0" name="type_of_retirement" type="xs:string" />
+      <xs:element minOccurs="0" name="umflag" type="xs:string" />
+      <xs:element minOccurs="0" name="user_id" type="xs:string" />
+      <xs:element minOccurs="0" name="v_name" type="xs:string" />
+      <xs:element minOccurs="0" name="year" type="xs:string" />
+      <xs:element minOccurs="0" name="year_last" type="xs:string" />
+      <xs:element minOccurs="0" name="year_last_deem" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAge">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAgeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:memberClaimInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pr_tran_token">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="get_tran_token" type="tns:hashMap" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pr_tran_tokenResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEligibilityResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="date_in" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEligibilityResultsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:eligibility" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eligibility">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="amsc" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTRI_F" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTRI_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="claimType" type="xs:string" />
+      <xs:element minOccurs="0" name="clid_claim_msg" type="xs:string" />
+      <xs:element name="computedAge" type="xs:int" />
+      <xs:element minOccurs="0" name="cys" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCOV_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="date_in" type="xs:string" />
+      <xs:element name="deem_pd_contrib" type="xs:int" />
+      <xs:element name="deem_pd_contrib_flg" type="xs:int" />
+      <xs:element minOccurs="0" name="docov_in" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg_in" type="xs:string" />
+      <xs:element minOccurs="0" name="entity_amsc" type="xs:double" />
+      <xs:element minOccurs="0" name="entity_cys" type="xs:string" />
+      <xs:element minOccurs="0" name="entity_lumpsum" type="xs:double" />
+      <xs:element minOccurs="0" name="entity_mp" type="xs:double" />
+      <xs:element minOccurs="0" name="finalClm_contngncy_dt" type="xs:string" />
+      <xs:element minOccurs="0" name="isEligible" type="xs:string" />
+      <xs:element minOccurs="0" name="lump" type="xs:string" />
+      <xs:element minOccurs="0" name="lumpsum_benefit" type="xs:string" />
+      <xs:element minOccurs="0" name="mem_stat_msg" type="xs:string" />
+      <xs:element minOccurs="0" name="mp" type="xs:string" />
+      <xs:element minOccurs="0" name="mp_flg" type="xs:string" />
+      <xs:element name="noOfContrib" type="xs:int" />
+      <xs:element name="no_of_contributions" type="xs:int" />
+      <xs:element name="pending_flg" type="xs:int" />
+      <xs:element minOccurs="0" name="pending_msg" type="xs:string" />
+      <xs:element name="re_flg1" type="xs:int" />
+      <xs:element minOccurs="0" name="re_flg1_msg" type="xs:string" />
+      <xs:element name="re_flg2" type="xs:int" />
+      <xs:element minOccurs="0" name="re_flg2_msg" type="xs:string" />
+      <xs:element name="re_flg3" type="xs:int" />
+      <xs:element minOccurs="0" name="re_flg3_msg" type="xs:string" />
+      <xs:element minOccurs="0" name="re_flg3_msg_2" type="xs:string" />
+      <xs:element minOccurs="0" name="re_flg3_msg_3" type="xs:string" />
+      <xs:element minOccurs="0" name="re_flg3_msg_4" type="xs:string" />
+      <xs:element name="re_flg4" type="xs:int" />
+      <xs:element minOccurs="0" name="re_flg4_msg" type="xs:string" />
+      <xs:element name="re_flg5" type="xs:int" />
+      <xs:element minOccurs="0" name="re_flg5_msg" type="xs:string" />
+      <xs:element name="re_flg6" type="xs:int" />
+      <xs:element minOccurs="0" name="re_flg6_msg" type="xs:string" />
+      <xs:element name="re_flg7" type="xs:int" />
+      <xs:element minOccurs="0" name="re_flg7_msg" type="xs:string" />
+      <xs:element name="re_flg8" type="xs:int" />
+      <xs:element minOccurs="0" name="re_flg8_msg" type="xs:string" />
+      <xs:element minOccurs="0" name="result_c60" type="xs:string" />
+      <xs:element minOccurs="0" name="result_cr" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="results" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="WORKFLOW_FLG" type="xs:string" />
+      <xs:element minOccurs="0" name="WORKFLOW_MSG" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compute_sem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="date_in" type="xs:string" />
+      <xs:element minOccurs="0" name="no_of_months" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compute_semResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:memberClaimInformationEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="availment_18mos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="date_in" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="availment_18mosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:memberClaimInformationEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compute_no_of_contrib">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="date_in" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compute_no_of_contribResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:memberClaimInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAllSSNumbers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAllSSNumbersResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:benefitsworkflow" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="benefitsworkflow">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bthdt" type="xs:string" />
+      <xs:element minOccurs="0" name="CANCEL_SSNUM" type="xs:string" />
+      <xs:element minOccurs="0" name="CURRENT_INT" type="xs:double" />
+      <xs:element minOccurs="0" name="CURRENT_PRIN" type="xs:double" />
+      <xs:element minOccurs="0" name="compute_ind" type="xs:string" />
+      <xs:element minOccurs="0" name="DOBTH" type="xs:string" />
+      <xs:element minOccurs="0" name="DOC_SOURCE" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="EFFECT_ENDDT" type="xs:string" />
+      <xs:element minOccurs="0" name="EFFECT_STRDT" type="xs:string" />
+      <xs:element minOccurs="0" name="ERACT_STATCD" type="xs:string" />
+      <xs:element minOccurs="0" name="ERSP_SSNUM" type="xs:string" />
+      <xs:element minOccurs="0" name="ER_BUSS_NAME" type="xs:string" />
+      <xs:element minOccurs="0" name="FULL_NAME" type="xs:string" />
+      <xs:element minOccurs="0" name="GIVEN_NAME" type="xs:string" />
+      <xs:element minOccurs="0" name="in_out_error_ms" type="xs:string" />
+      <xs:element minOccurs="0" name="JURIS_BR_CD" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_NAME" type="xs:string" />
+      <xs:element minOccurs="0" name="LOAN_DESC" type="xs:string" />
+      <xs:element minOccurs="0" name="l_CURRENT_INT" type="xs:double" />
+      <xs:element minOccurs="0" name="l_CURRENT_PRIN" type="xs:double" />
+      <xs:element minOccurs="0" name="l_OVERDUE_INT" type="xs:double" />
+      <xs:element minOccurs="0" name="l_OVERDUE_PEN" type="xs:double" />
+      <xs:element minOccurs="0" name="l_OVERDUE_PRIN" type="xs:double" />
+      <xs:element minOccurs="0" name="l_REMAINING_PRIN" type="xs:double" />
+      <xs:element minOccurs="0" name="lisno" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listOfPhysician" nillable="true" type="tns:benefitsworkflow" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="loanInfo" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="MEMBERSHIP_TYPE" type="xs:string" />
+      <xs:element minOccurs="0" name="MESSAGE" type="xs:string" />
+      <xs:element minOccurs="0" name="MIDDLE_NAME" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MULTIPLE_SS_NO" nillable="true" type="tns:benefitsworkflow" />
+      <xs:element minOccurs="0" name="MULTI_SSNUM" type="xs:string" />
+      <xs:element minOccurs="0" name="msg" type="xs:string" />
+      <xs:element minOccurs="0" name="n_CURRENT_INT" type="xs:double" />
+      <xs:element minOccurs="0" name="n_CURRENT_PRIN" type="xs:double" />
+      <xs:element minOccurs="0" name="n_OVERDUE_INT" type="xs:double" />
+      <xs:element minOccurs="0" name="n_OVERDUE_PEN" type="xs:double" />
+      <xs:element minOccurs="0" name="n_OVERDUE_PRIN" type="xs:double" />
+      <xs:element minOccurs="0" name="n_REMAINING_PRIN" type="xs:double" />
+      <xs:element minOccurs="0" name="OVERDUE_INT" type="xs:double" />
+      <xs:element minOccurs="0" name="OVERDUE_PEN" type="xs:double" />
+      <xs:element minOccurs="0" name="OVERDUE_PRIN" type="xs:double" />
+      <xs:element minOccurs="0" name="outstanding_loan_bal" type="xs:string" />
+      <xs:element minOccurs="0" name="p_CURRENT_INT" type="xs:double" />
+      <xs:element minOccurs="0" name="p_CURRENT_PRIN" type="xs:double" />
+      <xs:element minOccurs="0" name="p_OVERDUE_INT" type="xs:double" />
+      <xs:element minOccurs="0" name="p_OVERDUE_PEN" type="xs:double" />
+      <xs:element minOccurs="0" name="p_OVERDUE_PRIN" type="xs:double" />
+      <xs:element minOccurs="0" name="p_REMAINING_PRIN" type="xs:double" />
+      <xs:element minOccurs="0" name="pname" type="xs:string" />
+      <xs:element minOccurs="0" name="REMAINING_PRIN" type="xs:double" />
+      <xs:element minOccurs="0" name="REPORTING_DT" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RETAINED_CANCELLED_SS_NO" nillable="true" type="tns:benefitsworkflow" />
+      <xs:element minOccurs="0" name="RETAIN_SSNUM" type="xs:string" />
+      <xs:element minOccurs="0" name="regdt" type="xs:string" />
+      <xs:element minOccurs="0" name="SS_NUMBER" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="TRANSACT_DT" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPaymentHistory13thMonth">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPaymentHistory13thMonthResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:paymentHist13ThMon" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="paymentHist13ThMon">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="chk_amount" type="xs:string" />
+      <xs:element minOccurs="0" name="chk_date" type="xs:string" />
+      <xs:element minOccurs="0" name="chk_num" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listOfPayHist13thMon" nillable="true" type="tns:paymentHist13ThMon" />
+      <xs:element minOccurs="0" name="msg" type="xs:string" />
+      <xs:element minOccurs="0" name="payee_stat" type="xs:string" />
+      <xs:element minOccurs="0" name="relationship" type="xs:string" />
+      <xs:element minOccurs="0" name="sav_acc_num" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="year" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BSVoucherInquiryssNumberMF">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssNumber2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BSVoucherInquiryssNumberMFResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:bsVoucherInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compute_mp_edited">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg_in" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compute_mp_editedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:memberClaimInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BenefitCalculator">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BenefitCalculatorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:memberClaimInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMemCovHist">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMemCovHistResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:benefitsworkflow" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="checkElig_OnlineRt">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="filing_dt_in" type="xs:string" />
+      <xs:element minOccurs="0" name="auth_token" type="xs:string" />
+      <xs:element minOccurs="0" name="tran_token" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="checkElig_OnlineRtResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:memberClaimInformationEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="date_in" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="computeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:memberClaimInformationEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BSVoucherInquiryssNumber">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssNumber" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BSVoucherInquiryssNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:bsVoucherInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSSScase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSSScaseResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:memberClaimInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="employerCert">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="no_of_months" type="xs:string" />
+      <xs:element minOccurs="0" name="date_in" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="employerCertResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:memberClaimInformationEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BSVoucherInquiryDateMF">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="frday2" type="xs:string" />
+      <xs:element minOccurs="0" name="today2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BSVoucherInquiryDateMFResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:bsVoucherInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BSVoucherInquiryStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="trcd" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BSVoucherInquiryStatusResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:bsVoucherInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compute_no_of_contrib_with_sem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="date_in" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compute_no_of_contrib_with_semResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:memberClaimInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getResultsStruts">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="date_in" type="xs:string" />
+      <xs:element minOccurs="0" name="no_of_months" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getResultsStrutsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:eligibilityEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eligibilityEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="amsc" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTRI_F" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTRI_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="claimType" type="xs:string" />
+      <xs:element minOccurs="0" name="clid_claim_msg" type="xs:string" />
+      <xs:element minOccurs="0" name="cltyp" type="xs:string" />
+      <xs:element name="computedAge" type="xs:int" />
+      <xs:element minOccurs="0" name="contngncy_dt" type="xs:string" />
+      <xs:element minOccurs="0" name="coverage_dt" type="xs:string" />
+      <xs:element minOccurs="0" name="cys" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCOV_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="date_in" type="xs:string" />
+      <xs:element minOccurs="0" name="db_year" type="xs:string" />
+      <xs:element minOccurs="0" name="deem" type="xs:string" />
+      <xs:element name="deem_pd_contrib" type="xs:int" />
+      <xs:element name="deem_pd_contrib_flg" type="xs:int" />
+      <xs:element minOccurs="0" name="dobth" type="xs:string" />
+      <xs:element minOccurs="0" name="docov_in" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg_in" type="xs:string" />
+      <xs:element minOccurs="0" name="entity_amsc" type="xs:double" />
+      <xs:element minOccurs="0" name="entity_cys" type="xs:string" />
+      <xs:element minOccurs="0" name="entity_lumpsum" type="xs:double" />
+      <xs:element minOccurs="0" name="entity_mp" type="xs:double" />
+      <xs:element minOccurs="0" name="finalClm_contngncy_dt" type="xs:string" />
+      <xs:element minOccurs="0" name="final_clm_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="isEligible" type="xs:string" />
+      <xs:element minOccurs="0" name="lump" type="xs:string" />
+      <xs:element minOccurs="0" name="lumpsum_benefit" type="xs:string" />
+      <xs:element minOccurs="0" name="mem_stat_msg" type="xs:string" />
+      <xs:element minOccurs="0" name="members_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="mp" type="xs:string" />
+      <xs:element minOccurs="0" name="mp_flg" type="xs:string" />
+      <xs:element name="noOfContrib" type="xs:int" />
+      <xs:element name="no_of_contributions" type="xs:int" />
+      <xs:element name="pending_flg" type="xs:int" />
+      <xs:element minOccurs="0" name="pending_msg" type="xs:string" />
+      <xs:element name="re_flg1" type="xs:int" />
+      <xs:element minOccurs="0" name="re_flg1_msg" type="xs:string" />
+      <xs:element name="re_flg2" type="xs:int" />
+      <xs:element minOccurs="0" name="re_flg2_msg" type="xs:string" />
+      <xs:element name="re_flg3" type="xs:int" />
+      <xs:element minOccurs="0" name="re_flg3_msg" type="xs:string" />
+      <xs:element minOccurs="0" name="re_flg3_msg_2" type="xs:string" />
+      <xs:element minOccurs="0" name="re_flg3_msg_3" type="xs:string" />
+      <xs:element minOccurs="0" name="re_flg3_msg_4" type="xs:string" />
+      <xs:element name="re_flg4" type="xs:int" />
+      <xs:element minOccurs="0" name="re_flg4_msg" type="xs:string" />
+      <xs:element name="re_flg5" type="xs:int" />
+      <xs:element minOccurs="0" name="re_flg5_msg" type="xs:string" />
+      <xs:element name="re_flg6" type="xs:int" />
+      <xs:element minOccurs="0" name="re_flg6_msg" type="xs:string" />
+      <xs:element name="re_flg7" type="xs:int" />
+      <xs:element minOccurs="0" name="re_flg7_msg" type="xs:string" />
+      <xs:element name="re_flg8" type="xs:int" />
+      <xs:element minOccurs="0" name="re_flg8_msg" type="xs:string" />
+      <xs:element minOccurs="0" name="register_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="result_c60" type="xs:string" />
+      <xs:element minOccurs="0" name="result_cr" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="results" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="status_flg" type="xs:string" />
+      <xs:element minOccurs="0" name="WORKFLOW_FLG" type="xs:string" />
+      <xs:element minOccurs="0" name="WORKFLOW_MSG" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getDeathEligibilityResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="filing_type" type="xs:string" />
+      <xs:element minOccurs="0" name="benefit_type" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getDeathEligibilityResultsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:deathEligibility" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deathEligibility">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AGE_F" type="xs:string" />
+      <xs:element minOccurs="0" name="AGE_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="CCCS_F" type="xs:string" />
+      <xs:element minOccurs="0" name="CCCS_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="CLAIM_F" type="xs:string" />
+      <xs:element minOccurs="0" name="CLAIM_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTRI_F" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTRI_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="COVERAGE_F" type="xs:string" />
+      <xs:element minOccurs="0" name="COVERAGE_F2" type="xs:string" />
+      <xs:element minOccurs="0" name="COVERAGE_F3" type="xs:string" />
+      <xs:element minOccurs="0" name="COVERAGE_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="COVERAGE_MESG2" type="xs:string" />
+      <xs:element minOccurs="0" name="COVERAGE_MESG3" type="xs:string" />
+      <xs:element minOccurs="0" name="chkdt" type="xs:string" />
+      <xs:element minOccurs="0" name="cltyp" type="xs:string" />
+      <xs:element minOccurs="0" name="cltyp_code" type="xs:string" />
+      <xs:element minOccurs="0" name="covDt" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCREQ_F" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCREQ_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCTG_F" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCTG_MESG" type="xs:string" />
+      <xs:element name="deem_pd_contrib" type="xs:int" />
+      <xs:element name="deem_pd_contrib_flg" type="xs:int" />
+      <xs:element minOccurs="0" name="displayed_contrib" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="EDCLAIM_F" type="xs:string" />
+      <xs:element minOccurs="0" name="EDCLAIM_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="EXMAXCY_F" type="xs:string" />
+      <xs:element minOccurs="0" name="EXMAXCY_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="entity_amsc" type="xs:double" />
+      <xs:element minOccurs="0" name="entity_cys" type="xs:string" />
+      <xs:element minOccurs="0" name="entity_lumpsum" type="xs:double" />
+      <xs:element minOccurs="0" name="entity_mp" type="xs:double" />
+      <xs:element minOccurs="0" name="FNPay_brcd" type="xs:string" />
+      <xs:element minOccurs="0" name="ffreg" type="xs:string" />
+      <xs:element minOccurs="0" name="filetyp" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="infoList" nillable="true" type="tns:deathEligibility" />
+      <xs:element minOccurs="0" name="isEligible" type="xs:string" />
+      <xs:element minOccurs="0" name="LWD_F" type="xs:string" />
+      <xs:element minOccurs="0" name="LWD_MESG" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listOfPrevClaims" nillable="true" type="tns:prevClaims" />
+      <xs:element minOccurs="0" name="lump_contrib" type="xs:string" />
+      <xs:element minOccurs="0" name="MEMBERS_F" type="xs:string" />
+      <xs:element minOccurs="0" name="MEMBERS_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="msg" type="xs:string" />
+      <xs:element name="noOfContrib" type="xs:int" />
+      <xs:element minOccurs="0" name="PRESPER_F" type="xs:string" />
+      <xs:element minOccurs="0" name="PRESPER_MESG" type="xs:string" />
+      <xs:element name="pn_flg" type="xs:int" />
+      <xs:element minOccurs="0" name="posted_contrib" type="xs:string" />
+      <xs:element minOccurs="0" name="REGISTER_F" type="xs:string" />
+      <xs:element minOccurs="0" name="REGISTER_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="refno" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="results" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="SDCLAIM_F" type="xs:string" />
+      <xs:element minOccurs="0" name="SDCLAIM_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="SSC_F" type="xs:string" />
+      <xs:element minOccurs="0" name="SSC_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_F" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="status" type="xs:string" />
+      <xs:element minOccurs="0" name="WIDREASON_F" type="xs:string" />
+      <xs:element minOccurs="0" name="WIDREASON_MESG" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BSVoucherInquiryssNumberTFnMF">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssNumber" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BSVoucherInquiryssNumberTFnMFResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:bsVoucherInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="retirementEstimator">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dobth" type="xs:string" />
+      <xs:element minOccurs="0" name="start_work" type="xs:string" />
+      <xs:element minOccurs="0" name="msc" type="xs:string" />
+      <xs:element minOccurs="0" name="auth_token" type="xs:string" />
+      <xs:element minOccurs="0" name="tran_token" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="retirementEstimatorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:memberClaimInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPreviousClaimDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="cltyp" type="xs:string" />
+      <xs:element minOccurs="0" name="refno" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPreviousClaimDetailsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:claimDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="claimDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="addr1" type="xs:string" />
+      <xs:element minOccurs="0" name="addr2" type="xs:string" />
+      <xs:element minOccurs="0" name="amsc" type="xs:string" />
+      <xs:element minOccurs="0" name="ben_addr1" type="xs:string" />
+      <xs:element minOccurs="0" name="ben_addr2" type="xs:string" />
+      <xs:element minOccurs="0" name="ben_bname" type="xs:string" />
+      <xs:element minOccurs="0" name="ben_bstat" type="xs:string" />
+      <xs:element minOccurs="0" name="ben_bsvan" type="xs:string" />
+      <xs:element minOccurs="0" name="ben_cdolp" type="xs:string" />
+      <xs:element minOccurs="0" name="ben_itmtp" type="xs:string" />
+      <xs:element minOccurs="0" name="ben_local" type="xs:string" />
+      <xs:element minOccurs="0" name="ben_name" type="xs:string" />
+      <xs:element minOccurs="0" name="ben_nbcde" type="xs:string" />
+      <xs:element minOccurs="0" name="ben_pcode" type="xs:string" />
+      <xs:element minOccurs="0" name="ben_relcd" type="xs:string" />
+      <xs:element minOccurs="0" name="bname" type="xs:string" />
+      <xs:element minOccurs="0" name="brnam" type="xs:string" />
+      <xs:element minOccurs="0" name="brstn" type="xs:string" />
+      <xs:element minOccurs="0" name="bsvan" type="xs:string" />
+      <xs:element minOccurs="0" name="cdolp" type="xs:string" />
+      <xs:element minOccurs="0" name="cebal" type="xs:string" />
+      <xs:element minOccurs="0" name="ceddn" type="xs:string" />
+      <xs:element minOccurs="0" name="cemon" type="xs:string" />
+      <xs:element minOccurs="0" name="ckamt" type="xs:string" />
+      <xs:element minOccurs="0" name="ckdat" type="xs:string" />
+      <xs:element minOccurs="0" name="clmmp" type="xs:string" />
+      <xs:element minOccurs="0" name="clst1" type="xs:string" />
+      <xs:element minOccurs="0" name="clst2" type="xs:string" />
+      <xs:element minOccurs="0" name="cltmp" type="xs:string" />
+      <xs:element minOccurs="0" name="cltyp" type="xs:string" />
+      <xs:element minOccurs="0" name="cprct" type="xs:string" />
+      <xs:element minOccurs="0" name="cys" type="xs:string" />
+      <xs:element minOccurs="0" name="denst" type="xs:string" />
+      <xs:element minOccurs="0" name="dismo" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="esbal" type="xs:string" />
+      <xs:element minOccurs="0" name="esddn" type="xs:string" />
+      <xs:element minOccurs="0" name="fckam" type="xs:string" />
+      <xs:element minOccurs="0" name="fckdt" type="xs:string" />
+      <xs:element minOccurs="0" name="fckno" type="xs:string" />
+      <xs:element minOccurs="0" name="fcref" type="xs:string" />
+      <xs:element minOccurs="0" name="ffaddr1" type="xs:string" />
+      <xs:element minOccurs="0" name="ffaddr2" type="xs:string" />
+      <xs:element minOccurs="0" name="ffdat" type="xs:string" />
+      <xs:element minOccurs="0" name="ffreg" type="xs:string" />
+      <xs:element minOccurs="0" name="fldat" type="xs:string" />
+      <xs:element minOccurs="0" name="flreg" type="xs:string" />
+      <xs:element minOccurs="0" name="fstat" type="xs:string" />
+      <xs:element minOccurs="0" name="ftype" type="xs:string" />
+      <xs:element minOccurs="0" name="illtb" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listOfBenefs" nillable="true" type="tns:claimDetails" />
+      <xs:element minOccurs="0" name="local" type="xs:string" />
+      <xs:element minOccurs="0" name="mospd" type="xs:string" />
+      <xs:element minOccurs="0" name="msbal" type="xs:string" />
+      <xs:element minOccurs="0" name="msddn" type="xs:string" />
+      <xs:element minOccurs="0" name="msg" type="xs:string" />
+      <xs:element minOccurs="0" name="nbcde" type="xs:string" />
+      <xs:element minOccurs="0" name="opamt" type="xs:string" />
+      <xs:element minOccurs="0" name="opbal" type="xs:string" />
+      <xs:element minOccurs="0" name="payee" type="xs:string" />
+      <xs:element minOccurs="0" name="pcode" type="xs:string" />
+      <xs:element minOccurs="0" name="reccd" type="xs:string" />
+      <xs:element minOccurs="0" name="refno" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="totpy" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compute_mp_deemed">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compute_mp_deemedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:memberClaimInformationEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getDateOfDeath">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getDateOfDeathResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:prevClaims" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPaymentHistoryMonthlyPen">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPaymentHistoryMonthlyPenResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:paymentHistMP" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="paymentHistMP">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apdat" type="xs:string" />
+      <xs:element minOccurs="0" name="chk_brstn" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listOfPayHistMonthlyPen" nillable="true" type="tns:paymentHistMP" />
+      <xs:element minOccurs="0" name="msg" type="xs:string" />
+      <xs:element minOccurs="0" name="payst" type="xs:string" />
+      <xs:element minOccurs="0" name="pnamt" type="xs:string" />
+      <xs:element minOccurs="0" name="refno" type="xs:string" />
+      <xs:element minOccurs="0" name="relcode" type="xs:string" />
+      <xs:element minOccurs="0" name="repno" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="determineDoctg_OnlineRt">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="filing_dt_in" type="xs:string" />
+      <xs:element minOccurs="0" name="auth_token" type="xs:string" />
+      <xs:element minOccurs="0" name="tran_token" type="xs:string" />
+      <xs:element minOccurs="0" name="separation_dt_in" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="determineDoctg_OnlineRtResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:memberClaimInformationEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="employmentHistory">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="auth_token" type="xs:string" />
+      <xs:element minOccurs="0" name="tran_token" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="employmentHistoryResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:memberClaimInformationEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getDeathNDisabilityComp">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum_in" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg_in" type="xs:string" />
+      <xs:element minOccurs="0" name="benefit_type" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getDeathNDisabilityCompResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:eligibility" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMemberstatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMemberstatusResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:memberClaimInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="autoConnect">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="auth_token" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="autoConnectResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:memberClaimInformationEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPhysicianList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="lisno" type="xs:string" />
+      <xs:element minOccurs="0" name="lname" type="xs:string" />
+      <xs:element minOccurs="0" name="fname" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPhysicianListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:benefitsworkflow" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getActiveClaims">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getActiveClaimsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:memberClaimInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getDisabilityEligibilityResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="filing_type" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getDisabilityEligibilityResultsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:disabilityEligibility" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="disabilityEligibility">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CCCS_F" type="xs:string" />
+      <xs:element minOccurs="0" name="CCCS_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="CLAIM_F" type="xs:string" />
+      <xs:element minOccurs="0" name="CLAIM_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTRI_F" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTRI_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="COVERAGE_F" type="xs:string" />
+      <xs:element minOccurs="0" name="COVERAGE_F2" type="xs:string" />
+      <xs:element minOccurs="0" name="COVERAGE_F3" type="xs:string" />
+      <xs:element minOccurs="0" name="COVERAGE_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="COVERAGE_MESG2" type="xs:string" />
+      <xs:element minOccurs="0" name="COVERAGE_MESG3" type="xs:string" />
+      <xs:element minOccurs="0" name="covDt" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCREQ_F" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCREQ_MESG" type="xs:string" />
+      <xs:element name="deem_pd_contrib" type="xs:int" />
+      <xs:element name="deem_pd_contrib_flg" type="xs:int" />
+      <xs:element minOccurs="0" name="displayed_contrib" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="EC_PRESPER_F" type="xs:string" />
+      <xs:element minOccurs="0" name="EC_PRESPER_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="EDCLAIM_F" type="xs:string" />
+      <xs:element minOccurs="0" name="EDCLAIM_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="EXMAXCY_F" type="xs:string" />
+      <xs:element minOccurs="0" name="EXMAXCY_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="EXMAXNC_F" type="xs:string" />
+      <xs:element minOccurs="0" name="EXMAXNC_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="entity_amsc" type="xs:double" />
+      <xs:element minOccurs="0" name="entity_cys" type="xs:string" />
+      <xs:element minOccurs="0" name="entity_lumpsum" type="xs:double" />
+      <xs:element minOccurs="0" name="entity_mp" type="xs:double" />
+      <xs:element minOccurs="0" name="filetyp" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="infoList" nillable="true" type="tns:ecSsDisabilityMembership" />
+      <xs:element minOccurs="0" name="isEligible" type="xs:string" />
+      <xs:element minOccurs="0" name="LWD_F" type="xs:string" />
+      <xs:element minOccurs="0" name="LWD_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="lump_contrib" type="xs:string" />
+      <xs:element minOccurs="0" name="MEMBERS_F" type="xs:string" />
+      <xs:element minOccurs="0" name="MEMBERS_MESG" type="xs:string" />
+      <xs:element name="noOfContrib" type="xs:int" />
+      <xs:element minOccurs="0" name="PRDOC_F" type="xs:string" />
+      <xs:element minOccurs="0" name="PRDOC_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="posted_contrib" type="xs:string" />
+      <xs:element minOccurs="0" name="REGISTER_F" type="xs:string" />
+      <xs:element minOccurs="0" name="REGISTER_MESG" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="results" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="SDCLAIM_F" type="xs:string" />
+      <xs:element minOccurs="0" name="SDCLAIM_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="SS_PRESPER_F" type="xs:string" />
+      <xs:element minOccurs="0" name="SS_PRESPER_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_F" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="WIDREASON_F" type="xs:string" />
+      <xs:element minOccurs="0" name="WIDREASON_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="WPOSTC_F" type="xs:string" />
+      <xs:element minOccurs="0" name="WPOST_MESG" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ecSsDisabilityMembership">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLAIM_F" type="xs:string" />
+      <xs:element minOccurs="0" name="CLAIM_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="COVERAGE_F" type="xs:string" />
+      <xs:element minOccurs="0" name="COVERAGE_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="covDt" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCREQ_F" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCREQ_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+      <xs:element minOccurs="0" name="EDCLAIM_F" type="xs:string" />
+      <xs:element minOccurs="0" name="EDCLAIM_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="filetyp" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="infoList" nillable="true" type="tns:ecSsDisabilityMembership" />
+      <xs:element minOccurs="0" name="REGISTER_F" type="xs:string" />
+      <xs:element minOccurs="0" name="REGISTER_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="SDCLAIM_F" type="xs:string" />
+      <xs:element minOccurs="0" name="SDCLAIM_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_F" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_MESG" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="WIDREASON_F" type="xs:string" />
+      <xs:element minOccurs="0" name="WIDREASON_MESG" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLoansInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="doctg" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLoansInformationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:benefitsworkflow" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

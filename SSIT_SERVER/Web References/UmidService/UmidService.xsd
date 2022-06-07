@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://service/" targetNamespace="http://service/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="insertGSISUmid" type="tns:insertGSISUmid" />
+  <xs:element name="insertGSISUmidResponse" type="tns:insertGSISUmidResponse" />
+  <xs:element name="isCsnExist" type="tns:isCsnExist" />
+  <xs:element name="isCsnExistResponse" type="tns:isCsnExistResponse" />
+  <xs:element name="isSSSMember" type="tns:isSSSMember" />
+  <xs:element name="isSSSMemberResponse" type="tns:isSSSMemberResponse" />
+  <xs:element name="isWithUMIDSSID" type="tns:isWithUMIDSSID" />
+  <xs:element name="isWithUMIDSSIDResponse" type="tns:isWithUMIDSSIDResponse" />
+  <xs:complexType name="insertGSISUmid">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="transno" type="xs:string" />
+      <xs:element minOccurs="0" name="agncy_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="crnum" type="xs:string" />
+      <xs:element minOccurs="0" name="dobth" type="xs:string" />
+      <xs:element minOccurs="0" name="givnm" type="xs:string" />
+      <xs:element minOccurs="0" name="midnm" type="xs:string" />
+      <xs:element minOccurs="0" name="surnm" type="xs:string" />
+      <xs:element minOccurs="0" name="extnm" type="xs:string" />
+      <xs:element minOccurs="0" name="gender" type="xs:string" />
+      <xs:element minOccurs="0" name="post_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="coun_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="provc" type="xs:string" />
+      <xs:element minOccurs="0" name="twnct" type="xs:string" />
+      <xs:element minOccurs="0" name="brgay" type="xs:string" />
+      <xs:element minOccurs="0" name="subdv" type="xs:string" />
+      <xs:element minOccurs="0" name="street" type="xs:string" />
+      <xs:element minOccurs="0" name="houblk" type="xs:string" />
+      <xs:element minOccurs="0" name="rmunit" type="xs:string" />
+      <xs:element minOccurs="0" name="pob_city" type="xs:string" />
+      <xs:element minOccurs="0" name="pob_prov" type="xs:string" />
+      <xs:element minOccurs="0" name="pob_cncd" type="xs:string" />
+      <xs:element minOccurs="0" name="mstat" type="xs:string" />
+      <xs:element minOccurs="0" name="givnm_fa" type="xs:string" />
+      <xs:element minOccurs="0" name="midnm_fa" type="xs:string" />
+      <xs:element minOccurs="0" name="surnm_fa" type="xs:string" />
+      <xs:element minOccurs="0" name="extnm_fa" type="xs:string" />
+      <xs:element minOccurs="0" name="givnm_mo" type="xs:string" />
+      <xs:element minOccurs="0" name="midnm_mo" type="xs:string" />
+      <xs:element minOccurs="0" name="surnm_mo" type="xs:string" />
+      <xs:element minOccurs="0" name="extnm_mo" type="xs:string" />
+      <xs:element minOccurs="0" name="lprif_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="rprif_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="lbkuf_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="rbkuf_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="height" type="xs:string" />
+      <xs:element minOccurs="0" name="weight" type="xs:string" />
+      <xs:element minOccurs="0" name="disftr" type="xs:string" />
+      <xs:element minOccurs="0" name="tinum" type="xs:string" />
+      <xs:element minOccurs="0" name="cstat" type="xs:string" />
+      <xs:element minOccurs="0" name="cc_date" type="xs:string" />
+      <xs:element minOccurs="0" name="authToken" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertGSISUmidResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:webserviceResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="webserviceResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnumber" type="xs:string" />
+      <xs:element minOccurs="0" name="umidSSIDTag" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="isCsnExist">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="authToken" type="xs:string" />
+      <xs:element minOccurs="0" name="csn" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="isCsnExistResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:webserviceResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="isWithUMIDSSID">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnumber" type="xs:string" />
+      <xs:element minOccurs="0" name="wsUser" type="xs:string" />
+      <xs:element minOccurs="0" name="authToken" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="isWithUMIDSSIDResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:webserviceResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="isSSSMember">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="authToken" type="xs:string" />
+      <xs:element minOccurs="0" name="crn" type="xs:string" />
+      <xs:element minOccurs="0" name="dob" type="xs:string" />
+      <xs:element minOccurs="0" name="givnm" type="xs:string" />
+      <xs:element minOccurs="0" name="midnm" type="xs:string" />
+      <xs:element minOccurs="0" name="surnm" type="xs:string" />
+      <xs:element minOccurs="0" name="extnm" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="isSSSMemberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:webserviceResponse" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

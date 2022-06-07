@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://webservice/" name="EligibilityWebserviceImplService" targetNamespace="http://webservice/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://ww8.sss.gov.ph:80/eligibwebservice/EligibilityWebserviceImplService?xsd=1" namespace="http://webservice/" />
+    </xsd:schema>
+  </types>
+  <message name="AuthenticateToken">
+    <part name="parameters" element="tns:AuthenticateToken" />
+  </message>
+  <message name="AuthenticateTokenResponse">
+    <part name="parameters" element="tns:AuthenticateTokenResponse" />
+  </message>
+  <message name="calleligibility">
+    <part name="parameters" element="tns:calleligibility" />
+  </message>
+  <message name="calleligibilityResponse">
+    <part name="parameters" element="tns:calleligibilityResponse" />
+  </message>
+  <portType name="EligibilityWebservice">
+    <operation name="AuthenticateToken">
+      <input message="tns:AuthenticateToken" />
+      <output message="tns:AuthenticateTokenResponse" />
+    </operation>
+    <operation name="calleligibility">
+      <input message="tns:calleligibility" />
+      <output message="tns:calleligibilityResponse" />
+    </operation>
+  </portType>
+  <binding name="EligibilityWebserviceImplPortBinding" type="tns:EligibilityWebservice">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="AuthenticateToken">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="calleligibility">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="EligibilityWebserviceImplService">
+    <port name="EligibilityWebserviceImplPort" binding="tns:EligibilityWebserviceImplPortBinding">
+      <soap:address location="http://ww8.sss.gov.ph:80/eligibwebservice/EligibilityWebserviceImplService" />
+    </port>
+  </service>
+</definitions>

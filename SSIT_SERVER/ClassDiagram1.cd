@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SSIT_SERVER.addMaternityNotification" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEJAKEQQQFFCgCCSEACCAEEAAAASoEyYQAAAEIEEAIE=</HashCode>
+      <FileName>class\addMaternityNotification.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER.AdjustMode" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>class\AdjustMode.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER.auditTrail" Collapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAQAAAAAABAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>class\auditTrail.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER.ConnectionString" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFCAFgAAQAIEAQAAgAwgQEIBAEUQAAABQIAAAARIAAA=</HashCode>
+      <FileName>class\ConnectionString.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER.ConnectionString2" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFCAFgAAQAIEAAQAgAwgQEABAEUQAAABAIAAAARIAgI=</HashCode>
+      <FileName>class\ConnectionString2.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER.kioskRegistration" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAoAgwAAAAAAA=</HashCode>
+      <FileName>class\kioskRegistration.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER.Person" Collapsed="true">
+    <Position X="11.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEgAEAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAIAA=</HashCode>
+      <FileName>class\Person.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER.PrintHelper" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ARBAQAKEAAAIAQAAAAAECAAAAQAEERAEUAIgAAAAAAE=</HashCode>
+      <FileName>class\PrintHelper.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER.printModule" Collapsed="true">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RBAABIEkGAGACAAAUSIQWIAUBCBlRAxiVhWTsGiCApI=</HashCode>
+      <FileName>class\printModule.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER.Registration" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YABgAUAKAAgEAwgTBAAIDAxQAAAABBCAiQIAgABwAAQ=</HashCode>
+      <FileName>class\Registration.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER.Store" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAiAACAAGADeAQAIAAAAABAAAAAAAgAgAAAAAAAAhAA=</HashCode>
+      <FileName>class\Store.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER._frmBlock" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extra Forms\_frmBlock.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER._frmFingerPrintMatch" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECAAIAAAAACABAACAAAAAAABAAAAAAAEAAA=</HashCode>
+      <FileName>Extra Forms\_frmFingerPrintMatch.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER._frmMainMenu" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgAJBIAAMCIEEACAAAGA7LsCh0xgAAQNBEABAABAICI=</HashCode>
+      <FileName>Main Forms\_frmMainMenu.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER._rptActualPremium" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAAAAAAIAAAAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>rpt\_rptActualPremium.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER.Cached_rptActualPremium" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>rpt\_rptActualPremium.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SSIT_SERVER._frmKioskSettings" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCgBAAAgMiIQAAAAgECkwLsCADD/cA9DiIAAEAAAAAA=</HashCode>
+      <FileName>Settings\_frmKioskSettings.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER._frmFeedbackKiosk" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAA8CUAIAAAAACQAAADQAAwAAABgAAAAAEgBAA=</HashCode>
+      <FileName>Sub Forms\_frmFeedbackKiosk.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER._frmFeedbackWebsite" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gICAkIAAECtSYCAASICMKQgCojAoIuhBiFD+BQMoAEQ=</HashCode>
+      <FileName>Sub Forms\_frmFeedbackWebsite.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER._frmLoanSubmit" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAECAAAABIAACAAAACAAAQAAABAAAAAAAAAIA=</HashCode>
+      <FileName>Sub Forms\_frmLoanSubmit.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER._frmMaternityNotification" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BYiCIIAAECIUIACCQECQQgACAAgAAMAhkQBAkCGAAEI=</HashCode>
+      <FileName>Sub Forms\_frmMaternityNotification.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER._frmMembersRegistration" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoCqQSBAUeAYIIEBABCASBcigzj/AgihBUsgAAOAQAQ=</HashCode>
+      <FileName>Sub Forms\_frmMembersRegistration.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER._frmPensionerReg" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BoCoUSBAUWAYIKEBEBWAShcjBzj/CAijBUMgChKAwAQ=</HashCode>
+      <FileName>Sub Forms\_frmPensionerReg.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER._frmSalaryLoan" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQBgEAgkKAAgAAAAECgABD/ADD/CAADAEAQAgAAAIA=</HashCode>
+      <FileName>Sub Forms\_frmSalaryLoan.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER._frmSSSwebsite" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QuPxGJUQDWOarWRI+RG8/v8CZC3rd88NkEnDACtYRVA=</HashCode>
+      <FileName>Sub Forms\_frmSSSwebsite.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER._frmWebBrowser" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAgEAAQCBQACDAcACAAAACACASIEEJggEYIAAggUA=</HashCode>
+      <FileName>Sub Forms\_frmWebBrowser.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER._frmLoad" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAECACAAAAAACAAIACAAAAAAAAAEAAACAAAAA=</HashCode>
+      <FileName>Sub Forms\reportForms\_frmLoad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER._GTransactionReports" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Sub Forms\reportForms\_GTransactionReports.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER.My.MyApplication" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SSIT_SERVER.My.MySettings" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AApAgIIBBTAhAgWIgBKkIECgBAAhAIACAAgUYABiAgE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Module Name="SSIT_SERVER.My.MySettingsProperty" Collapsed="true">
+    <Position X="3" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="SSIT_SERVER.My.Resources.Resources" Collapsed="true">
+    <Position X="4.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EVQiJJACkCNpgAoYEgAHEEGEA4YGSwgtCZAQCUEABcA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

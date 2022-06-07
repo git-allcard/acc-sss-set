@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://service.sss/" targetNamespace="http://service.sss/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="getMemberRecord" type="tns:getMemberRecord" />
+  <xs:element name="getMemberRecordResponse" type="tns:getMemberRecordResponse" />
+  <xs:element name="insertToWesRegistration" type="tns:insertToWesRegistration" />
+  <xs:element name="insertToWesRegistrationResponse" type="tns:insertToWesRegistrationResponse" />
+  <xs:element name="setMemberToPermanent" type="tns:setMemberToPermanent" />
+  <xs:element name="setMemberToPermanentResponse" type="tns:setMemberToPermanentResponse" />
+  <xs:element name="validateEmail" type="tns:validateEmail" />
+  <xs:element name="validateEmailResponse" type="tns:validateEmailResponse" />
+  <xs:element name="validateUserId" type="tns:validateUserId" />
+  <xs:element name="validateUserIdResponse" type="tns:validateUserIdResponse" />
+  <xs:complexType name="insertToWesRegistration">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="authToken" type="xs:string" />
+      <xs:element minOccurs="0" name="ssNumber" type="xs:string" />
+      <xs:element minOccurs="0" name="userId" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertToWesRegistrationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:webResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="webResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="ssNumber" type="xs:string" />
+      <xs:element minOccurs="0" name="userId" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="validateEmail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="authToken" type="xs:string" />
+      <xs:element minOccurs="0" name="ssNumber" type="xs:string" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="validateEmailResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:webResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setMemberToPermanent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="authToken" type="xs:string" />
+      <xs:element minOccurs="0" name="ssNumber" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setMemberToPermanentResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:webResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMemberRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="authToken" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="transactionNo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMemberRecordResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:memberRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="memberRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bankCode" type="xs:string" />
+      <xs:element minOccurs="0" name="barangay_name" type="xs:string" />
+      <xs:element minOccurs="0" name="birthPlaceCity" type="xs:string" />
+      <xs:element minOccurs="0" name="birthPlaceCountry" type="xs:string" />
+      <xs:element minOccurs="0" name="birthPlaceProv" type="xs:string" />
+      <xs:element minOccurs="0" name="brstn" type="xs:string" />
+      <xs:element minOccurs="0" name="city_municipility" type="xs:string" />
+      <xs:element minOccurs="0" name="civilStatus" type="xs:string" />
+      <xs:element minOccurs="0" name="country_name" type="xs:string" />
+      <xs:element minOccurs="0" name="dateOfBirth" type="xs:string" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element minOccurs="0" name="enrolmentType" type="xs:string" />
+      <xs:element minOccurs="0" name="errorMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="extensionName" type="xs:string" />
+      <xs:element minOccurs="0" name="firstName" type="xs:string" />
+      <xs:element minOccurs="0" name="firstName_fa" type="xs:string" />
+      <xs:element minOccurs="0" name="firstName_mo" type="xs:string" />
+      <xs:element minOccurs="0" name="gender" type="xs:string" />
+      <xs:element minOccurs="0" name="height" type="xs:string" />
+      <xs:element minOccurs="0" name="house_blk_no" type="xs:string" />
+      <xs:element minOccurs="0" name="lastName" type="xs:string" />
+      <xs:element minOccurs="0" name="lastName_fa" type="xs:string" />
+      <xs:element minOccurs="0" name="lastName_mo" type="xs:string" />
+      <xs:element minOccurs="0" name="middleName" type="xs:string" />
+      <xs:element minOccurs="0" name="middleName_fa" type="xs:string" />
+      <xs:element minOccurs="0" name="middleName_mo" type="xs:string" />
+      <xs:element minOccurs="0" name="mobileNo" type="xs:string" />
+      <xs:element minOccurs="0" name="postal_code" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="province_name" type="xs:string" />
+      <xs:element minOccurs="0" name="replacementCode" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="street" type="xs:string" />
+      <xs:element minOccurs="0" name="subdivision" type="xs:string" />
+      <xs:element minOccurs="0" name="telNo" type="xs:string" />
+      <xs:element minOccurs="0" name="unit_bldg_name" type="xs:string" />
+      <xs:element minOccurs="0" name="weight" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="validateUserId">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="authToken" type="xs:string" />
+      <xs:element minOccurs="0" name="ssNumber" type="xs:string" />
+      <xs:element minOccurs="0" name="userid" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="validateUserIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:webResponse" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

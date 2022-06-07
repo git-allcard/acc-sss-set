@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://bem/" targetNamespace="http://bem/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="deactivateAccInfo" type="tns:deactivateAccInfo" />
+  <xs:element name="deactivateAccInfoResponse" type="tns:deactivateAccInfoResponse" />
+  <xs:element name="getAccountTypeList" type="tns:getAccountTypeList" />
+  <xs:element name="getAccountTypeListResponse" type="tns:getAccountTypeListResponse" />
+  <xs:element name="getBankAccountListByAC" type="tns:getBankAccountListByAC" />
+  <xs:element name="getBankAccountListByACResponse" type="tns:getBankAccountListByACResponse" />
+  <xs:element name="getBankAccountListBySSNumber" type="tns:getBankAccountListBySSNumber" />
+  <xs:element name="getBankAccountListBySSNumberResponse" type="tns:getBankAccountListBySSNumberResponse" />
+  <xs:element name="getMainBankList" type="tns:getMainBankList" />
+  <xs:element name="getMainBankListResponse" type="tns:getMainBankListResponse" />
+  <xs:element name="insertAccountInfo" type="tns:insertAccountInfo" />
+  <xs:element name="insertAccountInfoResponse" type="tns:insertAccountInfoResponse" />
+  <xs:complexType name="getMainBankList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TokenId" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMainBankListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:bankWorkflow" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bankWorkflow">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BANK_BRSTN" type="xs:string" />
+      <xs:element minOccurs="0" name="BANK_CODE" type="xs:string" />
+      <xs:element minOccurs="0" name="BANK_DEPBNK" type="xs:string" />
+      <xs:element minOccurs="0" name="BANK_NAME" type="xs:string" />
+      <xs:element name="REPLY_CODE" type="xs:int" />
+      <xs:element minOccurs="0" name="REPLY_MESSAGE" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAccountTypeList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TokenId" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAccountTypeListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:accountTypeWorkflow" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="accountTypeWorkflow">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACT_DESC" type="xs:string" />
+      <xs:element minOccurs="0" name="ACT_TYPE" type="xs:string" />
+      <xs:element name="REPLY_CODE" type="xs:int" />
+      <xs:element minOccurs="0" name="REPLY_MESSAGE" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertAccountInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TokenId" type="xs:string" />
+      <xs:element minOccurs="0" name="SS_NUMBER" type="xs:string" />
+      <xs:element minOccurs="0" name="MEMBER_TYPE" type="xs:string" />
+      <xs:element minOccurs="0" name="NEW_BANK_CODE" type="xs:string" />
+      <xs:element minOccurs="0" name="NEW_BRSTN" type="xs:string" />
+      <xs:element minOccurs="0" name="NEW_ACCNT_NUMBER" type="xs:string" />
+      <xs:element minOccurs="0" name="ACCNT_TYPE" type="xs:string" />
+      <xs:element minOccurs="0" name="E_CHANNEL" type="xs:string" />
+      <xs:element minOccurs="0" name="WES_ACCNT" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertAccountInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:insertAccntInfoWorkflow" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertAccntInfoWorkflow">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACCNT_TYPE" type="xs:string" />
+      <xs:element minOccurs="0" name="BNK_ACCT_ID" type="xs:string" />
+      <xs:element minOccurs="0" name="e_CHANNEL" type="xs:string" />
+      <xs:element minOccurs="0" name="MEMBER_TYPE" type="xs:string" />
+      <xs:element minOccurs="0" name="NEW_ACCNT_NUMBER" type="xs:string" />
+      <xs:element minOccurs="0" name="NEW_BANK_CODE" type="xs:string" />
+      <xs:element minOccurs="0" name="NEW_BRSTN" type="xs:string" />
+      <xs:element minOccurs="0" name="OLD_ACCNT_NUMBER" type="xs:string" />
+      <xs:element minOccurs="0" name="OLD_BANK_CODE" type="xs:string" />
+      <xs:element name="REPLY_CODE" type="xs:int" />
+      <xs:element minOccurs="0" name="REPLY_MESSAGE" type="xs:string" />
+      <xs:element minOccurs="0" name="SS_NUMBER" type="xs:string" />
+      <xs:element minOccurs="0" name="TRANS_TYPE" type="xs:string" />
+      <xs:element minOccurs="0" name="WES_ACCNT" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getBankAccountListByAC">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TokenId" type="xs:string" />
+      <xs:element minOccurs="0" name="SS_NUMBER" type="xs:string" />
+      <xs:element minOccurs="0" name="APP_SYS_CODE" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getBankAccountListByACResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:accountNumberWorkflow" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="accountNumberWorkflow">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACCNT_NUMBER" type="xs:string" />
+      <xs:element minOccurs="0" name="ACCNT_TYPE" type="xs:string" />
+      <xs:element minOccurs="0" name="APP_SYS_CODE" type="xs:string" />
+      <xs:element minOccurs="0" name="BANK_CODE" type="xs:string" />
+      <xs:element minOccurs="0" name="BANK_DEPBNK" type="xs:string" />
+      <xs:element minOccurs="0" name="BANK_NAME" type="xs:string" />
+      <xs:element minOccurs="0" name="BB_NAME" type="xs:string" />
+      <xs:element minOccurs="0" name="BNK_ACCT_ID" type="xs:string" />
+      <xs:element minOccurs="0" name="BRSTN" type="xs:string" />
+      <xs:element minOccurs="0" name="DISB_TYPE_CODE" type="xs:string" />
+      <xs:element minOccurs="0" name="DISB_TYPE_DESC" type="xs:string" />
+      <xs:element name="REPLY_CODE" type="xs:int" />
+      <xs:element minOccurs="0" name="REPLY_MESSAGE" type="xs:string" />
+      <xs:element minOccurs="0" name="SS_NUMBER" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deactivateAccInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TokenId" type="xs:string" />
+      <xs:element minOccurs="0" name="SS_NUMBER" type="xs:string" />
+      <xs:element minOccurs="0" name="BankCode" type="xs:string" />
+      <xs:element minOccurs="0" name="BankAccNo" type="xs:string" />
+      <xs:element minOccurs="0" name="WES_ACCNT" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deactivateAccInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:accountDeactiveWorkflow" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="accountDeactiveWorkflow">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BANK_ACCNO" type="xs:string" />
+      <xs:element minOccurs="0" name="BANK_CODE" type="xs:string" />
+      <xs:element minOccurs="0" name="BANK_NAME" type="xs:string" />
+      <xs:element name="REPLY_CODE" type="xs:int" />
+      <xs:element minOccurs="0" name="REPLY_MESSAGE" type="xs:string" />
+      <xs:element minOccurs="0" name="SS_NUMBER" type="xs:string" />
+      <xs:element minOccurs="0" name="WES_ACCNT" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getBankAccountListBySSNumber">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TokenId" type="xs:string" />
+      <xs:element minOccurs="0" name="SS_NUMBER" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getBankAccountListBySSNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:accountNumberWorkflow" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

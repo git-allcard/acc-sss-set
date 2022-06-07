@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://service.sss/" name="Wes3in1Service" targetNamespace="http://service.sss/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://10.0.161.237:7101/Wes3in1EJBBean/Wes3in1Service?xsd=1" namespace="http://service.sss/" />
+    </xsd:schema>
+  </types>
+  <message name="validateUserId">
+    <part name="parameters" element="tns:validateUserId" />
+  </message>
+  <message name="validateUserIdResponse">
+    <part name="parameters" element="tns:validateUserIdResponse" />
+  </message>
+  <message name="validateEmail">
+    <part name="parameters" element="tns:validateEmail" />
+  </message>
+  <message name="validateEmailResponse">
+    <part name="parameters" element="tns:validateEmailResponse" />
+  </message>
+  <message name="insertToWesRegistration">
+    <part name="parameters" element="tns:insertToWesRegistration" />
+  </message>
+  <message name="insertToWesRegistrationResponse">
+    <part name="parameters" element="tns:insertToWesRegistrationResponse" />
+  </message>
+  <message name="getMemberRecord">
+    <part name="parameters" element="tns:getMemberRecord" />
+  </message>
+  <message name="getMemberRecordResponse">
+    <part name="parameters" element="tns:getMemberRecordResponse" />
+  </message>
+  <message name="setMemberToPermanent">
+    <part name="parameters" element="tns:setMemberToPermanent" />
+  </message>
+  <message name="setMemberToPermanentResponse">
+    <part name="parameters" element="tns:setMemberToPermanentResponse" />
+  </message>
+  <portType name="Wes3in1Service">
+    <operation name="validateUserId">
+      <input message="tns:validateUserId" />
+      <output message="tns:validateUserIdResponse" />
+    </operation>
+    <operation name="validateEmail">
+      <input message="tns:validateEmail" />
+      <output message="tns:validateEmailResponse" />
+    </operation>
+    <operation name="insertToWesRegistration">
+      <input message="tns:insertToWesRegistration" />
+      <output message="tns:insertToWesRegistrationResponse" />
+    </operation>
+    <operation name="getMemberRecord">
+      <input message="tns:getMemberRecord" />
+      <output message="tns:getMemberRecordResponse" />
+    </operation>
+    <operation name="setMemberToPermanent">
+      <input message="tns:setMemberToPermanent" />
+      <output message="tns:setMemberToPermanentResponse" />
+    </operation>
+  </portType>
+  <binding name="Wes3in1ServicePortBinding" type="tns:Wes3in1Service">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="validateUserId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="validateEmail">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertToWesRegistration">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getMemberRecord">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setMemberToPermanent">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Wes3in1Service">
+    <port name="Wes3in1ServicePort" binding="tns:Wes3in1ServicePortBinding">
+      <soap:address location="http://10.0.161.237:7101/Wes3in1EJBBean/Wes3in1Service" />
+    </port>
+  </service>
+</definitions>

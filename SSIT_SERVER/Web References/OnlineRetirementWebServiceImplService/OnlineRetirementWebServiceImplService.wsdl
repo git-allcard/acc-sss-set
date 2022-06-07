@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://benefitsworkflowenhancementwebservice/" name="OnlineRetirementWebServiceImplService" targetNamespace="http://benefitsworkflowenhancementwebservice/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://ww8.sss.gov.ph:80/TestOnlineRetirement/OnlineRetirementWebServiceImplService?xsd=1" namespace="http://benefitsworkflowenhancementwebservice/" />
+    </xsd:schema>
+  </types>
+  <message name="compute">
+    <part name="parameters" element="tns:compute" />
+  </message>
+  <message name="computeResponse">
+    <part name="parameters" element="tns:computeResponse" />
+  </message>
+  <message name="employerCert">
+    <part name="parameters" element="tns:employerCert" />
+  </message>
+  <message name="employerCertResponse">
+    <part name="parameters" element="tns:employerCertResponse" />
+  </message>
+  <message name="employmentHistory">
+    <part name="parameters" element="tns:employmentHistory" />
+  </message>
+  <message name="employmentHistoryResponse">
+    <part name="parameters" element="tns:employmentHistoryResponse" />
+  </message>
+  <message name="pr_tran_token">
+    <part name="parameters" element="tns:pr_tran_token" />
+  </message>
+  <message name="pr_tran_tokenResponse">
+    <part name="parameters" element="tns:pr_tran_tokenResponse" />
+  </message>
+  <message name="BSVoucherInquiryDate">
+    <part name="parameters" element="tns:BSVoucherInquiryDate" />
+  </message>
+  <message name="BSVoucherInquiryDateResponse">
+    <part name="parameters" element="tns:BSVoucherInquiryDateResponse" />
+  </message>
+  <message name="BSVoucherInquiryssNumber">
+    <part name="parameters" element="tns:BSVoucherInquiryssNumber" />
+  </message>
+  <message name="BSVoucherInquiryssNumberResponse">
+    <part name="parameters" element="tns:BSVoucherInquiryssNumberResponse" />
+  </message>
+  <message name="getPhysicianList">
+    <part name="parameters" element="tns:getPhysicianList" />
+  </message>
+  <message name="getPhysicianListResponse">
+    <part name="parameters" element="tns:getPhysicianListResponse" />
+  </message>
+  <message name="getAllSSNumbers">
+    <part name="parameters" element="tns:getAllSSNumbers" />
+  </message>
+  <message name="getAllSSNumbersResponse">
+    <part name="parameters" element="tns:getAllSSNumbersResponse" />
+  </message>
+  <message name="getSSScase">
+    <part name="parameters" element="tns:getSSScase" />
+  </message>
+  <message name="getSSScaseResponse">
+    <part name="parameters" element="tns:getSSScaseResponse" />
+  </message>
+  <message name="getMemberstatus">
+    <part name="parameters" element="tns:getMemberstatus" />
+  </message>
+  <message name="getMemberstatusResponse">
+    <part name="parameters" element="tns:getMemberstatusResponse" />
+  </message>
+  <message name="getActiveClaims">
+    <part name="parameters" element="tns:getActiveClaims" />
+  </message>
+  <message name="getActiveClaimsResponse">
+    <part name="parameters" element="tns:getActiveClaimsResponse" />
+  </message>
+  <message name="getEligibilityResults">
+    <part name="parameters" element="tns:getEligibilityResults" />
+  </message>
+  <message name="getEligibilityResultsResponse">
+    <part name="parameters" element="tns:getEligibilityResultsResponse" />
+  </message>
+  <message name="compute_no_of_contrib">
+    <part name="parameters" element="tns:compute_no_of_contrib" />
+  </message>
+  <message name="compute_no_of_contribResponse">
+    <part name="parameters" element="tns:compute_no_of_contribResponse" />
+  </message>
+  <message name="getLoansInformation">
+    <part name="parameters" element="tns:getLoansInformation" />
+  </message>
+  <message name="getLoansInformationResponse">
+    <part name="parameters" element="tns:getLoansInformationResponse" />
+  </message>
+  <message name="getDisabilityEligibilityResults">
+    <part name="parameters" element="tns:getDisabilityEligibilityResults" />
+  </message>
+  <message name="getDisabilityEligibilityResultsResponse">
+    <part name="parameters" element="tns:getDisabilityEligibilityResultsResponse" />
+  </message>
+  <message name="BSVoucherInquiryssNumberTFnMF">
+    <part name="parameters" element="tns:BSVoucherInquiryssNumberTFnMF" />
+  </message>
+  <message name="BSVoucherInquiryssNumberTFnMFResponse">
+    <part name="parameters" element="tns:BSVoucherInquiryssNumberTFnMFResponse" />
+  </message>
+  <message name="autoConnect">
+    <part name="parameters" element="tns:autoConnect" />
+  </message>
+  <message name="autoConnectResponse">
+    <part name="parameters" element="tns:autoConnectResponse" />
+  </message>
+  <message name="getAge">
+    <part name="parameters" element="tns:getAge" />
+  </message>
+  <message name="getAgeResponse">
+    <part name="parameters" element="tns:getAgeResponse" />
+  </message>
+  <message name="availment_18mos">
+    <part name="parameters" element="tns:availment_18mos" />
+  </message>
+  <message name="availment_18mosResponse">
+    <part name="parameters" element="tns:availment_18mosResponse" />
+  </message>
+  <message name="compute_mp_edited">
+    <part name="parameters" element="tns:compute_mp_edited" />
+  </message>
+  <message name="compute_mp_editedResponse">
+    <part name="parameters" element="tns:compute_mp_editedResponse" />
+  </message>
+  <message name="getPreviousClaimDetails">
+    <part name="parameters" element="tns:getPreviousClaimDetails" />
+  </message>
+  <message name="getPreviousClaimDetailsResponse">
+    <part name="parameters" element="tns:getPreviousClaimDetailsResponse" />
+  </message>
+  <message name="getDeathNDisabilityComp">
+    <part name="parameters" element="tns:getDeathNDisabilityComp" />
+  </message>
+  <message name="getDeathNDisabilityCompResponse">
+    <part name="parameters" element="tns:getDeathNDisabilityCompResponse" />
+  </message>
+  <message name="BenefitCalculator">
+    <part name="parameters" element="tns:BenefitCalculator" />
+  </message>
+  <message name="BenefitCalculatorResponse">
+    <part name="parameters" element="tns:BenefitCalculatorResponse" />
+  </message>
+  <message name="getPreviousClaimsList">
+    <part name="parameters" element="tns:getPreviousClaimsList" />
+  </message>
+  <message name="getPreviousClaimsListResponse">
+    <part name="parameters" element="tns:getPreviousClaimsListResponse" />
+  </message>
+  <message name="getDateOfDeath">
+    <part name="parameters" element="tns:getDateOfDeath" />
+  </message>
+  <message name="getDateOfDeathResponse">
+    <part name="parameters" element="tns:getDateOfDeathResponse" />
+  </message>
+  <message name="getMemCovHist">
+    <part name="parameters" element="tns:getMemCovHist" />
+  </message>
+  <message name="getMemCovHistResponse">
+    <part name="parameters" element="tns:getMemCovHistResponse" />
+  </message>
+  <message name="compute_lump_sum">
+    <part name="parameters" element="tns:compute_lump_sum" />
+  </message>
+  <message name="compute_lump_sumResponse">
+    <part name="parameters" element="tns:compute_lump_sumResponse" />
+  </message>
+  <message name="BSVoucherInquiryDateMF">
+    <part name="parameters" element="tns:BSVoucherInquiryDateMF" />
+  </message>
+  <message name="BSVoucherInquiryDateMFResponse">
+    <part name="parameters" element="tns:BSVoucherInquiryDateMFResponse" />
+  </message>
+  <message name="BSVoucherInquiryStatus">
+    <part name="parameters" element="tns:BSVoucherInquiryStatus" />
+  </message>
+  <message name="BSVoucherInquiryStatusResponse">
+    <part name="parameters" element="tns:BSVoucherInquiryStatusResponse" />
+  </message>
+  <message name="compute_no_of_contrib_with_sem">
+    <part name="parameters" element="tns:compute_no_of_contrib_with_sem" />
+  </message>
+  <message name="compute_no_of_contrib_with_semResponse">
+    <part name="parameters" element="tns:compute_no_of_contrib_with_semResponse" />
+  </message>
+  <message name="compute_sem">
+    <part name="parameters" element="tns:compute_sem" />
+  </message>
+  <message name="compute_semResponse">
+    <part name="parameters" element="tns:compute_semResponse" />
+  </message>
+  <message name="determineDoctg_OnlineRt">
+    <part name="parameters" element="tns:determineDoctg_OnlineRt" />
+  </message>
+  <message name="determineDoctg_OnlineRtResponse">
+    <part name="parameters" element="tns:determineDoctg_OnlineRtResponse" />
+  </message>
+  <message name="compute_mp">
+    <part name="parameters" element="tns:compute_mp" />
+  </message>
+  <message name="compute_mpResponse">
+    <part name="parameters" element="tns:compute_mpResponse" />
+  </message>
+  <message name="compute_mp_deemed">
+    <part name="parameters" element="tns:compute_mp_deemed" />
+  </message>
+  <message name="compute_mp_deemedResponse">
+    <part name="parameters" element="tns:compute_mp_deemedResponse" />
+  </message>
+  <message name="checkElig_OnlineRt">
+    <part name="parameters" element="tns:checkElig_OnlineRt" />
+  </message>
+  <message name="checkElig_OnlineRtResponse">
+    <part name="parameters" element="tns:checkElig_OnlineRtResponse" />
+  </message>
+  <message name="getResultsStruts">
+    <part name="parameters" element="tns:getResultsStruts" />
+  </message>
+  <message name="getResultsStrutsResponse">
+    <part name="parameters" element="tns:getResultsStrutsResponse" />
+  </message>
+  <message name="getDeathEligibilityResults">
+    <part name="parameters" element="tns:getDeathEligibilityResults" />
+  </message>
+  <message name="getDeathEligibilityResultsResponse">
+    <part name="parameters" element="tns:getDeathEligibilityResultsResponse" />
+  </message>
+  <message name="getPaymentHistoryMonthlyPen">
+    <part name="parameters" element="tns:getPaymentHistoryMonthlyPen" />
+  </message>
+  <message name="getPaymentHistoryMonthlyPenResponse">
+    <part name="parameters" element="tns:getPaymentHistoryMonthlyPenResponse" />
+  </message>
+  <message name="getPaymentHistory13thMonth">
+    <part name="parameters" element="tns:getPaymentHistory13thMonth" />
+  </message>
+  <message name="getPaymentHistory13thMonthResponse">
+    <part name="parameters" element="tns:getPaymentHistory13thMonthResponse" />
+  </message>
+  <message name="BSVoucherInquiryssNumberMF">
+    <part name="parameters" element="tns:BSVoucherInquiryssNumberMF" />
+  </message>
+  <message name="BSVoucherInquiryssNumberMFResponse">
+    <part name="parameters" element="tns:BSVoucherInquiryssNumberMFResponse" />
+  </message>
+  <message name="retirementEstimator">
+    <part name="parameters" element="tns:retirementEstimator" />
+  </message>
+  <message name="retirementEstimatorResponse">
+    <part name="parameters" element="tns:retirementEstimatorResponse" />
+  </message>
+  <portType name="OnlineRetirementWebService">
+    <operation name="compute">
+      <input message="tns:compute" />
+      <output message="tns:computeResponse" />
+    </operation>
+    <operation name="employerCert">
+      <input message="tns:employerCert" />
+      <output message="tns:employerCertResponse" />
+    </operation>
+    <operation name="employmentHistory">
+      <input message="tns:employmentHistory" />
+      <output message="tns:employmentHistoryResponse" />
+    </operation>
+    <operation name="pr_tran_token">
+      <input message="tns:pr_tran_token" />
+      <output message="tns:pr_tran_tokenResponse" />
+    </operation>
+    <operation name="BSVoucherInquiryDate">
+      <input message="tns:BSVoucherInquiryDate" />
+      <output message="tns:BSVoucherInquiryDateResponse" />
+    </operation>
+    <operation name="BSVoucherInquiryssNumber">
+      <input message="tns:BSVoucherInquiryssNumber" />
+      <output message="tns:BSVoucherInquiryssNumberResponse" />
+    </operation>
+    <operation name="getPhysicianList">
+      <input message="tns:getPhysicianList" />
+      <output message="tns:getPhysicianListResponse" />
+    </operation>
+    <operation name="getAllSSNumbers">
+      <input message="tns:getAllSSNumbers" />
+      <output message="tns:getAllSSNumbersResponse" />
+    </operation>
+    <operation name="getSSScase">
+      <input message="tns:getSSScase" />
+      <output message="tns:getSSScaseResponse" />
+    </operation>
+    <operation name="getMemberstatus">
+      <input message="tns:getMemberstatus" />
+      <output message="tns:getMemberstatusResponse" />
+    </operation>
+    <operation name="getActiveClaims">
+      <input message="tns:getActiveClaims" />
+      <output message="tns:getActiveClaimsResponse" />
+    </operation>
+    <operation name="getEligibilityResults">
+      <input message="tns:getEligibilityResults" />
+      <output message="tns:getEligibilityResultsResponse" />
+    </operation>
+    <operation name="compute_no_of_contrib">
+      <input message="tns:compute_no_of_contrib" />
+      <output message="tns:compute_no_of_contribResponse" />
+    </operation>
+    <operation name="getLoansInformation">
+      <input message="tns:getLoansInformation" />
+      <output message="tns:getLoansInformationResponse" />
+    </operation>
+    <operation name="getDisabilityEligibilityResults">
+      <input message="tns:getDisabilityEligibilityResults" />
+      <output message="tns:getDisabilityEligibilityResultsResponse" />
+    </operation>
+    <operation name="BSVoucherInquiryssNumberTFnMF">
+      <input message="tns:BSVoucherInquiryssNumberTFnMF" />
+      <output message="tns:BSVoucherInquiryssNumberTFnMFResponse" />
+    </operation>
+    <operation name="autoConnect">
+      <input message="tns:autoConnect" />
+      <output message="tns:autoConnectResponse" />
+    </operation>
+    <operation name="getAge">
+      <input message="tns:getAge" />
+      <output message="tns:getAgeResponse" />
+    </operation>
+    <operation name="availment_18mos">
+      <input message="tns:availment_18mos" />
+      <output message="tns:availment_18mosResponse" />
+    </operation>
+    <operation name="compute_mp_edited">
+      <input message="tns:compute_mp_edited" />
+      <output message="tns:compute_mp_editedResponse" />
+    </operation>
+    <operation name="getPreviousClaimDetails">
+      <input message="tns:getPreviousClaimDetails" />
+      <output message="tns:getPreviousClaimDetailsResponse" />
+    </operation>
+    <operation name="getDeathNDisabilityComp">
+      <input message="tns:getDeathNDisabilityComp" />
+      <output message="tns:getDeathNDisabilityCompResponse" />
+    </operation>
+    <operation name="BenefitCalculator">
+      <input message="tns:BenefitCalculator" />
+      <output message="tns:BenefitCalculatorResponse" />
+    </operation>
+    <operation name="getPreviousClaimsList">
+      <input message="tns:getPreviousClaimsList" />
+      <output message="tns:getPreviousClaimsListResponse" />
+    </operation>
+    <operation name="getDateOfDeath">
+      <input message="tns:getDateOfDeath" />
+      <output message="tns:getDateOfDeathResponse" />
+    </operation>
+    <operation name="getMemCovHist">
+      <input message="tns:getMemCovHist" />
+      <output message="tns:getMemCovHistResponse" />
+    </operation>
+    <operation name="compute_lump_sum">
+      <input message="tns:compute_lump_sum" />
+      <output message="tns:compute_lump_sumResponse" />
+    </operation>
+    <operation name="BSVoucherInquiryDateMF">
+      <input message="tns:BSVoucherInquiryDateMF" />
+      <output message="tns:BSVoucherInquiryDateMFResponse" />
+    </operation>
+    <operation name="BSVoucherInquiryStatus">
+      <input message="tns:BSVoucherInquiryStatus" />
+      <output message="tns:BSVoucherInquiryStatusResponse" />
+    </operation>
+    <operation name="compute_no_of_contrib_with_sem">
+      <input message="tns:compute_no_of_contrib_with_sem" />
+      <output message="tns:compute_no_of_contrib_with_semResponse" />
+    </operation>
+    <operation name="compute_sem">
+      <input message="tns:compute_sem" />
+      <output message="tns:compute_semResponse" />
+    </operation>
+    <operation name="determineDoctg_OnlineRt">
+      <input message="tns:determineDoctg_OnlineRt" />
+      <output message="tns:determineDoctg_OnlineRtResponse" />
+    </operation>
+    <operation name="compute_mp">
+      <input message="tns:compute_mp" />
+      <output message="tns:compute_mpResponse" />
+    </operation>
+    <operation name="compute_mp_deemed">
+      <input message="tns:compute_mp_deemed" />
+      <output message="tns:compute_mp_deemedResponse" />
+    </operation>
+    <operation name="checkElig_OnlineRt">
+      <input message="tns:checkElig_OnlineRt" />
+      <output message="tns:checkElig_OnlineRtResponse" />
+    </operation>
+    <operation name="getResultsStruts">
+      <input message="tns:getResultsStruts" />
+      <output message="tns:getResultsStrutsResponse" />
+    </operation>
+    <operation name="getDeathEligibilityResults">
+      <input message="tns:getDeathEligibilityResults" />
+      <output message="tns:getDeathEligibilityResultsResponse" />
+    </operation>
+    <operation name="getPaymentHistoryMonthlyPen">
+      <input message="tns:getPaymentHistoryMonthlyPen" />
+      <output message="tns:getPaymentHistoryMonthlyPenResponse" />
+    </operation>
+    <operation name="getPaymentHistory13thMonth">
+      <input message="tns:getPaymentHistory13thMonth" />
+      <output message="tns:getPaymentHistory13thMonthResponse" />
+    </operation>
+    <operation name="BSVoucherInquiryssNumberMF">
+      <input message="tns:BSVoucherInquiryssNumberMF" />
+      <output message="tns:BSVoucherInquiryssNumberMFResponse" />
+    </operation>
+    <operation name="retirementEstimator">
+      <input message="tns:retirementEstimator" />
+      <output message="tns:retirementEstimatorResponse" />
+    </operation>
+  </portType>
+  <binding name="OnlineRetirementWebServiceImplPortBinding" type="tns:OnlineRetirementWebService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="compute">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="employerCert">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="employmentHistory">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="pr_tran_token">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="BSVoucherInquiryDate">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="BSVoucherInquiryssNumber">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getPhysicianList">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getAllSSNumbers">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getSSScase">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getMemberstatus">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getActiveClaims">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getEligibilityResults">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="compute_no_of_contrib">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getLoansInformation">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getDisabilityEligibilityResults">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="BSVoucherInquiryssNumberTFnMF">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="autoConnect">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getAge">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="availment_18mos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="compute_mp_edited">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getPreviousClaimDetails">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getDeathNDisabilityComp">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="BenefitCalculator">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getPreviousClaimsList">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getDateOfDeath">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getMemCovHist">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="compute_lump_sum">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="BSVoucherInquiryDateMF">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="BSVoucherInquiryStatus">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="compute_no_of_contrib_with_sem">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="compute_sem">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="determineDoctg_OnlineRt">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="compute_mp">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="compute_mp_deemed">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="checkElig_OnlineRt">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getResultsStruts">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getDeathEligibilityResults">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getPaymentHistoryMonthlyPen">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getPaymentHistory13thMonth">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="BSVoucherInquiryssNumberMF">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="retirementEstimator">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="OnlineRetirementWebServiceImplService">
+    <port name="OnlineRetirementWebServiceImplPort" binding="tns:OnlineRetirementWebServiceImplPortBinding">
+      <soap:address location="http://ww8.sss.gov.ph:80/TestOnlineRetirement/OnlineRetirementWebServiceImplService" />
+    </port>
+  </service>
+</definitions>

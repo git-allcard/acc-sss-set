@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://webservice/" targetNamespace="http://webservice/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AuthenticateToken" type="tns:AuthenticateToken" />
+  <xs:element name="AuthenticateTokenResponse" type="tns:AuthenticateTokenResponse" />
+  <xs:element name="calleligibility" type="tns:calleligibility" />
+  <xs:element name="calleligibilityResponse" type="tns:calleligibilityResponse" />
+  <xs:complexType name="calleligibility">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="lntyp" type="xs:string" />
+      <xs:element minOccurs="0" name="empid" type="xs:string" />
+      <xs:element minOccurs="0" name="seq_no" type="xs:string" />
+      <xs:element minOccurs="0" name="transac_token" type="xs:string" />
+      <xs:element minOccurs="0" name="token_id" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="calleligibilityResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:eligibWsResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eligibWsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="appl_st" type="xs:string" />
+      <xs:element minOccurs="0" name="empid" type="xs:string" />
+      <xs:element minOccurs="0" name="lntyp" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="loan_balance" nillable="true" type="tns:loan" />
+      <xs:element minOccurs="0" name="loan_month" type="xs:string" />
+      <xs:element minOccurs="0" name="loanableAmount" type="xs:string" />
+      <xs:element minOccurs="0" name="maxLoanableAmount" type="xs:string" />
+      <xs:element minOccurs="0" name="monthly_amort" type="xs:string" />
+      <xs:element minOccurs="0" name="msg" type="xs:string" />
+      <xs:element minOccurs="0" name="netloan" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="qual_info_cur" nillable="true" type="tns:qual" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="rej_dtls" nillable="true" type="tns:rejection" />
+      <xs:element minOccurs="0" name="rejlist" type="xs:string" />
+      <xs:element minOccurs="0" name="sadate" type="xs:string" />
+      <xs:element minOccurs="0" name="seq_no" type="xs:string" />
+      <xs:element minOccurs="0" name="serviceFee" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="token_id" type="xs:string" />
+      <xs:element minOccurs="0" name="totalbalance" type="xs:string" />
+      <xs:element minOccurs="0" name="transac_token" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="loan">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="first_amortization" type="xs:string" />
+      <xs:element minOccurs="0" name="loan_amount" type="xs:string" />
+      <xs:element minOccurs="0" name="loan_date" type="xs:string" />
+      <xs:element minOccurs="0" name="loan_tag" type="xs:string" />
+      <xs:element minOccurs="0" name="loan_type" type="xs:string" />
+      <xs:element minOccurs="0" name="outstanding_bal" type="xs:string" />
+      <xs:element minOccurs="0" name="stmt_date" type="xs:string" />
+      <xs:element minOccurs="0" name="total_obligation" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="qual">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="adv_inter" type="xs:string" />
+      <xs:element minOccurs="0" name="adv_interest" type="xs:string" />
+      <xs:element minOccurs="0" name="ave_msc" type="xs:string" />
+      <xs:element minOccurs="0" name="due_date" type="xs:string" />
+      <xs:element minOccurs="0" name="first_amort_date" type="xs:string" />
+      <xs:element minOccurs="0" name="ln_amount" type="xs:string" />
+      <xs:element minOccurs="0" name="ln_month" type="xs:string" />
+      <xs:element minOccurs="0" name="monthly_amort" type="xs:string" />
+      <xs:element minOccurs="0" name="net_lnamt" type="xs:string" />
+      <xs:element minOccurs="0" name="pr_lnded" type="xs:string" />
+      <xs:element minOccurs="0" name="serv_fee" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rejection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="delinq_amt" type="xs:string" />
+      <xs:element minOccurs="0" name="haflnamt" type="xs:string" />
+      <xs:element minOccurs="0" name="last12_mscamt" type="xs:string" />
+      <xs:element minOccurs="0" name="last_mscdt" type="xs:string" />
+      <xs:element minOccurs="0" name="last_posted_contri" type="xs:string" />
+      <xs:element minOccurs="0" name="maturity_dt" type="xs:string" />
+      <xs:element minOccurs="0" name="outs_prin_bl" type="xs:string" />
+      <xs:element minOccurs="0" name="reasons" type="xs:string" />
+      <xs:element minOccurs="0" name="total_contri_count" type="xs:string" />
+      <xs:element minOccurs="0" name="twelf_month" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AuthenticateToken">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="token_id" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AuthenticateTokenResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:eligibTsReponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eligibTsReponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="token_id" type="xs:string" />
+      <xs:element minOccurs="0" name="transac_token" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

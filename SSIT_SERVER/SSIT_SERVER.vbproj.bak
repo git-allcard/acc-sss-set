@@ -1,0 +1,1065 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87942264-1523-49CF-97FC-6E8326E00C8B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SSIT_SERVER.My.MyApplication</StartupObject>
+    <RootNamespace>SSIT_SERVER</RootNamespace>
+    <AssemblyName>SSIT_SERVER</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SSIT_SERVER.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SSIT_SERVER.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AllCardTech_UMID, Version=1.2.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AllCardTech_UMID.dll</HintPath>
+    </Reference>
+    <Reference Include="AllCardTech_UMID_SSS_MOD_JUL813, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AllCardTech_UMID_SSS_MOD_JUL813.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=10.0.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v14.1.Drawing, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPdfViewer.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPdfViewer.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="dotNetGlobalPlatform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\dotNetGlobalPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="dotNetUMIDSAM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSIT_Home\SSIT_Home\bin\Debug\dotNetUMIDSAM.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Morpho.MorphoAcquisition, Version=1.1.6.0, Culture=neutral, PublicKeyToken=6c88356942c144bd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Morpho.MorphoAcquisition.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="Sagem.MorphoKit, Version=5.1.6.0, Culture=neutral, PublicKeyToken=9129c4501865bd75, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Sagem.MorphoKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagem.MorphoKit.AcquisitionComponent, Version=5.1.6.0, Culture=neutral, PublicKeyToken=9129c4501865bd75, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Sagem.MorphoKit.AcquisitionComponent.dll</HintPath>
+    </Reference>
+    <Reference Include="SecuGen.FDxSDKPro.Windows, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SecuGen.FDxSDKPro.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="StarIO">
+      <HintPath>..\..\..\printer\kiosk printer\StarIO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="class\addMaternityNotification.vb" />
+    <Compile Include="class\AdjustMode.vb" />
+    <Compile Include="class\ClearCache.vb" />
+    <Compile Include="class\ConnectionString.vb" />
+    <Compile Include="class\ConnectionString2.vb" />
+    <Compile Include="class\ExtractedDetails.vb" />
+    <Compile Include="class\insertProcedure.vb" />
+    <Compile Include="class\insertSalaryLoan.vb" />
+    <Compile Include="class\loanDisclosuretxt.vb" />
+    <Compile Include="class\modClear_Cache.vb" />
+    <Compile Include="class\modSettings.vb" />
+    <Compile Include="class\MySettings.vb" />
+    <Compile Include="class\PrintHelper.vb" />
+    <Compile Include="class\printModule.vb" />
+    <Compile Include="class\SMTP.vb" />
+    <Compile Include="class\StarIOPrinter.vb" />
+    <Compile Include="class\Store.vb" />
+    <Compile Include="class\auditTrail.vb" />
+    <Compile Include="class\kioskRegistration.vb" />
+    <Compile Include="class\txnNo.vb" />
+    <Compile Include="class\webRegistration.vb" />
+    <Compile Include="Extra Forms\_frmErrorFormWeb.Designer.vb">
+      <DependentUpon>_frmErrorFormWeb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmErrorFormWeb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmCalendar.Designer.vb">
+      <DependentUpon>_frmCalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmCalendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmConError.Designer.vb">
+      <DependentUpon>_frmConError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmConError.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmErrorForm.Designer.vb">
+      <DependentUpon>_frmErrorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmErrorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmFirstLoad.Designer.vb">
+      <DependentUpon>_frmFirstLoad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmFirstLoad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmLoading.Designer.vb">
+      <DependentUpon>_frmLoading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmLoading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmFingerPrintMatch.Designer.vb">
+      <DependentUpon>_frmFingerPrintMatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmFingerPrintMatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmPrintError.Designer.vb">
+      <DependentUpon>_frmPrintError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmPrintError.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmPrintForm.Designer.vb">
+      <DependentUpon>_frmPrintForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmPrintForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmTerms.Designer.vb">
+      <DependentUpon>_frmTerms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmTerms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra Forms\_frmUserAuthentication.Designer.vb">
+      <DependentUpon>_frmUserAuthentication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmUserAuthentication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\_frmMainMenu.Designer.vb">
+      <DependentUpon>_frmMainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\_frmMainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\ACOP\_frmACOPconfirmationDependent.Designer.vb">
+      <DependentUpon>_frmACOPconfirmationDependent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\ACOP\_frmACOPconfirmationDependent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\ACOP\_frmACOPdependent.Designer.vb">
+      <DependentUpon>_frmACOPdependent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\ACOP\_frmACOPdependent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\ACOP\_frmAcopSummary.Designer.vb">
+      <DependentUpon>_frmAcopSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\ACOP\_frmAcopSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Maternity\_frmMaternitySummary.Designer.vb">
+      <DependentUpon>_frmMaternitySummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Maternity\_frmMaternitySummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Pensioner\_frmPensionSummary.Designer.vb">
+      <DependentUpon>_frmPensionSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Pensioner\_frmPensionSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Salary Form\_frmLoanSummaryEmployed.Designer.vb">
+      <DependentUpon>_frmLoanSummaryEmployed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Salary Form\_frmLoanSummaryEmployed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Salary Form\_frmLoanSummaryMember.Designer.vb">
+      <DependentUpon>_frmLoanSummaryMember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Salary Form\_frmLoanSummaryMember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Salary Form\_frmSalaryLoanDisclosure.Designer.vb">
+      <DependentUpon>_frmSalaryLoanDisclosure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Salary Form\_frmSalaryLoanDisclosure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Salary Form\_frmSalaryLoanMember.Designer.vb">
+      <DependentUpon>_frmSalaryLoanMember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Salary Form\_frmSalaryLoanMember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Salary Form\_frmSalaryLoanEmployer.Designer.vb">
+      <DependentUpon>_frmSalaryLoanEmployer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Salary Form\_frmSalaryLoanEmployer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk.designer.vb">
+      <DependentUpon>_frmFeedbackKiosk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk1.Designer.vb">
+      <DependentUpon>_frmFeedbackKiosk1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk2.designer.vb">
+      <DependentUpon>_frmFeedbackKiosk2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmFeedbackKioskMain.Designer.vb">
+      <DependentUpon>_frmFeedbackKioskMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmFeedbackKioskMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmSSSwebsite.Designer.vb">
+      <DependentUpon>_frmSSSwebsite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmSSSwebsite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite.designer.vb">
+      <DependentUpon>_frmFeedbackWebsite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite1.Designer.vb">
+      <DependentUpon>_frmFeedbackWebsite1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite2.Designer.vb">
+      <DependentUpon>_frmFeedbackWebsite2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite3.Designer.vb">
+      <DependentUpon>_frmFeedbackWebsite3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite4.Designer.vb">
+      <DependentUpon>_frmFeedbackWebsite4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmFeedbackWebsite4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmWebBrowser.Designer.vb">
+      <DependentUpon>_frmWebBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\_frmWebBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirementLessCont.Designer.vb">
+      <DependentUpon>_frmTechnicalRetirementLessCont.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirementLessCont.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirementQA.Designer.vb">
+      <DependentUpon>_frmTechnicalRetirementQA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirementQA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmMsgBox.Designer.vb">
+      <DependentUpon>_frmMsgBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmMsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirementEffectivityProceed.Designer.vb">
+      <DependentUpon>_frmTechnicalRetirementEffectivityProceed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirementEffectivityProceed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirementHistory.Designer.vb">
+      <DependentUpon>_frmTechnicalRetirementHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirementHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirementLumpSum.Designer.vb">
+      <DependentUpon>_frmTechnicalRetirementLumpSum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirementLumpSum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirementWillAvailLumpSum.Designer.vb">
+      <DependentUpon>_frmTechnicalRetirementWillAvailLumpSum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirementWillAvailLumpSum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Maternity\_frmMaternityNotification.Designer.vb">
+      <DependentUpon>_frmMaternityNotification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Maternity\_frmMaternityNotification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Registration\_frmMemberRegistration1.Designer.vb">
+      <DependentUpon>_frmMemberRegistration1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Registration\_frmMemberRegistration1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Registration\_frmMemberRegistration2.Designer.vb">
+      <DependentUpon>_frmMemberRegistration2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Registration\_frmMemberRegistration2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Registration\_frmMembersRegistration.Designer.vb">
+      <DependentUpon>_frmMembersRegistration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Registration\_frmMembersRegistration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="class\Person.vb" />
+    <Compile Include="class\Registration.vb" />
+    <Compile Include="Extra Forms\_frmBlock.Designer.vb">
+      <DependentUpon>_frmBlock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extra Forms\_frmBlock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Pensioner\_frmPensionDetails.Designer.vb">
+      <DependentUpon>_frmPensionDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Pensioner\_frmPensionDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Pensioner\_frmPensionMaintenance.Designer.vb">
+      <DependentUpon>_frmPensionMaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Pensioner\_frmPensionMaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmLoad.Designer.vb">
+      <DependentUpon>_frmLoad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_frmLoad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Sub Form\reportForms\_GTransactionReports.vb" />
+    <Compile Include="rpt\_rptActualPremium.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_rptActualPremium.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirement.Designer.vb">
+      <DependentUpon>_frmTechnicalRetirement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirementEffectivity.Designer.vb">
+      <DependentUpon>_frmTechnicalRetirementEffectivity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirementEffectivity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirementWillAvail.Designer.vb">
+      <DependentUpon>_frmTechnicalRetirementWillAvail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Form\Technical Retirement\_frmTechnicalRetirementWillAvail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\_frmHomeScreen.Designer.vb">
+      <DependentUpon>_frmHomeScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\_frmHomeScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\_frmKioskSettings.Designer.vb">
+      <DependentUpon>_frmKioskSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\_frmKioskSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\Class\AssociativeTuple.vb" />
+    <Compile Include="SSIT_Home\Class\DAL_Mssql.vb" />
+    <Compile Include="SSIT_Home\Class\DAL_Oracle.vb" />
+    <Compile Include="SSIT_Home\Class\DeviceLayoutConfig.vb" />
+    <Compile Include="SSIT_Home\Class\KeyboardJammer.vb" />
+    <Compile Include="SSIT_Home\Class\PrintHelper.vb" />
+    <Compile Include="SSIT_Home\Class\Sagem.vb" />
+    <Compile Include="SSIT_Home\Class\Sagem2.vb" />
+    <Compile Include="SSIT_Home\Class\SagemOldSSS.vb" />
+    <Compile Include="SSIT_Home\Class\SCard\ConversionRoutine.vb" />
+    <Compile Include="SSIT_Home\Class\SCard\ModWinsCard.vb" />
+    <Compile Include="SSIT_Home\Class\SCard\PCSCRoutines.vb" />
+    <Compile Include="SSIT_Home\Class\SharedFunction.vb" />
+    <Compile Include="SSIT_Home\Class\SystemMessage.vb" />
+    <Compile Include="SSIT_Home\Class\UMID_Card_Perso.vb" />
+    <Compile Include="SSIT_Home\Class\UMID_Card_Read.vb" />
+    <Compile Include="SSIT_Home\frmAuthentication.Designer.vb">
+      <DependentUpon>frmAuthentication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\frmAuthentication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\frmPIN.Designer.vb">
+      <DependentUpon>frmPIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\frmPIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\frmSelectAuth.designer.vb">
+      <DependentUpon>frmSelectAuth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\frmSelectAuth.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmCode.Designer.vb">
+      <DependentUpon>usrfrmCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmCode.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmFingerprintValidation.Designer.vb">
+      <DependentUpon>usrfrmFingerprintValidation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmFingerprintValidation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmFingerprintValidation2.Designer.vb">
+      <DependentUpon>usrfrmFingerprintValidation2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmFingerprintValidation2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmFingerprintValidationOldSSS.Designer.vb">
+      <DependentUpon>usrfrmFingerprintValidationOldSSS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmFingerprintValidationOldSSS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmFingerprintValidationOldSSS2.Designer.vb">
+      <DependentUpon>usrfrmFingerprintValidationOldSSS2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmFingerprintValidationOldSSS2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmIdle.Designer.vb">
+      <DependentUpon>usrfrmIdle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmIdle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmOldSSS.Designer.vb">
+      <DependentUpon>usrfrmOldSSS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmOldSSS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmSelect.Designer.vb">
+      <DependentUpon>usrfrmSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmSelect.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmUMID.Designer.vb">
+      <DependentUpon>usrfrmUMID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\usrfrmUMID.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SSIT_Home\_frm2.Designer.vb">
+      <DependentUpon>_frm2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSIT_Home\_frm2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Extra Forms\_frmCalendar.resx">
+      <DependentUpon>_frmCalendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmConError.resx">
+      <DependentUpon>_frmConError.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmErrorForm.resx">
+      <DependentUpon>_frmErrorForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmErrorFormWeb.resx">
+      <DependentUpon>_frmErrorFormWeb.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmFirstLoad.resx">
+      <DependentUpon>_frmFirstLoad.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmLoading.resx">
+      <DependentUpon>_frmLoading.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmFingerPrintMatch.resx">
+      <DependentUpon>_frmFingerPrintMatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmPrintError.resx">
+      <DependentUpon>_frmPrintError.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmPrintForm.resx">
+      <DependentUpon>_frmPrintForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmTerms.resx">
+      <DependentUpon>_frmTerms.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmUserAuthentication.resx">
+      <DependentUpon>_frmUserAuthentication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\_frmMainMenu.resx">
+      <DependentUpon>_frmMainMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\ACOP\_frmACOPconfirmationDependent.resx">
+      <DependentUpon>_frmACOPconfirmationDependent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\ACOP\_frmACOPdependent.resx">
+      <DependentUpon>_frmACOPdependent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\ACOP\_frmAcopSummary.resx">
+      <DependentUpon>_frmAcopSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Maternity\_frmMaternitySummary.resx">
+      <DependentUpon>_frmMaternitySummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Pensioner\_frmPensionSummary.resx">
+      <DependentUpon>_frmPensionSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Salary Form\_frmLoanSummaryEmployed.resx">
+      <DependentUpon>_frmLoanSummaryEmployed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Salary Form\_frmLoanSummaryMember.resx">
+      <DependentUpon>_frmLoanSummaryMember.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Salary Form\_frmSalaryLoanDisclosure.resx">
+      <DependentUpon>_frmSalaryLoanDisclosure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Salary Form\_frmSalaryLoanMember.resx">
+      <DependentUpon>_frmSalaryLoanMember.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Salary Form\_frmSalaryLoanEmployer.resx">
+      <DependentUpon>_frmSalaryLoanEmployer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk.resx">
+      <DependentUpon>_frmFeedbackKiosk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk1.resx">
+      <DependentUpon>_frmFeedbackKiosk1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\reportForms\_frmFeedbackKiosk2.resx">
+      <DependentUpon>_frmFeedbackKiosk2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\reportForms\_frmFeedbackKioskMain.resx">
+      <DependentUpon>_frmFeedbackKioskMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\reportForms\_frmSSSwebsite.resx">
+      <DependentUpon>_frmSSSwebsite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\_frmFeedbackWebsite.resx">
+      <DependentUpon>_frmFeedbackWebsite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\_frmFeedbackWebsite1.resx">
+      <DependentUpon>_frmFeedbackWebsite1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\_frmFeedbackWebsite2.resx">
+      <DependentUpon>_frmFeedbackWebsite2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\_frmFeedbackWebsite3.resx">
+      <DependentUpon>_frmFeedbackWebsite3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\_frmFeedbackWebsite4.resx">
+      <DependentUpon>_frmFeedbackWebsite4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\_frmWebBrowser.resx">
+      <DependentUpon>_frmWebBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirement\_frmMsgBox.resx">
+      <DependentUpon>_frmMsgBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirement\_frmTechnicalRetirementEffectivityProceed.resx">
+      <DependentUpon>_frmTechnicalRetirementEffectivityProceed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirement\_frmTechnicalRetirementHistory.resx">
+      <DependentUpon>_frmTechnicalRetirementHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirement\_frmTechnicalRetirementLessCont.resx">
+      <DependentUpon>_frmTechnicalRetirementLessCont.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirement\_frmTechnicalRetirementLumpSum.resx">
+      <DependentUpon>_frmTechnicalRetirementLumpSum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirement\_frmTechnicalRetirementQA.resx">
+      <DependentUpon>_frmTechnicalRetirementQA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirement\_frmTechnicalRetirementWillAvailLumpSum.resx">
+      <DependentUpon>_frmTechnicalRetirementWillAvailLumpSum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Maternity\_frmMaternityNotification.resx">
+      <DependentUpon>_frmMaternityNotification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Registration\_frmMemberRegistration1.resx">
+      <DependentUpon>_frmMemberRegistration1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Registration\_frmMemberRegistration2.resx">
+      <DependentUpon>_frmMemberRegistration2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Registration\_frmMembersRegistration.resx">
+      <DependentUpon>_frmMembersRegistration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra Forms\_frmBlock.resx">
+      <DependentUpon>_frmBlock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Pensioner\_frmPensionDetails.resx">
+      <DependentUpon>_frmPensionDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Pensioner\_frmPensionMaintenance.resx">
+      <DependentUpon>_frmPensionMaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Sub Form\reportForms\_frmLoad.resx">
+      <DependentUpon>_frmLoad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\_rptActualPremium.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>_rptActualPremium.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirement\_frmTechnicalRetirement.resx">
+      <DependentUpon>_frmTechnicalRetirement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirement\_frmTechnicalRetirementEffectivity.resx">
+      <DependentUpon>_frmTechnicalRetirementEffectivity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Form\Technical Retirement\_frmTechnicalRetirementWillAvail.resx">
+      <DependentUpon>_frmTechnicalRetirementWillAvail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\_frmHomeScreen.resx">
+      <DependentUpon>_frmHomeScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\_frmKioskSettings.resx">
+      <DependentUpon>_frmKioskSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\frmAuthentication.resx">
+      <DependentUpon>frmAuthentication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\frmPIN.resx">
+      <DependentUpon>frmPIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\frmSelectAuth.resx">
+      <DependentUpon>frmSelectAuth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmCode.resx">
+      <DependentUpon>usrfrmCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmFingerprintValidation.resx">
+      <DependentUpon>usrfrmFingerprintValidation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmFingerprintValidation2.resx">
+      <DependentUpon>usrfrmFingerprintValidation2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmFingerprintValidationOldSSS.resx">
+      <DependentUpon>usrfrmFingerprintValidationOldSSS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmFingerprintValidationOldSSS2.resx">
+      <DependentUpon>usrfrmFingerprintValidationOldSSS2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmIdle.resx">
+      <DependentUpon>usrfrmIdle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmOldSSS.resx">
+      <DependentUpon>usrfrmOldSSS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmSelect.resx">
+      <DependentUpon>usrfrmSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\usrfrmUMID.resx">
+      <DependentUpon>usrfrmUMID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSIT_Home\_frm2.resx">
+      <DependentUpon>_frm2.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Untitled.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\errorpage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SSSHEADER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PRINT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FEEDBACK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WEBICON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGOUT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BACK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEXT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KEYBOARD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HORIZONTALDIVIDERLONG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HORIZONTALDIVIDER23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HORIZONTAL DIVIDER23LEFT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DIVIDERVERTICAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REFRESH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOWN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UPBUTTON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEXT1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KEYBOARDWEBSITE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\System-Error-icon white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEXT BLUE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BACK BLUE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BACK BLUE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CHECK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SUBMIT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLEAR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico home resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BLUE_BUTTON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BLUE_BUTTON_CANCEL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico accept-submit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-in-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-OUT1-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MESSAGEBOX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TABLE_OF_CONTENTS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UPBUTTON75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOWN75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auth-bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auth-pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auth-fingerprint.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://service.webservice.sss/" name="MobileWSBeanService" targetNamespace="http://service.webservice.sss/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://wws.sss.gov.ph:80/MobileWSBean/MobileWSBeanService?xsd=1" namespace="http://service.webservice.sss/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://wws.sss.gov.ph:80/MobileWSBean/MobileWSBeanService?xsd=2" namespace="http://jaxb.dev.java.net/array" />
+    </xsd:schema>
+  </types>
+  <message name="connect">
+    <part name="authToken" type="xsd:string" />
+  </message>
+  <message name="connectResponse">
+    <part name="return" type="tns:webResponse" />
+  </message>
+  <message name="getBranches">
+    <part name="authToken" type="xsd:string" />
+    <part name="postalCode" type="xsd:string" />
+    <part name="city" type="xsd:string" />
+  </message>
+  <message name="getBranchesResponse">
+    <part name="return" type="tns:branchArray" />
+  </message>
+  <message name="loginWebAccount">
+    <part name="authToken" type="xsd:string" />
+    <part name="tranToken" type="xsd:string" />
+    <part name="userid" type="xsd:string" />
+    <part name="password" type="xsd:string" />
+  </message>
+  <message name="loginWebAccountResponse">
+    <part name="return" type="tns:webResponse" />
+  </message>
+  <message name="forgotPassword">
+    <part name="authToken" type="xsd:string" />
+    <part name="userid" type="xsd:string" />
+  </message>
+  <message name="forgotPasswordResponse">
+    <part name="return" type="tns:webResponse" />
+  </message>
+  <message name="getMemberProfile">
+    <part name="authToken" type="xsd:string" />
+    <part name="tranToken" type="xsd:string" />
+    <part name="pseudoNo" type="xsd:string" />
+  </message>
+  <message name="getMemberProfileResponse">
+    <part name="return" type="tns:memberProfile" />
+  </message>
+  <message name="getOtherInfo">
+    <part name="authToken" type="xsd:string" />
+    <part name="tranToken" type="xsd:string" />
+    <part name="pseudoNo" type="xsd:string" />
+  </message>
+  <message name="getOtherInfoResponse">
+    <part name="return" type="tns:otherInformation" />
+  </message>
+  <message name="getCompleteAddress">
+    <part name="authToken" type="xsd:string" />
+    <part name="tranToken" type="xsd:string" />
+    <part name="pseudoNo" type="xsd:string" />
+  </message>
+  <message name="getCompleteAddressResponse">
+    <part name="return" type="tns:completeAddress" />
+  </message>
+  <message name="maternityNotifEligibility">
+    <part name="authToken" type="xsd:string" />
+    <part name="pseudoNo" type="xsd:string" />
+  </message>
+  <message name="maternityNotifEligibilityResponse">
+    <part name="return" type="tns:webResponse" />
+  </message>
+  <message name="maternityNotifSubmit">
+    <part name="authToken" type="xsd:string" />
+    <part name="tranToken" type="xsd:string" />
+    <part name="pseudoNo" type="xsd:string" />
+    <part name="expectedDeliveryDate" type="xsd:string" />
+    <part name="prevNoOfDelivery" type="xsd:string" />
+    <part name="dateOfLastDelivery" type="xsd:string" />
+  </message>
+  <message name="maternityNotifSubmitResponse">
+    <part name="return" type="tns:webTransactionResponse" />
+  </message>
+  <message name="getParamInquirePRN">
+    <part name="pseudoNo" type="xsd:string" />
+  </message>
+  <message name="getParamInquirePRNResponse">
+    <part name="return" type="tns:paymentRefNo" />
+  </message>
+  <message name="getAllowedMemberTypeListPRN">
+    <part name="authToken" type="xsd:string" />
+    <part name="memberType" type="xsd:string" />
+  </message>
+  <message name="getAllowedMemberTypeListPRNResponse">
+    <part xmlns:ns1="http://jaxb.dev.java.net/array" name="return" type="ns1:stringArray" />
+  </message>
+  <message name="getContributionListPRN">
+    <part name="authToken" type="xsd:string" />
+  </message>
+  <message name="getContributionListPRNResponse">
+    <part xmlns:ns2="http://jaxb.dev.java.net/array" name="return" type="ns2:stringArray" />
+  </message>
+  <message name="insertTransactionPRN">
+    <part name="authToken" type="xsd:string" />
+    <part name="paymentRefNo" type="xsd:string" />
+    <part name="applicableDate" type="xsd:string" />
+    <part name="ssnum" type="xsd:string" />
+    <part name="monthlyContribution" type="xsd:string" />
+    <part name="flexiFundContribution" type="xsd:string" />
+    <part name="totalAmount" type="xsd:string" />
+    <part name="memberType" type="xsd:string" />
+  </message>
+  <message name="insertTransactionPRNResponse">
+    <part name="return" type="tns:webResponse" />
+  </message>
+  <message name="getMemberTypeSL">
+    <part name="pseudoNo" type="xsd:string" />
+  </message>
+  <message name="getMemberTypeSLResponse">
+    <part name="return" type="tns:memberType" />
+  </message>
+  <message name="getEmployerAddressesSL">
+    <part name="authToken" type="xsd:string" />
+    <part name="employerSSNumber" type="xsd:string" />
+  </message>
+  <message name="getEmployerAddressesSLResponse">
+    <part name="return" type="tns:employerAddressArray" />
+  </message>
+  <message name="submitSalaryLoanApplication">
+    <part name="authToken" type="xsd:string" />
+    <part name="ssnum" type="xsd:string" />
+    <part name="memberStatus" type="xsd:string" />
+    <part name="employerSSNumber" type="xsd:string" />
+    <part name="erbrn" type="xsd:string" />
+    <part name="loanAmount" type="xsd:string" />
+    <part name="loanMonth" type="xsd:string" />
+    <part name="averageMsc" type="xsd:string" />
+    <part name="totalBalance" type="xsd:string" />
+    <part name="serviceCharge" type="xsd:string" />
+    <part name="netLoan" type="xsd:string" />
+    <part name="monthlyAmort" type="xsd:string" />
+    <part name="disbursementCode" type="xsd:string" />
+    <part name="bankCode" type="xsd:string" />
+    <part name="brstn" type="xsd:string" />
+    <part name="accountNo" type="xsd:string" />
+    <part name="fundingBank" type="xsd:string" />
+    <part name="advanceInterest" type="xsd:string" />
+  </message>
+  <message name="submitSalaryLoanApplicationResponse">
+    <part name="return" type="tns:salaryLoanApplicationResponse" />
+  </message>
+  <message name="getMailingAddressSL">
+    <part name="pseudoNo" type="xsd:string" />
+  </message>
+  <message name="getMailingAddressSLResponse">
+    <part name="return" type="tns:mailingAddress" />
+  </message>
+  <message name="getActualPremiums">
+    <part name="authToken" type="xsd:string" />
+    <part name="ssnum" type="xsd:string" />
+  </message>
+  <message name="getActualPremiumsResponse">
+    <part name="return" type="tns:actualPremiumsArray" />
+  </message>
+  <message name="getActualPremiumsSummary">
+    <part name="authToken" type="xsd:string" />
+    <part name="ssnum" type="xsd:string" />
+  </message>
+  <message name="getActualPremiumsSummaryResponse">
+    <part name="return" type="tns:actualPremiumsSummary" />
+  </message>
+  <message name="getMetroManilaProvinces">
+    <part name="authToken" type="xsd:string" />
+  </message>
+  <message name="getMetroManilaProvincesResponse">
+    <part name="return" type="tns:provinceArray" />
+  </message>
+  <message name="getProvinces">
+    <part name="authToken" type="xsd:string" />
+  </message>
+  <message name="getProvincesResponse">
+    <part name="return" type="tns:provinceArray" />
+  </message>
+  <message name="getMunicipalities">
+    <part name="authToken" type="xsd:string" />
+    <part name="province_cd" type="xsd:string" />
+  </message>
+  <message name="getMunicipalitiesResponse">
+    <part name="return" type="tns:municipalityArray" />
+  </message>
+  <message name="getBrgyPostalCd">
+    <part name="authToken" type="xsd:string" />
+    <part name="city_mun_cd" type="xsd:string" />
+  </message>
+  <message name="getBrgyPostalCdResponse">
+    <part name="return" type="tns:municipalityArray" />
+  </message>
+  <message name="getCountries">
+    <part name="authToken" type="xsd:string" />
+  </message>
+  <message name="getCountriesResponse">
+    <part name="return" type="tns:countryArray" />
+  </message>
+  <message name="insertTranxUpdateContactInfo">
+    <part name="authToken" type="xsd:string" />
+    <part name="ssnum" type="xsd:string" />
+    <part name="transaction_cd" type="xsd:string" />
+    <part name="transactionNo" type="xsd:string" />
+  </message>
+  <message name="insertTranxUpdateContactInfoResponse">
+    <part name="return" type="tns:webResponse" />
+  </message>
+  <message name="isMatNotifEligible">
+    <part name="authToken" type="xsd:string" />
+    <part name="ssnumber" type="xsd:string" />
+    <part name="pSource" type="xsd:string" />
+  </message>
+  <message name="isMatNotifEligibleResponse">
+    <part name="return" type="tns:webResponse" />
+  </message>
+  <message name="submitMatNotif">
+    <part name="authToken" type="xsd:string" />
+    <part name="ssnumber" type="xsd:string" />
+    <part name="pSource" type="xsd:string" />
+    <part name="pTransactionNo" type="xsd:string" />
+    <part name="expectedDeliveryDate" type="xsd:string" />
+    <part name="allocation" type="xsd:string" />
+    <part name="lastName" type="xsd:string" />
+    <part name="firstName" type="xsd:string" />
+    <part name="midName" type="xsd:string" />
+    <part name="extensionName" type="xsd:string" />
+    <part name="kioskWorkStation" type="xsd:string" />
+    <part name="noOfAllocations" type="xsd:string" />
+  </message>
+  <message name="submitMatNotifResponse">
+    <part name="return" type="tns:webTransactionResponse" />
+  </message>
+  <message name="generateTransNoPM">
+    <part name="authToken" type="xsd:string" />
+    <part name="paymentRefNo" type="xsd:string" />
+    <part name="channelCode" type="xsd:string" />
+    <part name="countryCode" type="xsd:string" />
+  </message>
+  <message name="generateTransNoPMResponse">
+    <part name="return" type="tns:webResponse" />
+  </message>
+  <message name="postExitSurvey">
+    <part name="authToken" type="xsd:string" />
+    <part name="designRate" type="xsd:string" />
+    <part name="usefulRate" type="xsd:string" />
+    <part name="infoRate" type="xsd:string" />
+    <part name="fastRate" type="xsd:string" />
+    <part name="userExperienceRate" type="xsd:string" />
+    <part name="source" type="xsd:string" />
+  </message>
+  <message name="postExitSurveyResponse">
+    <part name="return" type="tns:webResponse" />
+  </message>
+  <message name="isMemberWebRegistered">
+    <part name="authToken" type="xsd:string" />
+    <part name="wsUserName" type="xsd:string" />
+    <part name="ssnumber" type="xsd:string" />
+  </message>
+  <message name="isMemberWebRegisteredResponse">
+    <part name="return" type="tns:webResponse" />
+  </message>
+  <message name="getContactInfoAddress">
+    <part name="authToken" type="xsd:string" />
+    <part name="wsUserName" type="xsd:string" />
+    <part name="ssnumber" type="xsd:string" />
+  </message>
+  <message name="getContactInfoAddressResponse">
+    <part name="return" type="tns:contactInfoAdress" />
+  </message>
+  <message name="insertRetirementApp">
+    <part name="authToken" type="xsd:string" />
+    <part name="wsUserName" type="xsd:string" />
+    <part name="tranId" type="xsd:string" />
+    <part name="transno" type="xsd:string" />
+    <part name="certificationTag" type="xsd:string" />
+    <part name="ssnumber" type="xsd:string" />
+    <part name="dateofContigency" type="xsd:string" />
+    <part name="address1" type="xsd:string" />
+    <part name="address2" type="xsd:string" />
+    <part name="postalCode" type="xsd:string" />
+    <part name="email" type="xsd:string" />
+    <part name="advance18Months" type="xsd:string" />
+    <part name="bankBRSTN" type="xsd:string" />
+    <part name="accountNo" type="xsd:string" />
+    <part name="landLine" type="xsd:string" />
+    <part name="mobileNo" type="xsd:string" />
+    <part name="separationDate" type="xsd:string" />
+    <part name="retirementFlag" type="xsd:string" />
+    <part name="retirementAmount" type="xsd:string" />
+    <part name="appliedFrom" type="xsd:string" />
+    <part name="membershipStatus" type="xsd:string" />
+    <part name="employerSSNum" type="xsd:string" />
+    <part name="employerERBR" type="xsd:string" />
+  </message>
+  <message name="insertRetirementAppResponse">
+    <part name="return" type="tns:webTransactionResponse" />
+  </message>
+  <message name="getLatestEmployer">
+    <part name="authToken" type="xsd:string" />
+    <part name="wsUserName" type="xsd:string" />
+    <part name="ssnumber" type="xsd:string" />
+    <part name="tranType" type="xsd:string" />
+  </message>
+  <message name="getLatestEmployerResponse">
+    <part name="return" type="tns:employerArray" />
+  </message>
+  <message name="getMultiEmployerAddress">
+    <part name="authToken" type="xsd:string" />
+    <part name="wsUserName" type="xsd:string" />
+    <part name="employerSSNum" type="xsd:string" />
+  </message>
+  <message name="getMultiEmployerAddressResponse">
+    <part name="return" type="tns:employerAddressArray" />
+  </message>
+  <message name="getMemberType">
+    <part name="authToken" type="xsd:string" />
+    <part name="wsUserName" type="xsd:string" />
+    <part name="ssnumber" type="xsd:string" />
+  </message>
+  <message name="getMemberTypeResponse">
+    <part name="return" type="tns:memberType" />
+  </message>
+  <message name="isMaternityNotifExist">
+    <part name="authToken" type="xsd:string" />
+    <part name="wsUserName" type="xsd:string" />
+    <part name="ssnumber" type="xsd:string" />
+    <part name="deliveryDate" type="xsd:string" />
+  </message>
+  <message name="isMaternityNotifExistResponse">
+    <part name="return" type="tns:webResponse" />
+  </message>
+  <message name="getContributionStatus">
+    <part name="authToken" type="xsd:string" />
+    <part name="tranToken" type="xsd:string" />
+    <part name="pseudoNo" type="xsd:string" />
+  </message>
+  <message name="getContributionStatusResponse">
+    <part name="return" type="tns:contributionStatus" />
+  </message>
+  <message name="getSalaryLoanStatus">
+    <part name="authToken" type="xsd:string" />
+    <part name="tranToken" type="xsd:string" />
+    <part name="pseudoNo" type="xsd:string" />
+  </message>
+  <message name="getSalaryLoanStatusResponse">
+    <part name="return" type="tns:salaryLoanStatus" />
+  </message>
+  <message name="getEcMedStatus">
+    <part name="authToken" type="xsd:string" />
+    <part name="tranToken" type="xsd:string" />
+    <part name="pseudoNo" type="xsd:string" />
+  </message>
+  <message name="getEcMedStatusResponse">
+    <part name="return" type="tns:ecMedStatus" />
+  </message>
+  <message name="getRetirementStatus">
+    <part name="authToken" type="xsd:string" />
+    <part name="tranToken" type="xsd:string" />
+    <part name="pseudoNo" type="xsd:string" />
+  </message>
+  <message name="getRetirementStatusResponse">
+    <part name="return" type="tns:retirementStatus" />
+  </message>
+  <message name="getDisabilityStatus">
+    <part name="authToken" type="xsd:string" />
+    <part name="tranToken" type="xsd:string" />
+    <part name="pseudoNo" type="xsd:string" />
+  </message>
+  <message name="getDisabilityStatusResponse">
+    <part name="return" type="tns:disabilityStatus" />
+  </message>
+  <message name="getMaternityStatus">
+    <part name="authToken" type="xsd:string" />
+    <part name="tranToken" type="xsd:string" />
+    <part name="pseudoNo" type="xsd:string" />
+  </message>
+  <message name="getMaternityStatusResponse">
+    <part name="return" type="tns:maternityStatus" />
+  </message>
+  <message name="getSicknessStatus">
+    <part name="authToken" type="xsd:string" />
+    <part name="tranToken" type="xsd:string" />
+    <part name="pseudoNo" type="xsd:string" />
+  </message>
+  <message name="getSicknessStatusResponse">
+    <part name="return" type="tns:sicknessStatus" />
+  </message>
+  <message name="getSalaryLoanBalance">
+    <part name="authToken" type="xsd:string" />
+    <part name="tranToken" type="xsd:string" />
+    <part name="pseudoNo" type="xsd:string" />
+  </message>
+  <message name="getSalaryLoanBalanceResponse">
+    <part name="return" type="tns:salaryLoanStatus" />
+  </message>
+  <portType name="MobileWSBeanPortType">
+    <operation name="connect">
+      <input message="tns:connect" />
+      <output message="tns:connectResponse" />
+    </operation>
+    <operation name="getBranches" parameterOrder="authToken postalCode city">
+      <input message="tns:getBranches" />
+      <output message="tns:getBranchesResponse" />
+    </operation>
+    <operation name="loginWebAccount" parameterOrder="authToken tranToken userid password">
+      <input message="tns:loginWebAccount" />
+      <output message="tns:loginWebAccountResponse" />
+    </operation>
+    <operation name="forgotPassword" parameterOrder="authToken userid">
+      <input message="tns:forgotPassword" />
+      <output message="tns:forgotPasswordResponse" />
+    </operation>
+    <operation name="getMemberProfile" parameterOrder="authToken tranToken pseudoNo">
+      <input message="tns:getMemberProfile" />
+      <output message="tns:getMemberProfileResponse" />
+    </operation>
+    <operation name="getOtherInfo" parameterOrder="authToken tranToken pseudoNo">
+      <input message="tns:getOtherInfo" />
+      <output message="tns:getOtherInfoResponse" />
+    </operation>
+    <operation name="getCompleteAddress" parameterOrder="authToken tranToken pseudoNo">
+      <input message="tns:getCompleteAddress" />
+      <output message="tns:getCompleteAddressResponse" />
+    </operation>
+    <operation name="maternityNotifEligibility" parameterOrder="authToken pseudoNo">
+      <input message="tns:maternityNotifEligibility" />
+      <output message="tns:maternityNotifEligibilityResponse" />
+    </operation>
+    <operation name="maternityNotifSubmit" parameterOrder="authToken tranToken pseudoNo expectedDeliveryDate prevNoOfDelivery dateOfLastDelivery">
+      <input message="tns:maternityNotifSubmit" />
+      <output message="tns:maternityNotifSubmitResponse" />
+    </operation>
+    <operation name="getParamInquirePRN">
+      <input message="tns:getParamInquirePRN" />
+      <output message="tns:getParamInquirePRNResponse" />
+    </operation>
+    <operation name="getAllowedMemberTypeListPRN" parameterOrder="authToken memberType">
+      <input message="tns:getAllowedMemberTypeListPRN" />
+      <output message="tns:getAllowedMemberTypeListPRNResponse" />
+    </operation>
+    <operation name="getContributionListPRN">
+      <input message="tns:getContributionListPRN" />
+      <output message="tns:getContributionListPRNResponse" />
+    </operation>
+    <operation name="insertTransactionPRN" parameterOrder="authToken paymentRefNo applicableDate ssnum monthlyContribution flexiFundContribution totalAmount memberType">
+      <input message="tns:insertTransactionPRN" />
+      <output message="tns:insertTransactionPRNResponse" />
+    </operation>
+    <operation name="getMemberTypeSL">
+      <input message="tns:getMemberTypeSL" />
+      <output message="tns:getMemberTypeSLResponse" />
+    </operation>
+    <operation name="getEmployerAddressesSL" parameterOrder="authToken employerSSNumber">
+      <input message="tns:getEmployerAddressesSL" />
+      <output message="tns:getEmployerAddressesSLResponse" />
+    </operation>
+    <operation name="submitSalaryLoanApplication" parameterOrder="authToken ssnum memberStatus employerSSNumber erbrn loanAmount loanMonth averageMsc totalBalance serviceCharge netLoan monthlyAmort disbursementCode bankCode brstn accountNo fundingBank advanceInterest">
+      <input message="tns:submitSalaryLoanApplication" />
+      <output message="tns:submitSalaryLoanApplicationResponse" />
+    </operation>
+    <operation name="getMailingAddressSL">
+      <input message="tns:getMailingAddressSL" />
+      <output message="tns:getMailingAddressSLResponse" />
+    </operation>
+    <operation name="getActualPremiums" parameterOrder="authToken ssnum">
+      <input message="tns:getActualPremiums" />
+      <output message="tns:getActualPremiumsResponse" />
+    </operation>
+    <operation name="getActualPremiumsSummary" parameterOrder="authToken ssnum">
+      <input message="tns:getActualPremiumsSummary" />
+      <output message="tns:getActualPremiumsSummaryResponse" />
+    </operation>
+    <operation name="getMetroManilaProvinces">
+      <input message="tns:getMetroManilaProvinces" />
+      <output message="tns:getMetroManilaProvincesResponse" />
+    </operation>
+    <operation name="getProvinces">
+      <input message="tns:getProvinces" />
+      <output message="tns:getProvincesResponse" />
+    </operation>
+    <operation name="getMunicipalities" parameterOrder="authToken province_cd">
+      <input message="tns:getMunicipalities" />
+      <output message="tns:getMunicipalitiesResponse" />
+    </operation>
+    <operation name="getBrgyPostalCd" parameterOrder="authToken city_mun_cd">
+      <input message="tns:getBrgyPostalCd" />
+      <output message="tns:getBrgyPostalCdResponse" />
+    </operation>
+    <operation name="getCountries">
+      <input message="tns:getCountries" />
+      <output message="tns:getCountriesResponse" />
+    </operation>
+    <operation name="insertTranxUpdateContactInfo" parameterOrder="authToken ssnum transaction_cd transactionNo">
+      <input message="tns:insertTranxUpdateContactInfo" />
+      <output message="tns:insertTranxUpdateContactInfoResponse" />
+    </operation>
+    <operation name="isMatNotifEligible" parameterOrder="authToken ssnumber pSource">
+      <input message="tns:isMatNotifEligible" />
+      <output message="tns:isMatNotifEligibleResponse" />
+    </operation>
+    <operation name="submitMatNotif" parameterOrder="authToken ssnumber pSource pTransactionNo expectedDeliveryDate allocation lastName firstName midName extensionName kioskWorkStation noOfAllocations">
+      <input message="tns:submitMatNotif" />
+      <output message="tns:submitMatNotifResponse" />
+    </operation>
+    <operation name="generateTransNoPM" parameterOrder="authToken paymentRefNo channelCode countryCode">
+      <input message="tns:generateTransNoPM" />
+      <output message="tns:generateTransNoPMResponse" />
+    </operation>
+    <operation name="postExitSurvey" parameterOrder="authToken designRate usefulRate infoRate fastRate userExperienceRate source">
+      <input message="tns:postExitSurvey" />
+      <output message="tns:postExitSurveyResponse" />
+    </operation>
+    <operation name="isMemberWebRegistered" parameterOrder="authToken wsUserName ssnumber">
+      <input message="tns:isMemberWebRegistered" />
+      <output message="tns:isMemberWebRegisteredResponse" />
+    </operation>
+    <operation name="getContactInfoAddress" parameterOrder="authToken wsUserName ssnumber">
+      <input message="tns:getContactInfoAddress" />
+      <output message="tns:getContactInfoAddressResponse" />
+    </operation>
+    <operation name="insertRetirementApp" parameterOrder="authToken wsUserName tranId transno certificationTag ssnumber dateofContigency address1 address2 postalCode email advance18Months bankBRSTN accountNo landLine mobileNo separationDate retirementFlag retirementAmount appliedFrom membershipStatus employerSSNum employerERBR">
+      <input message="tns:insertRetirementApp" />
+      <output message="tns:insertRetirementAppResponse" />
+    </operation>
+    <operation name="getLatestEmployer" parameterOrder="authToken wsUserName ssnumber tranType">
+      <input message="tns:getLatestEmployer" />
+      <output message="tns:getLatestEmployerResponse" />
+    </operation>
+    <operation name="getMultiEmployerAddress" parameterOrder="authToken wsUserName employerSSNum">
+      <input message="tns:getMultiEmployerAddress" />
+      <output message="tns:getMultiEmployerAddressResponse" />
+    </operation>
+    <operation name="getMemberType" parameterOrder="authToken wsUserName ssnumber">
+      <input message="tns:getMemberType" />
+      <output message="tns:getMemberTypeResponse" />
+    </operation>
+    <operation name="isMaternityNotifExist" parameterOrder="authToken wsUserName ssnumber deliveryDate">
+      <input message="tns:isMaternityNotifExist" />
+      <output message="tns:isMaternityNotifExistResponse" />
+    </operation>
+    <operation name="getContributionStatus" parameterOrder="authToken tranToken pseudoNo">
+      <input message="tns:getContributionStatus" />
+      <output message="tns:getContributionStatusResponse" />
+    </operation>
+    <operation name="getSalaryLoanStatus" parameterOrder="authToken tranToken pseudoNo">
+      <input message="tns:getSalaryLoanStatus" />
+      <output message="tns:getSalaryLoanStatusResponse" />
+    </operation>
+    <operation name="getEcMedStatus" parameterOrder="authToken tranToken pseudoNo">
+      <input message="tns:getEcMedStatus" />
+      <output message="tns:getEcMedStatusResponse" />
+    </operation>
+    <operation name="getRetirementStatus" parameterOrder="authToken tranToken pseudoNo">
+      <input message="tns:getRetirementStatus" />
+      <output message="tns:getRetirementStatusResponse" />
+    </operation>
+    <operation name="getDisabilityStatus" parameterOrder="authToken tranToken pseudoNo">
+      <input message="tns:getDisabilityStatus" />
+      <output message="tns:getDisabilityStatusResponse" />
+    </operation>
+    <operation name="getMaternityStatus" parameterOrder="authToken tranToken pseudoNo">
+      <input message="tns:getMaternityStatus" />
+      <output message="tns:getMaternityStatusResponse" />
+    </operation>
+    <operation name="getSicknessStatus" parameterOrder="authToken tranToken pseudoNo">
+      <input message="tns:getSicknessStatus" />
+      <output message="tns:getSicknessStatusResponse" />
+    </operation>
+    <operation name="getSalaryLoanBalance" parameterOrder="authToken tranToken pseudoNo">
+      <input message="tns:getSalaryLoanBalance" />
+      <output message="tns:getSalaryLoanBalanceResponse" />
+    </operation>
+  </portType>
+  <binding name="MobileWSPortBinding" type="tns:MobileWSBeanPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <operation name="connect">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getBranches">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="loginWebAccount">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="forgotPassword">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getMemberProfile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getOtherInfo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getCompleteAddress">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="maternityNotifEligibility">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="maternityNotifSubmit">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getParamInquirePRN">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getAllowedMemberTypeListPRN">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getContributionListPRN">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="insertTransactionPRN">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getMemberTypeSL">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getEmployerAddressesSL">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="submitSalaryLoanApplication">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getMailingAddressSL">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getActualPremiums">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getActualPremiumsSummary">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getMetroManilaProvinces">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getProvinces">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getMunicipalities">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getBrgyPostalCd">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getCountries">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="insertTranxUpdateContactInfo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="isMatNotifEligible">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="submitMatNotif">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="generateTransNoPM">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="postExitSurvey">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="isMemberWebRegistered">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getContactInfoAddress">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="insertRetirementApp">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getLatestEmployer">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getMultiEmployerAddress">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getMemberType">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="isMaternityNotifExist">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getContributionStatus">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getSalaryLoanStatus">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getEcMedStatus">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getRetirementStatus">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getDisabilityStatus">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getMaternityStatus">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getSicknessStatus">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+    <operation name="getSalaryLoanBalance">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://service.webservice.sss/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="MobileWSBeanService">
+    <port name="MobileWSPort" binding="tns:MobileWSPortBinding">
+      <soap:address location="http://wws.sss.gov.ph:80/MobileWSBean/MobileWSBeanService" />
+    </port>
+  </service>
+</definitions>

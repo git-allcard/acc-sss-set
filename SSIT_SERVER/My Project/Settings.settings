@@ -1,0 +1,248 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="getURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="tagPage" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="webPageTag" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="getPermanentURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://m01ws079:8888/sss-ssitserve2/</Value>
+    </Setting>
+    <Setting Name="tagInqury" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BenefitTag1" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Setting" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Dsn=SSIT;uid=sa;pwd=password2013&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.Odbc&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Dsn=SSIT;uid=sa;pwd=password2013</Value>
+    </Setting>
+    <Setting Name="BenefitTag2" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="getLogsWeb" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="autoGenID" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="lastIDmaternity" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="getAdd" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="pageIncremement" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="sssWebsiteLink" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://www.sss.gov.ph/sss/login.jsp</Value>
+    </Setting>
+    <Setting Name="kioskID" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="kioskIP" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="kioskName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="db_Server" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="db_UName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="db_Pass" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="db_Name" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="db_DSN" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="kioskBranch" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="lastOnline" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="lastOffline" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="firstRun" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="userType" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="printTag" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="db_Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="db_Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="db_ServiceName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="db_UserID" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="db_Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="kiosk_cluster" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="kiosk_group" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="authentication" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="getUmidCardStatus" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="pathLoc" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="salaryLoanTag" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="getErNo" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="getNameEr" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="getEmpStatus" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="kioskAdminUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ssitsssgov</Value>
+    </Setting>
+    <Setting Name="kioskAdminPass" Type="System.String" Scope="User">
+      <Value Profile="(Default)">allcardtech@2014!</Value>
+    </Setting>
+    <Setting Name="SSStempFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="printerPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="errorLoadTag" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="dateOfBirth" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="dateOfCov" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="lastTransNo" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="disclosureURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://prs:7777/</Value>
+    </Setting>
+    <Setting Name="errorTag" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="transTag" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="getLumpSum" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UMID" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="SAM" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SmartCardReader" Type="System.String" Scope="User">
+      <Value Profile="(Default)">OMNIKEY CardMan 5x21-CL 0</Value>
+    </Setting>
+    <Setting Name="CRN" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PIN" Type="System.String" Scope="User">
+      <Value Profile="(Default)">123456</Value>
+    </Setting>
+    <Setting Name="SSSCard_SessionTime" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">7</Value>
+    </Setting>
+    <Setting Name="UMIDCard_SessionTime" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">12</Value>
+    </Setting>
+    <Setting Name="webFeedEmail" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ncjaluag@allcardtech.com.ph</Value>
+    </Setting>
+    <Setting Name="CHECK_MEMSTATUS" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="IsCRNJustActivated" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="lastContribution" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CSN" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CCDT" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CardPIN" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SS_Number" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CARD_DATA" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SSIT_SERVER_WS_Disclosure_DisclosureWebserviceImplService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://sssohs:7777/webcallingds/DisclosureWebserviceImplService</Value>
+    </Setting>
+    <Setting Name="SSIT_SERVER_SSSTokenGenerator_TokenDetailsService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.141.249.22:8017/TokenServiceBean/TokenServiceBeanService</Value>
+    </Setting>
+    <Setting Name="SSIT_SERVER_MobileWS2BeanService_MobileWS2BeanService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://wws.sss.gov.ph:80/MobileWSBean/MobileWSBeanService</Value>
+    </Setting>
+    <Setting Name="SSIT_SERVER_EligibilityWebserviceImplService_EligibilityWebserviceImplService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://ww8.sss.gov.ph:80/eligibwebservice/EligibilityWebserviceImplService</Value>
+    </Setting>
+    <Setting Name="SSIT_SERVER_DisclosureWebserviceImplService_DisclosureWebserviceImplService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://ww8.sss.gov.ph:80/webcallingds/DisclosureWebserviceImplService</Value>
+    </Setting>
+    <Setting Name="SSIT_SERVER_SimpleWebRegistrationService_SimpleWebRegistrationService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.0.161.237:7101/Wes3in1EJBBean/Wes3in1Service</Value>
+    </Setting>
+    <Setting Name="SSIT_SERVER_BankWorkflowWebService_BankWorkflowWebServiceImplService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://m41sv145:7009/testbemws/BankWorkflowWebServiceImplPort</Value>
+    </Setting>
+    <Setting Name="SSIT_SERVER_UmidService_UmidService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://m41sv145:7009/TestUmidWSBean/UmidService</Value>
+    </Setting>
+    <Setting Name="SSIT_SERVER_OnlineRetirementWebServiceImplService_OnlineRetirementWebServiceImplService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://ww8.sss.gov.ph:80/TestOnlineRetirement/OnlineRetirementWebServiceImplService</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://webservice/" targetNamespace="http://webservice/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="calldisclosure" type="tns:calldisclosure" />
+  <xs:element name="calldisclosureResponse" type="tns:calldisclosureResponse" />
+  <xs:element name="disAuthenticate" type="tns:disAuthenticate" />
+  <xs:element name="disAuthenticateResponse" type="tns:disAuthenticateResponse" />
+  <xs:complexType name="disAuthenticate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="token_id" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="disAuthenticateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:disWsparams" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="disWsparams">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="msg" type="xs:string" />
+      <xs:element minOccurs="0" name="token_id" type="xs:string" />
+      <xs:element minOccurs="0" name="transac_token" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="calldisclosure">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="issnum" type="xs:string" />
+      <xs:element minOccurs="0" name="iernum" type="xs:string" />
+      <xs:element minOccurs="0" name="iloan_type" type="xs:string" />
+      <xs:element name="iln_amt" type="xs:double" />
+      <xs:element name="iinstallment_term" type="xs:int" />
+      <xs:element minOccurs="0" name="iurlds" type="xs:string" />
+      <xs:element name="iprevln_amount" type="xs:double" />
+      <xs:element name="iservcharge" type="xs:double" />
+      <xs:element minOccurs="0" name="itransac_token" type="xs:string" />
+      <xs:element minOccurs="0" name="itoken_id" type="xs:string" />
+      <xs:element minOccurs="0" name="ier_seq_no" type="xs:string" />
+      <xs:element minOccurs="0" name="iaddress" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="calldisclosureResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:disclosureWsResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="disclosureWsResponse">
+    <xs:sequence>
+      <xs:element name="adv_interest" type="xs:double" />
+      <xs:element minOccurs="0" name="er_no" type="xs:string" />
+      <xs:element minOccurs="0" name="first_amort" type="xs:string" />
+      <xs:element name="installment_term" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="listloan" nillable="true" type="tns:loandetails" />
+      <xs:element name="ln_amt" type="xs:double" />
+      <xs:element minOccurs="0" name="loanbal" type="xs:string" />
+      <xs:element name="monthly_amort" type="xs:double" />
+      <xs:element minOccurs="0" name="msg" type="xs:string" />
+      <xs:element minOccurs="0" name="net_proceeds" type="xs:string" />
+      <xs:element minOccurs="0" name="path" type="xs:string" />
+      <xs:element minOccurs="0" name="path_mobile" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="url" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="loandetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="res_first_amortization2" type="xs:string" />
+      <xs:element minOccurs="0" name="res_loan_amount2" type="xs:string" />
+      <xs:element minOccurs="0" name="res_loan_date2" type="xs:string" />
+      <xs:element minOccurs="0" name="res_loan_tag2" type="xs:string" />
+      <xs:element minOccurs="0" name="res_loan_type2" type="xs:string" />
+      <xs:element minOccurs="0" name="res_outstanding_bal2" type="xs:string" />
+      <xs:element minOccurs="0" name="res_stmt_date2" type="xs:string" />
+      <xs:element minOccurs="0" name="res_total_obligation2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://service.webservice.sss/" targetNamespace="http://service.webservice.sss/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="webResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="firstName" type="xs:string" />
+      <xs:element minOccurs="0" name="fullName" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="pseudoNo" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="transactionToken" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualPremiumsSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="totalAmountContri" type="xs:string" />
+      <xs:element minOccurs="0" name="totalNoContri" type="xs:string" />
+      <xs:element minOccurs="0" name="totalNoContriDisplayed" type="xs:string" />
+      <xs:element minOccurs="0" name="totalNoContriNotDisplayed" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mailingAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="barangay" type="xs:string" />
+      <xs:element minOccurs="0" name="cityMunicipality" type="xs:string" />
+      <xs:element minOccurs="0" name="houseBlockLot" type="xs:string" />
+      <xs:element minOccurs="0" name="postalCode" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="province" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="roomFlrBuilding" type="xs:string" />
+      <xs:element minOccurs="0" name="street" type="xs:string" />
+      <xs:element minOccurs="0" name="subdivision" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sicknessStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="sicAmountApproved" type="xs:string" />
+      <xs:element minOccurs="0" name="sicCheckDate" type="xs:string" />
+      <xs:element minOccurs="0" name="sicConfinementDate" type="xs:string" />
+      <xs:element minOccurs="0" name="sicNoOfDaysApproved" type="xs:string" />
+      <xs:element minOccurs="0" name="sicReason" type="xs:string" />
+      <xs:element minOccurs="0" name="sicStatus" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="retirementStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="amountOfBenefit" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="reason" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="settlementDate" type="xs:string" />
+      <xs:element minOccurs="0" name="status" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="employerAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="address" type="xs:string" />
+      <xs:element minOccurs="0" name="employerSSNumber" type="xs:string" />
+      <xs:element minOccurs="0" name="erbrn" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="contributionStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="appMonthOfLastContriPosted" type="xs:string" />
+      <xs:element minOccurs="0" name="noOfContributions" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="completeAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="foreignHome" type="xs:string" />
+      <xs:element minOccurs="0" name="foreignMailing" type="xs:string" />
+      <xs:element minOccurs="0" name="localHome" type="xs:string" />
+      <xs:element minOccurs="0" name="localMailing" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="memberProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bday" type="xs:string" />
+      <xs:element minOccurs="0" name="crn" type="xs:string" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element minOccurs="0" name="fullName" type="xs:string" />
+      <xs:element minOccurs="0" name="landline" type="xs:string" />
+      <xs:element minOccurs="0" name="mobile" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="salaryLoanStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="loanBalance" type="xs:string" />
+      <xs:element minOccurs="0" name="loanDate" type="xs:string" />
+      <xs:element minOccurs="0" name="loanStatus" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="municipality">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="barangay_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="barangayname" type="xs:string" />
+      <xs:element minOccurs="0" name="city_mun_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="city_munname" type="xs:string" />
+      <xs:element minOccurs="0" name="post_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="province_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ecMedStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="amountOfBenefit" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="reason" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="settlementDate" type="xs:string" />
+      <xs:element minOccurs="0" name="status" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="webTransactionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="expirationDate" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="pseudoNo" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="transactionNo" type="xs:string" />
+      <xs:element minOccurs="0" name="transactionToken" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="otherInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="coverageStatus" type="xs:string" />
+      <xs:element minOccurs="0" name="dateOfCoverage" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnumStatus" type="xs:string" />
+      <xs:element minOccurs="0" name="umidSavingsAccountNo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="paymentRefNo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="authenticationToken" type="xs:string" />
+      <xs:element minOccurs="0" name="bday" type="xs:string" />
+      <xs:element minOccurs="0" name="membershipType" type="xs:string" />
+      <xs:element minOccurs="0" name="paymentRefNo" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnumber" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="country">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="country_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="country_name" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="employer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="employerName" type="xs:string" />
+      <xs:element minOccurs="0" name="employerSSNumber" type="xs:string" />
+      <xs:element minOccurs="0" name="erbrn" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="contactInfoAdress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element minOccurs="0" name="foreignHome" type="xs:string" />
+      <xs:element minOccurs="0" name="foreignMailing" type="xs:string" />
+      <xs:element minOccurs="0" name="landline" type="xs:string" />
+      <xs:element minOccurs="0" name="localHome" type="xs:string" />
+      <xs:element minOccurs="0" name="localMailing" type="xs:string" />
+      <xs:element minOccurs="0" name="mobile" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualPremiums">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="aprPremium" type="xs:string" />
+      <xs:element minOccurs="0" name="augPremium" type="xs:string" />
+      <xs:element minOccurs="0" name="decPremium" type="xs:string" />
+      <xs:element minOccurs="0" name="febPremium" type="xs:string" />
+      <xs:element minOccurs="0" name="janPremium" type="xs:string" />
+      <xs:element minOccurs="0" name="julPremium" type="xs:string" />
+      <xs:element minOccurs="0" name="junPremium" type="xs:string" />
+      <xs:element minOccurs="0" name="marPremium" type="xs:string" />
+      <xs:element minOccurs="0" name="mayPremium" type="xs:string" />
+      <xs:element minOccurs="0" name="novPremium" type="xs:string" />
+      <xs:element minOccurs="0" name="octPremium" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="sepPremium" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+      <xs:element minOccurs="0" name="year" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="branch">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="areaCode" type="xs:string" />
+      <xs:element minOccurs="0" name="branchName" type="xs:string" />
+      <xs:element minOccurs="0" name="brgy" type="xs:string" />
+      <xs:element minOccurs="0" name="country" type="xs:string" />
+      <xs:element minOccurs="0" name="phoneNumber" type="xs:string" />
+      <xs:element minOccurs="0" name="posLatitude" type="xs:string" />
+      <xs:element minOccurs="0" name="posLongtitude" type="xs:string" />
+      <xs:element minOccurs="0" name="postalCode" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="province" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="street" type="xs:string" />
+      <xs:element minOccurs="0" name="townCity" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="province">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="city_mun_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="city_munname" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="province_cd" type="xs:string" />
+      <xs:element minOccurs="0" name="provincename" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="disabilityStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="amountOfBenefit" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="reason" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="settlementDate" type="xs:string" />
+      <xs:element minOccurs="0" name="status" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="memberType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="employerName" type="xs:string" />
+      <xs:element minOccurs="0" name="employerSSNumber" type="xs:string" />
+      <xs:element minOccurs="0" name="erbrn" type="xs:string" />
+      <xs:element minOccurs="0" name="memberType" type="xs:string" />
+      <xs:element minOccurs="0" name="memberTypeCode" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="ssnum" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="maternityStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="matAmountApproved" type="xs:string" />
+      <xs:element minOccurs="0" name="matCheckDate" type="xs:string" />
+      <xs:element minOccurs="0" name="matConfinementDate" type="xs:string" />
+      <xs:element minOccurs="0" name="matNoOfDaysApproved" type="xs:string" />
+      <xs:element minOccurs="0" name="matReason" type="xs:string" />
+      <xs:element minOccurs="0" name="matStatus" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="salaryLoanApplicationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="applicationDt" type="xs:string" />
+      <xs:element minOccurs="0" name="expiryDt" type="xs:string" />
+      <xs:element minOccurs="0" name="memberType" type="xs:string" />
+      <xs:element minOccurs="0" name="processFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string" />
+      <xs:element minOccurs="0" name="transactionNo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="employerAddressArray" final="#all">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:employerAddress" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="municipalityArray" final="#all">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:municipality" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="countryArray" final="#all">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:country" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="employerArray" final="#all">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:employer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualPremiumsArray" final="#all">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:actualPremiums" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="branchArray" final="#all">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:branch" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="provinceArray" final="#all">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:province" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://bem/" name="BankWorkflowWebServiceImplService" targetNamespace="http://bem/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://m41sv145:7009/testbemws/BankWorkflowWebServiceImplPort?xsd=1" namespace="http://bem/" />
+    </xsd:schema>
+  </types>
+  <message name="getAccountTypeList">
+    <part name="parameters" element="tns:getAccountTypeList" />
+  </message>
+  <message name="getAccountTypeListResponse">
+    <part name="parameters" element="tns:getAccountTypeListResponse" />
+  </message>
+  <message name="getMainBankList">
+    <part name="parameters" element="tns:getMainBankList" />
+  </message>
+  <message name="getMainBankListResponse">
+    <part name="parameters" element="tns:getMainBankListResponse" />
+  </message>
+  <message name="getBankAccountListBySSNumber">
+    <part name="parameters" element="tns:getBankAccountListBySSNumber" />
+  </message>
+  <message name="getBankAccountListBySSNumberResponse">
+    <part name="parameters" element="tns:getBankAccountListBySSNumberResponse" />
+  </message>
+  <message name="insertAccountInfo">
+    <part name="parameters" element="tns:insertAccountInfo" />
+  </message>
+  <message name="insertAccountInfoResponse">
+    <part name="parameters" element="tns:insertAccountInfoResponse" />
+  </message>
+  <message name="deactivateAccInfo">
+    <part name="parameters" element="tns:deactivateAccInfo" />
+  </message>
+  <message name="deactivateAccInfoResponse">
+    <part name="parameters" element="tns:deactivateAccInfoResponse" />
+  </message>
+  <message name="getBankAccountListByAC">
+    <part name="parameters" element="tns:getBankAccountListByAC" />
+  </message>
+  <message name="getBankAccountListByACResponse">
+    <part name="parameters" element="tns:getBankAccountListByACResponse" />
+  </message>
+  <portType name="BankWorkflowWebService">
+    <operation name="getAccountTypeList">
+      <input message="tns:getAccountTypeList" />
+      <output message="tns:getAccountTypeListResponse" />
+    </operation>
+    <operation name="getMainBankList">
+      <input message="tns:getMainBankList" />
+      <output message="tns:getMainBankListResponse" />
+    </operation>
+    <operation name="getBankAccountListBySSNumber">
+      <input message="tns:getBankAccountListBySSNumber" />
+      <output message="tns:getBankAccountListBySSNumberResponse" />
+    </operation>
+    <operation name="insertAccountInfo">
+      <input message="tns:insertAccountInfo" />
+      <output message="tns:insertAccountInfoResponse" />
+    </operation>
+    <operation name="deactivateAccInfo">
+      <input message="tns:deactivateAccInfo" />
+      <output message="tns:deactivateAccInfoResponse" />
+    </operation>
+    <operation name="getBankAccountListByAC">
+      <input message="tns:getBankAccountListByAC" />
+      <output message="tns:getBankAccountListByACResponse" />
+    </operation>
+  </portType>
+  <binding name="BankWorkflowWebServiceImplPortBinding" type="tns:BankWorkflowWebService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getAccountTypeList">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getMainBankList">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getBankAccountListBySSNumber">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertAccountInfo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deactivateAccInfo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getBankAccountListByAC">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="BankWorkflowWebServiceImplService">
+    <port name="BankWorkflowWebServiceImplPort" binding="tns:BankWorkflowWebServiceImplPortBinding">
+      <soap:address location="http://m41sv145:7009/testbemws/BankWorkflowWebServiceImplPort" />
+    </port>
+  </service>
+</definitions>

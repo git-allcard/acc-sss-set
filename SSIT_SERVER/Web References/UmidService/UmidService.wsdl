@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://service/" name="UmidService" targetNamespace="http://service/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://m41sv145:7009/TestUmidWSBean/UmidService?xsd=1" namespace="http://service/" />
+    </xsd:schema>
+  </types>
+  <message name="isWithUMIDSSID">
+    <part name="parameters" element="tns:isWithUMIDSSID" />
+  </message>
+  <message name="isWithUMIDSSIDResponse">
+    <part name="parameters" element="tns:isWithUMIDSSIDResponse" />
+  </message>
+  <message name="isSSSMember">
+    <part name="parameters" element="tns:isSSSMember" />
+  </message>
+  <message name="isSSSMemberResponse">
+    <part name="parameters" element="tns:isSSSMemberResponse" />
+  </message>
+  <message name="insertGSISUmid">
+    <part name="parameters" element="tns:insertGSISUmid" />
+  </message>
+  <message name="insertGSISUmidResponse">
+    <part name="parameters" element="tns:insertGSISUmidResponse" />
+  </message>
+  <message name="isCsnExist">
+    <part name="parameters" element="tns:isCsnExist" />
+  </message>
+  <message name="isCsnExistResponse">
+    <part name="parameters" element="tns:isCsnExistResponse" />
+  </message>
+  <portType name="UmidService">
+    <operation name="isWithUMIDSSID">
+      <input message="tns:isWithUMIDSSID" />
+      <output message="tns:isWithUMIDSSIDResponse" />
+    </operation>
+    <operation name="isSSSMember">
+      <input message="tns:isSSSMember" />
+      <output message="tns:isSSSMemberResponse" />
+    </operation>
+    <operation name="insertGSISUmid">
+      <input message="tns:insertGSISUmid" />
+      <output message="tns:insertGSISUmidResponse" />
+    </operation>
+    <operation name="isCsnExist">
+      <input message="tns:isCsnExist" />
+      <output message="tns:isCsnExistResponse" />
+    </operation>
+  </portType>
+  <binding name="UmidServicePortBinding" type="tns:UmidService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="isWithUMIDSSID">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="isSSSMember">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertGSISUmid">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="isCsnExist">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="UmidService">
+    <port name="UmidServicePort" binding="tns:UmidServicePortBinding">
+      <soap:address location="http://m41sv145:7009/TestUmidWSBean/UmidService" />
+    </port>
+  </service>
+</definitions>
